@@ -14,11 +14,15 @@
 + [Vector Art](https://all-free-download.com/)
 
 + Android Assets
-  * [Asset Studio](https://github.com/romannurik/AndroidAssetStudio)
-  * [Icon Animator](https://github.com/romannurik/AndroidIconAnimator)
+
+    * [Asset Studio](https://github.com/romannurik/AndroidAssetStudio)
+
+    * [Icon Animator](https://github.com/romannurik/AndroidIconAnimator)
 
 + Markup Rules
 
-  * [Original](https://daringfireball.net/projects/markdown/basics)
-  * [Bitbucket Version](https://bitbucket.org/tutorials/markdowndemo/src/master/)
-  * [Python Version](https://pypi.org/project/Markdown/)
+    * [Original](https://daringfireball.net/projects/markdown/basics)
+
+    * [Bitbucket Version](https://bitbucket.org/tutorials/markdowndemo/src/master/)
+
+    * [Python Version](https://pypi.org/project/Markdown/)
