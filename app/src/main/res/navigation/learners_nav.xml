@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/learners_nav"
+    app:startDestination="@id/mainMenu">
+
+    <fragment
+        android:id="@+id/mainMenu"
+        android:name="com.wordpress.phumelelathedesigner.learnerspermit.MainMenu"
+        android:label="main_menu"
+        tools:layout="@layout/main_menu" >
+        <action
+            android:id="@+id/action_mainMenu_to_learnSigns"
+            app:destination="@id/learnSigns" />
+        <action
+            android:id="@+id/action_mainMenu_to_testCards"
+            app:destination="@id/testCards" />
+        <action
+            android:id="@+id/action_mainMenu_to_scoredTest"
+            app:destination="@id/scoredTest" />
+    </fragment>
+    <activity
+        android:id="@+id/learnSigns"
+        android:name="com.wordpress.phumelelathedesigner.learnerspermit.LearnSigns"
+        android:label="activity_learn_signs"
+        tools:layout="@layout/activity_learn_signs" />
+    <activity
+        android:id="@+id/testCards"
+        android:name="com.wordpress.phumelelathedesigner.learnerspermit.TestCards"
+        android:label="activity_test_cards"
+        tools:layout="@layout/activity_test_cards" />
+    <activity
+        android:id="@+id/scoredTest"
+        android:name="com.wordpress.phumelelathedesigner.learnerspermit.ScoredTest"
+        android:label="activity_scored_test"
+        tools:layout="@layout/activity_scored_test" />
+</navigation>
