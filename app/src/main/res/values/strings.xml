@@ -1,37 +1,38 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+
     <!-- General Tags -->
-    <string name="app_name">Learners Permit</string>
-    <string name="app_desc">The Kingdom of Eswatini Learner\'s Permit study app</string>
-    <string name="app_title">The Kingdom of Eswatini Learners Permit Study App</string>
-    <string name="app_title_description">App Title</string>
-    <string name="choose_language_title">Choose a Study Language:</string>
-    <string name="choose_language_title_description">Study language choice title</string>
-    <string name="english_button">English</string>
-    <string name="english_button_description">English language choice button</string>
-    <string name="siswati_button">SiSwati</string>
-    <string name="siswati_button_description">SiSwati language choice button</string>
-    <string name="app_exit_alert_title">Exit App?</string>
-    <string name="app_exit_alert_confirm">Yes</string>
-    <string name="app_exit_alert_decline">No</string>
-    <string name="app_exit_alert_message">Would you like to exit the application?</string>
+    <string name="app_name" translatable="false">Learners Permit</string>
+    <string name="app_desc" translatable="false">The Kingdom of Eswatini Learner\'s Permit study app</string>
+    <string name="app_title" translatable="false">The Kingdom of Eswatini Learners Permit Study App</string>
+    <string name="app_title_description" translatable="false">App Title</string>
+    <string name="choose_language_title" translatable="false">Choose a Study Language:</string>
+    <string name="choose_language_title_description" translatable="false">Study language choice title</string>
+    <string name="english_button" translatable="false">English</string>
+    <string name="english_button_description" translatable="false">English language choice button</string>
+    <string name="siswati_button" translatable="false">SiSwati</string>
+    <string name="siswati_button_description" translatable="false">SiSwati language choice button</string>
+    <string name="app_exit_alert_title" translatable="false">Exit App?</string>
+    <string name="app_exit_alert_confirm" translatable="false">Yes</string>
+    <string name="app_exit_alert_decline" translatable="false">No</string>
+    <string name="app_exit_alert_message" translatable="false">Would you like to exit the application?</string>
 
     <!-- Learn or Study Tags -->
-    <string name="learn_button">Study Signs</string>
-    <string name="learn_button_description">Study signs button</string>
+    <string name="learn_button" translatable="false">Study Signs</string>
+    <string name="learn_button_description" translatable="false">Study signs button</string>
 
     <!-- Test Cards Tags -->
-    <string name="test_cards_button">Test Cards</string>
-    <string name="test_cards_button_description">Test cards button</string>
+    <string name="test_cards_button" translatable="false">Test Cards</string>
+    <string name="test_cards_button_description" translatable="false">Test cards button</string>
 
     <!-- Scored Test Tags -->
-    <string name="scored_test_button">Scored Test</string>
-    <string name="scored_test_button_description">Scored test button</string>
+    <string name="scored_test_button" translatable="false">Scored Test</string>
+    <string name="scored_test_button_description" translatable="false">Scored test button</string>
 
     <!-- Settings Tags -->
-    <string name="settings_button">Settings</string>
-    <string name="settings_button_description">Settings button</string>
+    <string name="settings_button" translatable="false">Settings</string>
+    <string name="settings_button_description" translatable="false">Settings button</string>
 
-    <string name="game_logo_description">Learners Permit App Logo</string>
+    <string name="game_logo_description" translatable="false">Learners Permit App Logo</string>
 
     <!-- Categories Tags -->
     <string name="rules_of_the_road">Rules of the Road</string>
@@ -493,19 +494,19 @@
     <string name="road_signals_207">Robot with Alternative Positions for Arrow Lenses</string>
 
     <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
-    <string name="sync_header">Sync</string>
+    <string name="messages_header" translatable="false">Messages</string>
+    <string name="sync_header" translatable="false">Sync</string>
 
     <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
+    <string name="signature_title" translatable="false">Your signature</string>
+    <string name="reply_title" translatable="false">Default reply action</string>
 
     <!-- Sync Preferences -->
-    <string name="sync_title">Sync email periodically</string>
-    <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    <string name="sync_title" translatable="false">Sync email periodically</string>
+    <string name="attachment_title" translatable="false">Download incoming attachments</string>
+    <string name="attachment_summary_on" translatable="false">Automatically download attachments for incoming emails
     </string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="attachment_summary_off" translatable="false">Only download attachments when manually requested</string>
     <!-- TODO: Remove or change this placeholder text -->
 
 </resources>

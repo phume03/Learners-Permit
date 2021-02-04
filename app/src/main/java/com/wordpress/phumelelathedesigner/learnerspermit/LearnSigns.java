@@ -6,13 +6,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.widget.ExpandableListView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class LearnSigns extends AppCompatActivity {
-    private ListView listview;
+    private ExpandableListView listview;
     private List<String> rulesSignsCategoriesTitles;
     private static final String Log_Tag = LearnSigns.class.getSimpleName();
 
@@ -20,7 +20,7 @@ public class LearnSigns extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn_signs);
-        Log.i(Log_Tag, "Displaying rules and signs list.");
+        /*Log.i(Log_Tag, "Displaying rules and signs list.");
         listview = findViewById(R.id.rules_signs_categories);
         rulesSignsCategoriesTitles = new ArrayList<>();
         rulesSignsCategoriesTitles.add(getString(R.string.rules_of_the_road));
@@ -37,7 +37,7 @@ public class LearnSigns extends AppCompatActivity {
             public void onClick(View v) {
 
             }
-        });
+        });*/
 
     }
 }
