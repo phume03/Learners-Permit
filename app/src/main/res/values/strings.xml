@@ -10,19 +10,37 @@
     <string name="english_button_description">English language choice button</string>
     <string name="siswati_button">SiSwati</string>
     <string name="siswati_button_description">SiSwati language choice button</string>
-    <string name="learn_button">Study Signs</string>
-    <string name="learn_button_description">Study signs button</string>
-    <string name="test_cards_button">Test Cards</string>
-    <string name="test_cards_button_description">Test cards button</string>
-    <string name="scored_test_button">Scored Test</string>
-    <string name="scored_test_button_description">Scored test button</string>
-    <string name="settings_button">Settings</string>
-    <string name="settings_button_description">Settings button</string>
-    <string name="game_logo_description">Learners Permit App Logo</string>
     <string name="app_exit_alert_title">Exit App?</string>
     <string name="app_exit_alert_confirm">Yes</string>
     <string name="app_exit_alert_decline">No</string>
     <string name="app_exit_alert_message">Would you like to exit the application?</string>
+
+    <!-- Learn or Study Tags -->
+    <string name="learn_button">Study Signs</string>
+    <string name="learn_button_description">Study signs button</string>
+
+    <!-- Test Cards Tags -->
+    <string name="test_cards_button">Test Cards</string>
+    <string name="test_cards_button_description">Test cards button</string>
+
+    <!-- Scored Test Tags -->
+    <string name="scored_test_button">Scored Test</string>
+    <string name="scored_test_button_description">Scored test button</string>
+
+    <!-- Settings Tags -->
+    <string name="settings_button">Settings</string>
+    <string name="settings_button_description">Settings button</string>
+
+    <string name="game_logo_description">Learners Permit App Logo</string>
+
+    <!-- Categories Tags -->
+    <string name="rules_of_the_road">Rules of the Road</string>
+    <string name="road_traffic_signs_and_markings">Road Traffic Signs and Markings</string>
+    <string name="regulatory_signs">Regulatory Signs</string>
+    <string name="warning_signs">Warning Signs</string>
+    <string name="guide_or_information_signs">Guide or Information Signs</string>
+    <string name="road_markings">Road Markings</string>
+    <string name="road_signals">Road Signals</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
