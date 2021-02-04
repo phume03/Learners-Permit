@@ -6,4 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".LearnSigns">
 
+    <ListView
+        android:id="@id/rules_signs_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider=""
+        android:dividerHeight="1dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,22 +9,17 @@
         android:allowBackup="true"
         android:description="@string/app_desc"
         android:label="@string/app_name"
+        android:icon="@mipmap/learners_permit"
+        android:logo="@mipmap/learners_permit"
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnersPermit">
         <activity android:name=".ScoredTest"></activity>
         <activity android:name=".TestCards" />
         <activity android:name=".LearnSigns" />
-        <activity android:name=".SplashScreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <category android:name="android.intent.category.LAUNCHER" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

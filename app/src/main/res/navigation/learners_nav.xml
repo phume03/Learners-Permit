@@ -5,21 +5,6 @@
     android:id="@+id/learners_nav"
     app:startDestination="@id/mainMenu">
 
-    <fragment
-        android:id="@+id/mainMenu"
-        android:name="com.wordpress.phumelelathedesigner.learnerspermit.MainMenu"
-        android:label="main_menu"
-        tools:layout="@layout/main_menu" >
-        <action
-            android:id="@+id/action_mainMenu_to_learnSigns"
-            app:destination="@id/learnSigns" />
-        <action
-            android:id="@+id/action_mainMenu_to_testCards"
-            app:destination="@id/testCards" />
-        <action
-            android:id="@+id/action_mainMenu_to_scoredTest"
-            app:destination="@id/scoredTest" />
-    </fragment>
     <activity
         android:id="@+id/learnSigns"
         android:name="com.wordpress.phumelelathedesigner.learnerspermit.LearnSigns"
@@ -35,4 +20,97 @@
         android:name="com.wordpress.phumelelathedesigner.learnerspermit.ScoredTest"
         android:label="activity_scored_test"
         tools:layout="@layout/activity_scored_test" />
+
+    <fragment
+        android:id="@+id/mainMenu"
+        android:name="com.wordpress.phumelelathedesigner.learnerspermit.MainMenu"
+        android:label="main_menu"
+        tools:layout="@layout/main_menu">
+        <action
+            android:id="@+id/action_mainMenu_to_learnSigns"
+            app:destination="@id/learnSigns"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/mainMenu" />
+        <action
+            android:id="@+id/action_mainMenu_to_testCards"
+            app:destination="@id/testCards"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/mainMenu" />
+        <action
+            android:id="@+id/action_mainMenu_to_scoredTest"
+            app:destination="@id/scoredTest"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/mainMenu" />
+        <action
+            android:id="@+id/action_mainMenu_to_settings2"
+            app:destination="@id/settings2"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/mainMenu" />
+        <action
+            android:id="@+id/action_mainMenu_to_app_entry_nav2"
+            app:destination="@id/app_entry_nav"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/settings2"
+        android:name="com.wordpress.phumelelathedesigner.learnerspermit.Settings"
+        android:label="Settings" />
+    <navigation
+        android:id="@+id/app_entry_nav"
+        android:label="app_entry_navigation"
+        app:startDestination="@id/splash_nav">
+        <action
+            android:id="@+id/action_global_mainMenu2"
+            app:destination="@id/mainMenu"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+        <fragment
+            android:id="@+id/languageChoice"
+            android:name="com.wordpress.phumelelathedesigner.learnerspermit.LanguageChoice"
+            android:label="language_choice"
+            tools:layout="@layout/language_choice">
+            <action
+                android:id="@+id/action_languageChoice_to_mainMenu"
+                app:destination="@id/mainMenu"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out" />
+        </fragment>
+        <navigation
+            android:id="@+id/splash_nav"
+            android:label="splash_navigation"
+            app:startDestination="@id/splash_company_logo">
+            <action
+                android:id="@+id/action_global_languageChoice"
+                app:destination="@id/languageChoice"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out" />
+            <fragment
+                android:id="@+id/splash_game_logo"
+                android:name="com.wordpress.phumelelathedesigner.learnerspermit.splash_game_logo"
+                android:label="splash_game_logo"
+                tools:layout="@layout/splash_game_logo">
+                <action
+                    android:id="@+id/action_splash_game_logo_to_languageChoice"
+                    app:destination="@id/languageChoice"
+                    app:enterAnim="@anim/fade_in"
+                    app:exitAnim="@anim/fade_out" />
+            </fragment>
+            <fragment
+                android:id="@+id/splash_company_logo"
+                android:name="com.wordpress.phumelelathedesigner.learnerspermit.splash_company_logo"
+                android:label="splash_company_logo"
+                tools:layout="@layout/splash_company_logo">
+                <action
+                    android:id="@+id/action_splash_company_logo_to_splash_game_logo"
+                    app:destination="@id/splash_game_logo"
+                    app:enterAnim="@anim/fade_in"
+                    app:exitAnim="@anim/fade_out" />
+            </fragment>
+        </navigation>
+    </navigation>
 </navigation>

@@ -1,8 +1,29 @@
 <resources>
+    <!-- General Tags -->
     <string name="app_name">Learners Permit</string>
     <string name="app_desc">The Kingdom of Eswatini Learner\'s Permit study app</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="app_title">The Kingdom of Eswatini Learners Permit Study App</string>
+    <string name="app_title_description">App Title</string>
+    <string name="choose_language_title">Choose a Study Language:</string>
+    <string name="choose_language_title_description">Study language choice title</string>
+    <string name="english_button">English</string>
+    <string name="english_button_description">English language choice button</string>
+    <string name="siswati_button">SiSwati</string>
+    <string name="siswati_button_description">SiSwati language choice button</string>
+    <string name="learn_button">Study Signs</string>
+    <string name="learn_button_description">Study signs button</string>
+    <string name="test_cards_button">Test Cards</string>
+    <string name="test_cards_button_description">Test cards button</string>
+    <string name="scored_test_button">Scored Test</string>
+    <string name="scored_test_button_description">Scored test button</string>
+    <string name="settings_button">Settings</string>
+    <string name="settings_button_description">Settings button</string>
+    <string name="game_logo_description">Learners Permit App Logo</string>
+    <string name="app_exit_alert_title">Exit App?</string>
+    <string name="app_exit_alert_confirm">Yes</string>
+    <string name="app_exit_alert_decline">No</string>
+    <string name="app_exit_alert_message">Would you like to exit the application?</string>
+
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>
@@ -18,10 +39,5 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="app_title">Test App</string>
-    <string name="learn_button">Study Signs</string>
-    <string name="test_cards_button">Test Cards</string>
-    <string name="scored_test_button">Scored Test</string>
-    <string name="settings_button">Settings</string>
+
 </resources>

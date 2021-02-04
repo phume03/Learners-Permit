@@ -1,64 +1,116 @@
 package com.wordpress.phumelelathedesigner.learnerspermit;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
-
+import androidx.activity.OnBackPressedCallback;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link MainMenu#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class MainMenu extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private static final String Log_Tag = MainMenu.class.getSimpleName();
+    private static final String FIRST_RUN = "APP_FIRST_RUN";
+    private static final String CHOSEN_LANGUAGE = "STUDY_LANGUAGE";
+    private Boolean mFirstRun;
+    private String mStudyLang;
 
     public MainMenu() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment MainMenu.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static MainMenu newInstance(String param1, String param2) {
-        MainMenu fragment = new MainMenu();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+        if (getArguments() == null) {
+            runIntro();
+        } else {
+            Bundle data = getArguments();
+            mFirstRun = data.getBoolean(FIRST_RUN);
+            mStudyLang = data.getString(CHOSEN_LANGUAGE);
+
+            if (mFirstRun) {
+                runIntro();
+            }
         }
+
+        OnBackPressedCallback callback = new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                AlertDialog confirmExit = new AlertDialog.Builder(getActivity())
+                        .setMessage(getString(R.string.app_exit_alert_message))
+                        .setTitle(getString(R.string.app_exit_alert_title))
+                        .setPositiveButton(getString(R.string.app_exit_alert_confirm), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                System.exit(0);
+                            }
+                        }).setNegativeButton(getString(R.string.app_exit_alert_decline), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                // dismiss
+                            }
+                        }).create();
+                confirmExit.show();
+            }
+        };
+        requireActivity().getOnBackPressedDispatcher().addCallback(this, callback);
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        Log.i(Log_Tag,"Inflate the layout for main menu fragment");
         return inflater.inflate(R.layout.main_menu, container, false);
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        final Button study = (Button) view.findViewById(R.id.learn);
+        final Button test = (Button) view.findViewById(R.id.test_cards);
+        final Button exam = (Button) view.findViewById(R.id.scored_test);
+        final Button settings = (Button) view.findViewById(R.id.settings);
+        final NavController controller = Navigation.findNavController(view);
+
+        study.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                controller.navigate(R.id.action_mainMenu_to_learnSigns);
+            }
+        });
+        test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                controller.navigate(R.id.action_mainMenu_to_testCards);
+            }
+        });
+        exam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                controller.navigate(R.id.action_mainMenu_to_scoredTest);
+            }
+        });
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                controller.navigate(R.id.action_mainMenu_to_settings2);
+            }
+        });
+    }
+
+    private void runIntro() {
+        Log.i(Log_Tag,"Run application intro");
+        final NavController controller = NavHostFragment.findNavController(this);
+        controller.navigate(R.id.action_mainMenu_to_app_entry_nav2);
     }
 }
