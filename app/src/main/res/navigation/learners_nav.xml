@@ -5,45 +5,11 @@
     android:id="@+id/learners_nav"
     app:startDestination="@id/mainMenu">
 
-    <activity
-        android:id="@+id/learnSigns"
-        android:name="com.wordpress.phumelelathedesigner.learnerspermit.LearnSigns"
-        android:label="activity_learn_signs"
-        tools:layout="@layout/activity_learn_signs" />
-    <activity
-        android:id="@+id/testCards"
-        android:name="com.wordpress.phumelelathedesigner.learnerspermit.TestCards"
-        android:label="activity_test_cards"
-        tools:layout="@layout/activity_test_cards" />
-    <activity
-        android:id="@+id/scoredTest"
-        android:name="com.wordpress.phumelelathedesigner.learnerspermit.ScoredTest"
-        android:label="activity_scored_test"
-        tools:layout="@layout/activity_scored_test" />
-
     <fragment
         android:id="@+id/mainMenu"
         android:name="com.wordpress.phumelelathedesigner.learnerspermit.MainMenu"
         android:label="main_menu"
         tools:layout="@layout/main_menu">
-        <action
-            android:id="@+id/action_mainMenu_to_learnSigns"
-            app:destination="@id/learnSigns"
-            app:enterAnim="@anim/fade_in"
-            app:exitAnim="@anim/fade_out"
-            app:popUpTo="@id/mainMenu" />
-        <action
-            android:id="@+id/action_mainMenu_to_testCards"
-            app:destination="@id/testCards"
-            app:enterAnim="@anim/fade_in"
-            app:exitAnim="@anim/fade_out"
-            app:popUpTo="@id/mainMenu" />
-        <action
-            android:id="@+id/action_mainMenu_to_scoredTest"
-            app:destination="@id/scoredTest"
-            app:enterAnim="@anim/fade_in"
-            app:exitAnim="@anim/fade_out"
-            app:popUpTo="@id/mainMenu" />
         <action
             android:id="@+id/action_mainMenu_to_settings2"
             app:destination="@id/settings2"
@@ -60,6 +26,36 @@
         android:id="@+id/settings2"
         android:name="com.wordpress.phumelelathedesigner.learnerspermit.Settings"
         android:label="Settings" />
+    <fragment
+        android:id="@+id/warningSigns"
+        android:name="com.wordpress.phumelelathedesigner.learnerspermit.WarningSigns"
+        android:label="learn_signs_warning_signs"
+        tools:layout="@layout/learn_signs_warning_signs" />
+    <fragment
+        android:id="@+id/rulesOfTheRoad"
+        android:name="com.wordpress.phumelelathedesigner.learnerspermit.RulesOfTheRoad"
+        android:label="learn_signs_rules_of_the_road"
+        tools:layout="@layout/learn_signs_rules_of_the_road" />
+    <fragment
+        android:id="@+id/roadMarkings"
+        android:name="com.wordpress.phumelelathedesigner.learnerspermit.RoadMarkings"
+        android:label="learn_signs_road_markings"
+        tools:layout="@layout/learn_signs_road_markings" />
+    <fragment
+        android:id="@+id/roadSignals"
+        android:name="com.wordpress.phumelelathedesigner.learnerspermit.RoadSignals"
+        android:label="learn_signs_road_signals"
+        tools:layout="@layout/learn_signs_road_signals" />
+    <fragment
+        android:id="@+id/guideOrInformationSigns"
+        android:name="com.wordpress.phumelelathedesigner.learnerspermit.GuideOrInformationSigns"
+        android:label="learn_signs_guide_or_information_signs"
+        tools:layout="@layout/learn_signs_guide_or_information_signs" />
+    <fragment
+        android:id="@+id/regulatorySigns"
+        android:name="com.wordpress.phumelelathedesigner.learnerspermit.RegulatorySigns"
+        android:label="learn_signs_regulatory_signs"
+        tools:layout="@layout/learn_signs_regulatory_signs" />
     <navigation
         android:id="@+id/app_entry_nav"
         android:label="app_entry_navigation"

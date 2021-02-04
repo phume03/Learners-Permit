@@ -5,18 +5,25 @@
     <string name="app_desc" translatable="false">The Kingdom of Eswatini Learner\'s Permit study app</string>
     <string name="app_title" translatable="false">The Kingdom of Eswatini Learners Permit Study App</string>
     <string name="app_title_description" translatable="false">App Title</string>
+    <string name="app_exit_alert_title" translatable="false">Exit App?</string>
+    <string name="app_exit_alert_confirm" translatable="false">Yes</string>
+    <string name="app_exit_alert_decline" translatable="false">No</string>
+    <string name="app_exit_alert_message" translatable="false">Would you like to exit the application?</string>
+
+    <!-- Splash Tags-->
+    <string name="game_logo_description" translatable="false">Learners Permit App Logo</string>
+
+    <!-- Language Tags -->
     <string name="choose_language_title" translatable="false">Choose a Study Language:</string>
     <string name="choose_language_title_description" translatable="false">Study language choice title</string>
     <string name="english_button" translatable="false">English</string>
     <string name="english_button_description" translatable="false">English language choice button</string>
     <string name="siswati_button" translatable="false">SiSwati</string>
     <string name="siswati_button_description" translatable="false">SiSwati language choice button</string>
-    <string name="app_exit_alert_title" translatable="false">Exit App?</string>
-    <string name="app_exit_alert_confirm" translatable="false">Yes</string>
-    <string name="app_exit_alert_decline" translatable="false">No</string>
-    <string name="app_exit_alert_message" translatable="false">Would you like to exit the application?</string>
 
     <!-- Learn or Study Tags -->
+    <string name="learn_signs_title" translatable="false">Study Signs</string>
+    <string name="learn_signs_title_description" translatable="false">Learn traffic signs title</string>
     <string name="learn_button" translatable="false">Study Signs</string>
     <string name="learn_button_description" translatable="false">Study signs button</string>
 
@@ -31,8 +38,6 @@
     <!-- Settings Tags -->
     <string name="settings_button" translatable="false">Settings</string>
     <string name="settings_button_description" translatable="false">Settings button</string>
-
-    <string name="game_logo_description" translatable="false">Learners Permit App Logo</string>
 
     <!-- Categories Tags -->
     <string name="rules_of_the_road">Rules of the Road</string>
@@ -507,6 +512,8 @@
     <string name="attachment_summary_on" translatable="false">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off" translatable="false">Only download attachments when manually requested</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <!-- TODO: Remove or change this placeholder text -->
 
 </resources>
