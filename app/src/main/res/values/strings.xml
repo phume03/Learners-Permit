@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- General Tags -->
     <string name="app_name">Learners Permit</string>
     <string name="app_desc">The Kingdom of Eswatini Learner\'s Permit study app</string>
@@ -41,6 +41,456 @@
     <string name="guide_or_information_signs">Guide or Information Signs</string>
     <string name="road_markings">Road Markings</string>
     <string name="road_signals">Road Signals</string>
+
+    <!-- Rules of the Road Tags -->
+    <string name="rules_of_the_road_01_Q">What is the first rule of the road?</string>
+    <string name="rules_of_the_road_01_A">Drive on the left hand side, pass the right hand side.</string>
+    <string name="rules_of_the_road_02_Q">What is the permitted speed of travel on the road?</string>
+    <string name="rules_of_the_road_02_A">It is dependent on the area and section of the road that I am driving on.</string>
+    <string name="rules_of_the_road_03_Q">What are you supposed to do when people and animals cross the road infront of you?</string>
+    <string name="rules_of_the_road_03_A">You are supposed to check your mirrors for traffic, stop, give the people or animal a chance to pass, and then continue driving.</string>
+    <string name="rules_of_the_road_04_Q">In which areas are you supposed to drive with caution?</string>
+    <string name="rules_of_the_road_04_A">i. Mist
+        \nii. Heavy Rain
+        \niii. Slippery road (e.g. heavy rain, oil spills, etc)
+        \niv. Dust clouds
+        \nv. At Night</string>
+    <string name="rules_of_the_road_05_Q">What are you supposed to do when preparing to overtake?</string>
+    <string name="rules_of_the_road_05_A">i.	Check the mirrors and look ahead for traffic and obstructions
+        \nii.	Confirm or be sure that the rules of the road permit me to overtake
+        \niii.	Check the mirrors again for traffic and obstructions to make certain that the way is clear for me to overtake
+        \niv.	Make a signal that you will be overtaking on the right (use hand signals or use the right indicator), then over take
+        \nv.	Check your mirros for traffic and obstructions,make a signal that you intend to return to your lane (left indicator or use a hand signal), if the way is clear, return to your lane</string>
+    <string name="rules_of_the_road_06_Q">Name seven (7) places where you are not supposed to overtake?</string>
+    <string name="rules_of_the_road_06_A">i.	Cross-road
+        \nii.	Blind rise
+        \niii.	One vehicle bridge
+        \niv.	Zebra or pedestrian crossing
+        \nv.	Robots
+        \nvi.	Sharp corners
+        \nvii.	T-junction</string>
+    <string name="rules_of_the_road_07_Q">On which side of the road are you permitted to overtake?</string>
+    <string name="rules_of_the_road_07_A">Right hand side</string>
+    <string name="rules_of_the_road_08_Q">When are you permitted to overtake on the left hand side?</string>
+    <string name="rules_of_the_road_08_A">i. When the driver infront or ahead of you indicates that they are making a right hand turn on a one way
+        \nii. When directed or requested by a traffic officer or a road workman</string>
+    <string name="rules_of_the_road_09_Q">How can you coordinate with other drivers on the road?</string>
+    <string name="rules_of_the_road_09_A">Make early indications of what you intend to do.</string>
+    <string name="rules_of_the_road_10_Q"> What must always be in working condition in your car?</string>
+    <string name="rules_of_the_road_10_A">i.	Tyres
+        \nii.	Windscreen
+        \niii.	Wipers
+        \niv.	Steering
+        \nv.	Hooter
+        \nvi.	Indicators
+        \nvii.	Lights
+        \nviii. Breaks
+        \nix.	Mirrors
+        \nx.	Seat belts</string>
+    <string name="rules_of_the_road_11_Q">How do you approach on coming traffic at night?</string>
+    <string name="rules_of_the_road_11_A">Dim the lights (even if the other driver does not), reduce your speed and drive with caution.</string>
+    <string name="rules_of_the_road_12_Q">What do you do when you have a load that exceeds the dimensions of you car?</string>
+    <string name="rules_of_the_road_12_A">i.	At night, hang a red triangle at the back
+        \nii.	During the day, you may hang a triangle or use a red cloth at the back</string>
+    <string name="rules_of_the_road_13_Q">Can you over take over a barrier line?</string>
+    <string name="rules_of_the_road_13_A"> No or you cannot.</string>
+    <string name="rules_of_the_road_14_Q">Can you park on a yellow line?</string>
+    <string name="rules_of_the_road_14_A"> No, it is prohibited.</string>
+    <string name="rules_of_the_road_15_Q">Name five (5) places that you must turn on headlights during the day?</string>
+    <string name="rules_of_the_road_15_A">i.	Heavy rain
+        \nii.	Dust clouds
+        \niii.	Tunnel
+        \niv.	Mist
+        \nv.	Smoke</string>
+    <string name="rules_of_the_road_16_Q"> How do you distinguish a blind man on the road?</string>
+    <string name="rules_of_the_road_16_A">i. They carry a white stick,
+        \nii. Or, they are lead by another person,
+        \niii. Or, they are lead by a trained dog.</string>
+    <string name="rules_of_the_road_17_Q">What is the weight of a light vehicle or a heavy vehicle?</string>
+    <string name="rules_of_the_road_17_A">A light vehicle is 3.5 tonnes and a heavy vehicle (e.g. lorry) is 7 tonnes in weight.</string>
+    <string name="rules_of_the_road_18_Q">How do you distinguish a heavy vehicle when it cuts across your path, at night?</string>
+    <string name="rules_of_the_road_18_A">It has yellow reflectors on the side.</string>
+    <string name="rules_of_the_road_19_Q">How do you distinguish a heavy vehicle when it is in the on coming traffic, at night?</string>
+    <string name="rules_of_the_road_19_A">It has green lights at the top.</string>
+    <string name="rules_of_the_road_20_Q">What are you supposed to do when approaching a cross road, at night?</string>
+    <string name="rules_of_the_road_20_A"> Dim the lights and then bright so that oncoming traffic may be alert, then reduce your speed</string>
+    <string name="rules_of_the_road_21_Q">What is the difference between a light and a heavy vehicle?</string>
+    <string name="rules_of_the_road_21_A">i.	A heavy vehicle drives slowly, especially on inclined roadways; the driver of a heavy vehicle has to drive to the side and give way to light vehicles.
+        \nii.	A heavy vehicle has yellow reflectors on the sides, whereas a light vehicle does not.
+        \niii. A heavy vehicle has green lights at the top, on front
+        \niv.	A heavy vehicle has a different weight than a light vehicle
+        \nv.	A heavy vehicle has chevron belts at the back</string>
+    <string name="rules_of_the_road_22_Q">What are you supposed to do if the vehicle you are driving in experiences break failure?</string>
+    <string name="rules_of_the_road_22_A">i. Use the hooter to alert other drivers on the road,
+        \nii. Turn the headlights on and off before you lose control of the vehicle,
+        \niii. Use the centre or dividing barrier to slow it down</string>
+    <string name="rules_of_the_road_23_Q">Where are you not supposed to use a hooter?</string>
+    <string name="rules_of_the_road_23_A">i.	Royal residence
+        \nii.	School
+        \niii.	Hospital
+        \niv.	Zebra crossing
+        \nv.	Robots
+        \nvi.	Pedestrian crossing</string>
+    <string name="rules_of_the_road_24_Q">What cars are to be given right of way or moved aside for on the road?</string>
+    <string name="rules_of_the_road_24_A">i.	Ambulance
+        \nii.	Police vehicles
+        \niii.	National Defense vehicles
+        \niv.	Fire and Emergency Trucks – when they are using the siren</string>
+    <string name="rules_of_the_road_25_Q">Which signs should you see when approaching a one car structure or bridge?</string>
+    <string name="rules_of_the_road_25_A">i.	Do not overtake
+        \nii.	The road narrows both sides
+        \niii.	Only one car at a time, on the bridge or one vehicle width structure
+        \niv.	Yield sign
+        \nv.	Danger plates, on the bridge</string>
+    <string name="rules_of_the_road_26_Q">Which signs should you see when approaching the end of a freeway?</string>
+    <string name="rules_of_the_road_26_A">i.	End of the free way or de-restriction – freeway
+        \nii.	The road narrows both sides
+        \niii.	Two way traffic</string>
+    <string name="rules_of_the_road_27_Q">State four (4) rules of the road.</string>
+    <string name="rules_of_the_road_27_A">i.	Drive on the left hand side, pass the right hand side
+        \nii.	Do not drive on the right of the road, you can cause an accident
+        \niii.	Do not drive on the right hand side of the road if the rules prohibit you from doing so
+        \niv.	You may drive on the right if instructed by a traffic officer or road workman</string>
+    <string name="rules_of_the_road_28_Q">What are you supposed to do if you run over a person and they do not die on the road?</string>
+    <string name="rules_of_the_road_28_A">i.	Stop the car and administer first aid to the pedestrian or victim (e.g. cyclist)
+        \nii.	Then, track back to where you first bumped the person and where they fell. Make a mark on the road (straight white line) or directly adjacent to the area and off the road, knot some grass
+        \niii.	Then, call for an ambulance or take the person to the emergency room,
+        \niv.	Finally, make sure to report the incident to the police within 24 hours (otherwise you are liable for a road traffic crime)</string>
+    <string name="rules_of_the_road_29_Q">When should you carry your license?</string>
+    <string name="rules_of_the_road_29_A">Always</string>
+    <string name="rules_of_the_road_30_Q">When should you show your license?</string>
+    <string name="rules_of_the_road_30_A">When requested by a confirmed traffic officer or an officer in whom you have an assurance of their duty or responsibility.</string>
+    <string name="rules_of_the_road_31_Q">When should you turn your headlights on, at sundown?</string>
+    <string name="rules_of_the_road_31_A">Turn the headlights on 30 minutes after sunset.</string>
+    <string name="rules_of_the_road_32_Q">When should you turn your headlights off, at sunup?</string>
+    <string name="rules_of_the_road_32_A">Turn the headlights off 30 minutes after sunrise.</string>
+    <string name="rules_of_the_road_33_Q">The headlights are turned on when your visibility on the road has been limited to what distance?</string>
+    <string name="rules_of_the_road_33_A">The headlights are turned on when you cannot see 150m ahead on the road.</string>
+    <string name="rules_of_the_road_34_Q"> How much can extra load exceed the dimensions of the car?</string>
+    <string name="rules_of_the_road_34_A">i.	Load cannot exceed 1.8m behind
+        \nii.	Load cannot exceed 30cm infront
+        \niii.	Load cannot exceed 15cm on the sides
+        \niv.	Or load cannot exceed 2.5m</string>
+    <string name="rules_of_the_road_35_Q">How do the reflectors on a light vehicle differ?</string>
+    <string name="rules_of_the_road_35_A">i.	Red reflectors at the back
+        \nii.	White reflectors in front</string>
+    <string name="rules_of_the_road_36_Q">How do the reflectors on a heavy vehicle differ?</string>
+    <string name="rules_of_the_road_36_A">i.	Yellow reflectors on the side
+        \nii.	Red reflectors at the back
+        \niii.	White reflectors in front</string>
+    <string name="rules_of_the_road_37_Q">What is the maximum speed limit in a town or city?</string>
+    <string name="rules_of_the_road_37_A">60km/h</string>
+    <string name="rules_of_the_road_38_Q">At what speed should one drive in a town or city?</string>
+    <string name="rules_of_the_road_38_A">At the speed that is permitted by the traffic regulations in the area that I am driving in.</string>
+    <string name="rules_of_the_road_39_Q">How do the road traffic signs and markings differ?</string>
+    <string name="rules_of_the_road_39_A">i.	Regulatory signs
+        \nii.	Warning signs
+        \niii.	Guide or information signs
+        \niv.	Road markings</string>
+    <string name="rules_of_the_road_40_Q">How many corners on a stop sign?</string>
+    <string name="rules_of_the_road_40_A">8</string>
+    <string name="rules_of_the_road_41_Q">What is the maximum speed limit permitted in the Kingdom of Eswatini?</string>
+    <string name="rules_of_the_road_41_A">100km/h</string>
+    <string name="rules_of_the_road_42_Q">What should always be checked in the car hood?</string>
+    <string name="rules_of_the_road_42_A">i.	Engine oil
+        \nii.	Brake fluid
+        \niii.	Water
+        \niv.	Fan belt
+        \nv.	Battery terminals</string>
+    <string name="rules_of_the_road_43_Q">What is not permitted on the free way?</string>
+    <string name="rules_of_the_road_43_A">i.	Animals
+        \nii.	Animal drawn carriages
+        \niii.	Pedestrians
+        \niv.	Tractors
+        \nv.	Cyclists
+        \nvi.	Motorcycles below 50cc (50 cubic cm)
+        \nvii.	Hand signal sign
+        \nviii. Driving slowly</string>
+    <string name="rules_of_the_road_44_Q">What should one use to pull a broken down vehicle?</string>
+    <string name="rules_of_the_road_44_A">i. If the vehicle has break failure, you may use a 3.5m iron rod,
+        \nii. If the breaks work, you may use a 1.8m rope or a chain – so that traffic following does not plan to overtake one vehicle at a time</string>
+    <string name="rules_of_the_road_45_Q">State four (4) differences between a free way  and a one way?</string>
+    <string name="rules_of_the_road_45_A">One-Way				Free-way
+        \ni.	Two lanes				Three or more lanes
+        \nii.	In town/city				Connecting towns
+        \niii.	There are obstructions		There are no obstructions
+        \niv.	Vehicles move according 		Vehicles move at the maximum speed to the traffic</string>
+    <string name="rules_of_the_road_46_Q">What must always be in the boot of a car?</string>
+    <string name="rules_of_the_road_46_A">i.	Car jack
+        \nii.	Red triangle
+        \niii.	Spare wheel
+        \niv.	Wheel spanner
+        \nV.	Chain
+        \nvi.	Tool box</string>
+    <string name="rules_of_the_road_47_Q">When is the law lenient if you run over a pedestrian (or cyclist) and they die?</string>
+    <string name="rules_of_the_road_47_A">If there are more people in the car and the driver could not avoid the pedestrian</string>
+    <string name="rules_of_the_road_48_Q">State seven (7) places where one can find a barrier line?</string>
+    <string name="rules_of_the_road_48_A">i. One vehicle bridge
+        \nii. Blind rise
+        \niii.	Sharp corners
+        \niv. Painted island
+        \nv.	T-junction
+        \nvi.	Zebra crossing
+        \nvii.	Cross road</string>
+    <string name="rules_of_the_road_49_Q">How far on the road do the brightened headlamps shine?</string>
+    <string name="rules_of_the_road_49_A">100m</string>
+    <string name="rules_of_the_road_50_Q">How far on the road do the dimmed headlamps shine?</string>
+    <string name="rules_of_the_road_50_A">45m</string>
+    <string name="rules_of_the_road_51_Q">How do you know you are about to enter a town?</string>
+    <string name="rules_of_the_road_51_A">A sign that says “Welcome To {the city name}”</string>
+    <string name="rules_of_the_road_52_Q"> How do you know you are about to leave a town?</string>
+    <string name="rules_of_the_road_52_A"> A sign that says “Thank you/Siyabonga”</string>
+    <string name="rules_of_the_road_53_Q">Which body parts must be well in order to drive?</string>
+    <string name="rules_of_the_road_53_A">i.	Eyes
+        \nii.	Ears
+        \niii.	Hands
+        \niv.	Feet
+        \nv.	Mind</string>
+    <string name="rules_of_the_road_54_Q">How far does a car hooter sound on the road?</string>
+    <string name="rules_of_the_road_54_A">80m</string>
+    <string name="rules_of_the_road_55_Q">What is the maximum speed that one should drive when towing another vehicle?</string>
+    <string name="rules_of_the_road_55_A">30km/h</string>
+    <string name="rules_of_the_road_56_Q">Name five (5) things that can be operated by the driver apart from the steering wheel while driving?</string>
+    <string name="rules_of_the_road_56_A">i.	Hooter
+        \nii.	Indicators
+        \niii.	Headlamps
+        \niv.	Hazard switch
+        \nv.	Wipers</string>
+    <string name="rules_of_the_road_57_Q">What are road reflectors?</string>
+    <string name="rules_of_the_road_57_A">Road reflectors are an enhancement to road markings/lines where there are no street lamps. They are also referred to as cat’s eyes, delineators, road studs, or road turtles.</string>
+    <string name="rules_of_the_road_58_Q">How do road reflectors differ?</string>
+    <string name="rules_of_the_road_58_A">There are three types of road reflects:
+        \ni.	Red; on the barrier line
+        \nii.	White; on the center line
+        \niii.	Yellow; on the yellow line</string>
+    <string name="rules_of_the_road_59_Q">What is a hazard?</string>
+    <string name="rules_of_the_road_59_A">It is something that can disrupt your driving on the road</string>
+    <string name="rules_of_the_road_60_Q">How do hazards differ?</string>
+    <string name="rules_of_the_road_60_A"> There are two types of hazards:
+        \ni.	Moving hazards (e.g. people, animals, etc)
+        \nii.	Stationary hazards (e.g. potholes, rocks, trees, cans, etc)</string>
+    <string name="rules_of_the_road_61_Q">How can you tell that an oncoming bus is at full capacity?</string>
+    <string name="rules_of_the_road_61_A">It has a board in the front that reads “full/vol”</string>
+    <string name="rules_of_the_road_62_Q">What are the codes for light and heavy vehicles?</string>
+    <string name="rules_of_the_road_62_A">i.	Light vehicles are code 8
+        \nii.	Heavy vehicles are code 10</string>
+    <string name="rules_of_the_road_63_Q">How do you tow a car that has been in an accident, and the front has been damaged?</string>
+    <string name="rules_of_the_road_63_A">Use a breakdown, so it may lift the car.</string>
+    <string name="rules_of_the_road_64_Q">How close may you follow another car, when driving cautiously?</string>
+    <string name="rules_of_the_road_64_A">Three segments of the centre line.</string>
+    <string name="rules_of_the_road_65_Q">How do you turn into a one-way?</string>
+    <string name="rules_of_the_road_65_A">When you\'re turning into a one-way street
+        \ni. Turn into the lane closest to you, unless there are lane markings guiding you to a different lane.
+        \nii. When turning, be careful of other drivers opposite you who are also turning.</string>
+
+    <!-- Road Traffic Signs and Markings Tags -->
+    <string name="regulatory_signs_001">Stop Sign</string>
+    <string name="regulatory_signs_002">Customs Stop Sign</string>
+    <string name="regulatory_signs_003">Police Stop Sign</string>
+    <string name="regulatory_signs_004">Yield Sign</string>
+    <string name="regulatory_signs_005">No Entry Sign</string>
+    <string name="regulatory_signs_006">No Animal Drawn Vehicles</string>
+    <string name="regulatory_signs_007">No Cyclists</string>
+    <string name="regulatory_signs_008">No Motor Cyclists</string>
+    <string name="regulatory_signs_009">No Left Turn (Reversible for Right)</string>
+    <string name="regulatory_signs_010">No U-turn</string>
+    <string name="regulatory_signs_011">No Overtaking</string>
+    <string name="regulatory_signs_012">No Parking</string>
+    <string name="regulatory_signs_013">No Stopping</string>
+    <string name="regulatory_signs_014">Limited Hours – No Parking</string>
+    <string name="regulatory_signs_015">Limited Hours – No Stopping</string>
+    <string name="regulatory_signs_016">Three Periods – No Parking or Stopping</string>
+    <string name="regulatory_signs_017">Permissible Maximum Height</string>
+    <string name="regulatory_signs_018">Speed Limit</string>
+    <string name="regulatory_signs_019">Permissible Maximum Mass</string>
+    <string name="regulatory_signs_020">Axle Mass load Limit</string>
+    <string name="regulatory_signs_021">Road Closed</string>
+    <string name="regulatory_signs_022">Go</string>
+    <string name="regulatory_signs_023">Keep Left</string>
+    <string name="regulatory_signs_024">Proceed Left Only</string>
+    <string name="regulatory_signs_025">Proceed Right Only</string>
+    <string name="regulatory_signs_026">Proceed Straight Only</string>
+    <string name="regulatory_signs_027">Turn Right Only</string>
+    <string name="regulatory_signs_028">Turn Left Only</string>
+    <string name="regulatory_signs_029">Minimum Speed</string>
+    <string name="regulatory_signs_030">Cyclists Only</string>
+    <string name="regulatory_signs_031">Bus Lane</string>
+    <string name="regulatory_signs_032">Limited Parking</string>
+    <string name="regulatory_signs_033">Overhead Lane Direction, Control Signal</string>
+    <string name="regulatory_signs_034" tools:ignore="DuplicateDefinition">Overhead Lane Direction, Control Signal</string>
+    <string name="warning_signs_035">Cross Roads</string>
+    <string name="warning_signs_036">T-junction</string>
+    <string name="warning_signs_037">Side road junction (reversible)</string>
+    <string name="warning_signs_038">Staggered Junction (reversible)</string>
+    <string name="warning_signs_039">Sharp junction from left (reversible)</string>
+    <string name="warning_signs_040">Sharp junction from right (reversible)</string>
+    <string name="warning_signs_041">Skew junction (reversible)</string>
+    <string name="warning_signs_042">Y-junction</string>
+    <string name="warning_signs_043">Traffic circle</string>
+    <string name="warning_signs_044">Gentle curve to the right (reversible)</string>
+    <string name="warning_signs_045">Sharp curve to the right (reversible)</string>
+    <string name="warning_signs_046">Hairpin bend (reversible)</string>
+    <string name="warning_signs_047">Winding road (reversible)</string>
+    <string name="warning_signs_048">Combined curves – left and right (reversible)</string>
+    <string name="warning_signs_049">End of dual roadways (reversible)</string>
+    <string name="warning_signs_050">Beginning of dual roadways (reversible)</string>
+    <string name="warning_signs_051">Two-way traffic</string>
+    <string name="warning_signs_052">Road narrows from both sides</string>
+    <string name="warning_signs_053">Road narrows from one side only (reversible)</string>
+    <string name="warning_signs_054">Pedestrians</string>
+    <string name="warning_signs_055">Pedestrian crossing</string>
+    <string name="warning_signs_056">Children</string>
+    <string name="warning_signs_057">Cyclists</string>
+    <string name="warning_signs_058">Cattle</string>
+    <string name="warning_signs_059">Horses</string>
+    <string name="warning_signs_060">Sheep</string>
+    <string name="warning_signs_061">Wild Animals</string>
+    <string name="warning_signs_062">Uneven roadway</string>
+    <string name="warning_signs_063">Falling rocks on right (reversible)</string>
+    <string name="warning_signs_064">Slippery road</string>
+    <string name="warning_signs_065">Drift</string>
+    <string name="warning_signs_066">Jetty edge or river bank</string>
+    <string name="warning_signs_067">Height restriction ahead</string>
+    <string name="warning_signs_068">Gate</string>
+    <string name="warning_signs_069">Motor gate on left (reversible)</string>
+    <string name="warning_signs_070">Motor gate in middle of roadway</string>
+    <string name="warning_signs_071">One vehicle width structure</string>
+    <string name="warning_signs_072">Tunnel</string>
+    <string name="warning_signs_073">Level crossing</string>
+    <string name="warning_signs_074">Steep descent to right (reversible)</string>
+    <string name="warning_signs_075">Steep descent to left (reversible)</string>
+    <string name="warning_signs_076">Cross winds</string>
+    <string name="warning_signs_077">Traffic signals ahead</string>
+    <string name="warning_signs_078">Scholar patrol ahead</string>
+    <string name="warning_signs_079">Trucks crossing</string>
+    <string name="warning_signs_080">Grader working</string>
+    <string name="warning_signs_081">Loose stones</string>
+    <string name="warning_signs_082">Traffic control ahead</string>
+    <string name="warning_signs_083">Stop/Go Control ahead</string>
+    <string name="warning_signs_084">Road workmen</string>
+    <string name="warning_signs_085">Temporary emergency flashlight</string>
+    <string name="guide_or_information_signs_086">Level crossing – one track</string>
+    <string name="guide_or_information_signs_087">Level crossing – two or more tracks</string>
+    <string name="guide_or_information_signs_088">One way roadway - left</string>
+    <string name="guide_or_information_signs_089">One way roadway - right</string>
+    <string name="guide_or_information_signs_090">One way roadway – straight on</string>
+    <string name="guide_or_information_signs_091">Free way begins</string>
+    <string name="guide_or_information_signs_092">Parking area ahead</string>
+    <string name="guide_or_information_signs_093">Stopping place ahead</string>
+    <string name="guide_or_information_signs_094">Minor airfield direction</string>
+    <string name="guide_or_information_signs_095">Hospital or first aid post</string>
+    <string name="guide_or_information_signs_096">Tourist information direction</string>
+    <string name="guide_or_information_signs_097">Caravan site</string>
+    <string name="guide_or_information_signs_098">Camping site direction</string>
+    <string name="guide_or_information_signs_099">Caravan and Camping site</string>
+    <string name="guide_or_information_signs_100">Hotel or Motel (international)</string>
+    <string name="guide_or_information_signs_101">International hotel or motel direction</string>
+    <string name="guide_or_information_signs_102">Filing and service station direction</string>
+    <string name="guide_or_information_signs_103">Filing station direction</string>
+    <string name="guide_or_information_signs_104">Telephone direction</string>
+    <string name="guide_or_information_signs_105">Police station</string>
+    <string name="guide_or_information_signs_106">Water ahead</string>
+    <string name="guide_or_information_signs_107">National monument</string>
+    <string name="guide_or_information_signs_108">Restaurant direction</string>
+    <string name="guide_or_information_signs_109">Ride safe pick up point for national servicemen</string>
+    <string name="guide_or_information_signs_110">Free way off ramp ahead: 300m ahead, 200m ahead, 100m ahead (respectively)</string>
+    <string name="guide_or_information_signs_111">Stop ahead</string>
+    <string name="guide_or_information_signs_112">De-restriction – speed limit</string>
+    <string name="guide_or_information_signs_113">De-restriction – freeway</string>
+    <string name="guide_or_information_signs_114">Cul-de-sac</string>
+    <string name="guide_or_information_signs_115">Bus stop</string>
+    <string name="guide_or_information_signs_116">Provincial or territorial border</string>
+    <string name="guide_or_information_signs_117">Town name</string>
+    <string name="guide_or_information_signs_118">River name</string>
+    <string name="guide_or_information_signs_119">Mountain pass (450m)</string>
+    <string name="guide_or_information_signs_120">Road works ahead</string>
+    <string name="guide_or_information_signs_121">National road markers</string>
+    <string name="guide_or_information_signs_122">Minor road route marker</string>
+    <string name="guide_or_information_signs_123">Major provincial or territorial route marker</string>
+    <string name="guide_or_information_signs_124">National road route marker</string>
+    <string name="guide_or_information_signs_125">Minor road route marker</string>
+    <string name="guide_or_information_signs_126">Route straight on</string>
+    <string name="guide_or_information_signs_127">Route to the left (reversible)</string>
+    <string name="guide_or_information_signs_128">Route to the right and straight on</string>
+    <string name="guide_or_information_signs_129">Route to the left and right</string>
+    <string name="guide_or_information_signs_130">Route to the left and then straight on</string>
+    <string name="guide_or_information_signs_131">Thank you</string>
+    <string name="guide_or_information_signs_132">End of detour</string>
+    <string name="guide_or_information_signs_133">Detour ahead</string>
+    <string name="guide_or_information_signs_134">Map type – free flow exit</string>
+    <string name="guide_or_information_signs_135">Map type – four legged intersection</string>
+    <string name="guide_or_information_signs_136">Map type – four legged staggered intersection</string>
+    <string name="guide_or_information_signs_137">Map type – traffic circle junction</string>
+    <string name="guide_or_information_signs_138">Minor route direction</string>
+    <string name="guide_or_information_signs_139">Ramp entrance direction</string>
+    <string name="guide_or_information_signs_140">Stack type direction</string>
+    <string name="guide_or_information_signs_141">Overhead direction</string>
+    <string name="guide_or_information_signs_142">Overhead direction</string>
+    <string name="guide_or_information_signs_143">Distance information plate</string>
+    <string name="guide_or_information_signs_144">Recommended speed information plate</string>
+    <string name="guide_or_information_signs_145">Overhead direction</string>
+    <string name="guide_or_information_signs_146">Overhead direction</string>
+    <string name="guide_or_information_signs_147">Overhead direction</string>
+    <string name="guide_or_information_signs_148">Confirmation</string>
+    <string name="guide_or_information_signs_149">Airport direction</string>
+    <string name="guide_or_information_signs_150">Right of way</string>
+    <string name="guide_or_information_signs_151">Danger plates</string>
+    <string name="guide_or_information_signs_152">Junction chevron</string>
+    <string name="guide_or_information_signs_153">Sharp curve chevron - right</string>
+    <string name="guide_or_information_signs_154">Sharp curve chevron - left</string>
+    <string name="guide_or_information_signs_155">Single curve chevron – right (reversible)</string>
+    <string name="guide_or_information_signs_156">Multiple sharp curve chevron – right (reversible)</string>
+    <string name="guide_or_information_signs_157">Combined multiple sharp curve chevron left and right</string>
+    <string name="road_markings_158">Painted island with barrier line</string>
+    <string name="road_markings_159">Pedestrian crossing lines</string>
+    <string name="road_markings_160">Block pedestrian crossing</string>
+    <string name="road_markings_161">Parking bays</string>
+    <string name="road_markings_162">Exclusive parking bays</string>
+    <string name="road_markings_163">Barrier line</string>
+    <string name="road_markings_164">Stop line at intersection</string>
+    <string name="road_markings_165">Directional arrows</string>
+    <string name="road_markings_166">Lane reduction ahead from right</string>
+    <string name="road_markings_167">Lane reduction ahead from left</string>
+    <string name="road_markings_168">Lane reduction ahead from left and right</string>
+    <string name="road_markings_169">Yield line</string>
+    <string name="road_markings_170">Barrier line with center line</string>
+    <string name="road_markings_171">Barrier line with center line</string>
+    <string name="road_markings_172">Barrier line with center line</string>
+    <string name="road_markings_173">Information arrow</string>
+    <string name="road_markings_174">Yield sign ahead</string>
+    <string name="road_markings_175">Barrier line ahead</string>
+    <string name="road_markings_176">Level crossing marking</string>
+    <string name="road_markings_177">Level crossing marking</string>
+    <string name="road_markings_178">Turn left only – straight or right turn prohibited</string>
+    <string name="road_markings_179">Proceed straight only – left or right turn prohibited</string>
+    <string name="road_markings_180">Turn right only – straight or left turn prohibited</string>
+    <string name="road_markings_181">Proceed straight or turn right only – left turn prohibited</string>
+    <string name="road_markings_182">Proceed straight or turn left only – right turn prohibited</string>
+    <string name="road_markings_183">Bus lane</string>
+    <string name="road_markings_184">Bus lane</string>
+    <string name="road_markings_185">Bus lane</string>
+    <string name="road_markings_186">Exclusive parking bay - bus</string>
+    <string name="road_markings_187">Exclusive parking bay – loading zone</string>
+    <string name="road_markings_188">Exclusive parking bay - diplomatic</string>
+    <string name="road_markings_189">Exclusive parking bay – SA defence force vehicles</string>
+    <string name="road_markings_190">Exclusive parking bay - ambulance</string>
+    <string name="road_markings_191">Exclusive parking bay - taxi</string>
+    <string name="road_markings_192">Exclusive parking bay – fire fighting</string>
+    <string name="road_markings_193">Exclusive parking bay - rickshaw</string>
+    <string name="road_signals_194">Traffic shall stop</string>
+    <string name="road_signals_195">Traffic shall proceed</string>
+    <string name="road_signals_196">Traffic shall proceed slowly</string>
+    <string name="road_signals_197">Traffic shall proceed with caution</string>
+    <string name="road_signals_198">Traffic on the right - Proceed</string>
+    <string name="road_signals_199">Traffic on the left - Proceed</string>
+    <string name="road_signals_200">Traffic infront - Proceed</string>
+    <string name="road_signals_201">Traffic infront and behind - Proceed</string>
+    <string name="road_signals_202">Traffic infront - stop</string>
+    <string name="road_signals_203">Traffic behind - stop</string>
+    <string name="road_signals_204">Robot</string>
+    <string name="road_signals_205">Robot with Pedestrian Signal Face</string>
+    <string name="road_signals_206">Robot with Arrow Lenses</string>
+    <string name="road_signals_207">Robot with Alternative Positions for Arrow Lenses</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
