@@ -8,7 +8,7 @@
     android:background="@color/black"
     tools:context=".LearnSigns">
 
-    <TextView
+    <!--TextView
         android:id="@+id/learn_signs_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,11 +25,11 @@
         app:layout_constraintBottom_toTopOf="@+id/road_rules_signs_categories"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" /-->
     <ListView
         android:id="@+id/road_rules_signs_categories"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_centerInParent="true"
         android:divider="@color/white"
         android:dividerHeight="1dp"
@@ -41,7 +41,7 @@
         android:visibility="visible"
         tools:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/learn_signs_title"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textColor="@color/white" >

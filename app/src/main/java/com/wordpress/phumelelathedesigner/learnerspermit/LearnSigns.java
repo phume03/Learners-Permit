@@ -2,12 +2,14 @@ package com.wordpress.phumelelathedesigner.learnerspermit;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
+import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -45,28 +47,23 @@ public class LearnSigns extends Fragment {
         View rootView = (View) inflater.inflate(R.layout.learn_signs, container, false);
         listOfRulesAndSignsCategories = rootView.findViewById(R.id.road_rules_signs_categories);
         titlesOfCategories = new ArrayList<String>();
-
-        titlesOfCategories.add(getString(R.string.rules_of_the_road));
         titlesOfCategories.add(getString(R.string.regulatory_signs));
         titlesOfCategories.add(getString(R.string.warning_signs));
         titlesOfCategories.add(getString(R.string.guide_or_information_signs));
         titlesOfCategories.add(getString(R.string.road_markings));
         titlesOfCategories.add(getString(R.string.road_signals));
-        ArrayAdapter <String> titlesAdapter = new ArrayAdapter<String>(this, android.R.layout.list_item, titlesOfCategories);
+        titlesOfCategories.add(getString(R.string.rules_of_the_road));
+        ArrayAdapter<String> titlesAdapter = new ArrayAdapter<String> (requireContext(), android.R.layout.simple_list_item_1, titlesOfCategories);
         listOfRulesAndSignsCategories.setAdapter(titlesAdapter);
-
-        listViewA.setOnClickListener(new View.OnClickListener() {
+        /*final AdapterView.OnItemClickListener messageClickedHandler = new AdapterView.OnItemClickListener() {
             @Override
-            public void onClick(View v) {
-
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //final NavController controller = (NavController) Navigation.findNavController(rootView);
+                //controller.navigate();
             }
-        });
-        listViewB.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+        };
+        listOfRulesAndSignsCategories.setOnItemClickListener(messageClickedHandler);
+        listOfRulesAndSignsCategories.addHeaderView(rootView,getString(R.string.learn_signs_title),false);*/
         return rootView;
     }
 }
