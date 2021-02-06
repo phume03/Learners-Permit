@@ -5,15 +5,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:background="@color/black"
+    android:background="@color/white"
     android:padding="10dp"
     android:paddingLeft="20dp">
     <TextView
         android:id="@+id/activity_learn_signs_childlist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="text"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textAlignment="textStart"
         android:textAppearance="?android:attr/textAppearanceLarge"/>
     <TextView
@@ -21,7 +20,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="text"
         android:textColor="@color/white"
         android:textAlignment="textStart"
         android:textDirection="ltr" />

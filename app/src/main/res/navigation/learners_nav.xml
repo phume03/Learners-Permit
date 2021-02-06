@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/learners_nav"
-    app:startDestination="@id/mainMenu">
+    app:startDestination="@id/learn_signs_nav">
 
     <fragment
         android:id="@+id/mainMenu"
@@ -130,7 +130,7 @@
             android:id="@+id/learnSigns"
             android:name="com.wordpress.phumelelathedesigner.learnerspermit.LearnSigns"
             android:label="learn_signs"
-            tools:layout="@layout/learn_signs" >
+            tools:layout="@layout/learn_signs">
             <action
                 android:id="@+id/action_learnSigns_to_regulatorySigns"
                 app:destination="@id/regulatorySigns" />

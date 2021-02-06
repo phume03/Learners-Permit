@@ -22,8 +22,8 @@
     <string name="siswati_button_description" translatable="false">SiSwati language choice button</string>
 
     <!-- Learn or Study Tags -->
-    <string name="learn_signs_title" translatable="false">Study Signs</string>
-    <string name="learn_signs_title_description" translatable="false">Learn traffic signs title</string>
+    <string name="learn_signs_title" translatable="false">Road Traffic Signs and Rules of the Road</string>
+    <string name="learn_signs_title_description" translatable="false">Learn road traffic signs and rules of the road title</string>
     <string name="learn_button" translatable="false">Study Signs</string>
     <string name="learn_button_description" translatable="false">Study signs button</string>
 
@@ -41,6 +41,7 @@
 
     <!-- Categories Tags -->
     <string name="rules_of_the_road">Rules of the Road</string>
+    <string name="rules_of_the_road_title_description" translatable="false">Rules of the road title</string>
     <string name="road_traffic_signs_and_markings">Road Traffic Signs and Markings</string>
     <string name="regulatory_signs">Regulatory Signs</string>
     <string name="warning_signs">Warning Signs</string>
