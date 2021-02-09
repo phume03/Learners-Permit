@@ -44,10 +44,15 @@
     <string name="rules_of_the_road_title_description" translatable="false">Rules of the road title</string>
     <string name="road_traffic_signs_and_markings">Road Traffic Signs and Markings</string>
     <string name="regulatory_signs">Regulatory Signs</string>
+    <string name="regulatory_signs_title_description" translatable="false">Regulatory signs title</string>
     <string name="warning_signs">Warning Signs</string>
+    <string name="warning_signs_title_description" translatable="false">Warning signs title</string>
     <string name="guide_or_information_signs">Guide or Information Signs</string>
+    <string name="guide_or_information_signs_title_description" translatable="false">Guide or information signs title</string>
     <string name="road_markings">Road Markings</string>
+    <string name="road_markings_title_description" translatable="false">Road markings title</string>
     <string name="road_signals">Road Signals</string>
+    <string name="road_signals_title_description" translatable="false">Road signals title</string>
 
     <!-- Rules of the Road Tags -->
     <string name="rules_of_the_road_01_Q">What is the first rule of the road?</string>

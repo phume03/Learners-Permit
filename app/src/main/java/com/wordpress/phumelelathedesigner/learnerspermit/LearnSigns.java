@@ -8,18 +8,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.util.Log;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link LearnSigns#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class LearnSigns extends Fragment {
     private ListView listOfRulesAndSignsCategories;
     private List <String> titlesOfCategories;

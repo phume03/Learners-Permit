@@ -20,7 +20,7 @@
         android:padding="5dp"
         android:text="@string/learn_signs_title"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textDirection="ltr"
         android:textSize="18sp"
         android:visibility="visible"

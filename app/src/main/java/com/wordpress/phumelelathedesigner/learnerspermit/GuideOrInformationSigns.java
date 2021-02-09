@@ -1,64 +1,273 @@
 package com.wordpress.phumelelathedesigner.learnerspermit;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridView;
+import android.widget.ImageView;
+import android.widget.SimpleAdapter;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link GuideOrInformationSigns#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import androidx.fragment.app.Fragment;
+
 public class GuideOrInformationSigns extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private GridView signs;
+    private List<Map<String, Integer>> signsData;
+    private static final String Log_Tag = GuideOrInformationSigns.class.getSimpleName();
+    private final static String [] signs_key = new String[] {Log_Tag};
+    private int [] signs_views = new int[]{R.id.signs_image};
 
     public GuideOrInformationSigns() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment GuideOrInformationSigns.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static GuideOrInformationSigns newInstance(String param1, String param2) {
+    public static GuideOrInformationSigns newInstance() {
         GuideOrInformationSigns fragment = new GuideOrInformationSigns();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
         return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+        Log.i(Log_Tag, "Displaying guide or information signs.");
+        signsData = new ArrayList<Map<String, Integer>>();
+        Map<String, Integer> GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_086);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_087);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_088);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_089);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_090);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_091);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_092);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_093);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_094);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_095);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_096);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_097);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_098);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_099);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_100);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_101);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_102);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_103);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_104);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_105);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_106);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_107);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_108);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_109);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_110);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_111);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_112);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_113);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_114);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_115);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_116);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_117);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_118);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_119);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_120);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_121);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_122);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_123);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_124);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_125);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_126);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_127);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_128);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_129);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_130);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_131);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_132);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_133);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_134);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_135);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_136);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_137);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_138);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_139);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_140);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_141);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_142);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_143);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_144);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_145);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_146);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_147);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_148);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_149);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_150);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_151);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_152);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_153);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_154);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_155);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_156);
+        signsData.add(GOISEntry);
+        GOISEntry = new HashMap<String, Integer>();
+        GOISEntry.put(Log_Tag, R.drawable.sign_157);
+        signsData.add(GOISEntry);
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.learn_signs_guide_or_information_signs, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View rootView = (View) inflater.inflate(R.layout.learn_signs_guide_or_information_signs, container, false);
+        signs = (GridView) rootView.findViewById(R.id.ls_gois_grid_view);
+        SimpleAdapter signsAdapter = new SimpleAdapter(requireContext(), signsData, R.layout.grid_item, signs_key, signs_views);
+        SimpleAdapter.ViewBinder binder = new SimpleAdapter.ViewBinder() {
+            @Override
+            public boolean setViewValue(View view, Object data, String textRepresentation) {
+                return false;
+            }
+        };
+        signsAdapter.setViewBinder(binder);
+        signs.setAdapter(signsAdapter);
+        return rootView;
     }
 }
