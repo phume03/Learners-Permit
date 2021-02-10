@@ -22,7 +22,7 @@
         android:singleLine="false"
         android:text="@string/app_title"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textDirection="ltr"
         android:textSize="16sp"
         android:visibility="visible"
@@ -73,10 +73,12 @@
             android:description="@string/test_cards_button_description"
             android:text="@string/test_cards_button"
             android:textAlignment="center"
+            android:visibility="gone"
             app:layout_constraintBottom_toTopOf="@+id/scored_test"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/learn" />
+            app:layout_constraintTop_toBottomOf="@id/learn"
+            tools:visibility="gone" />
 
         <Button
             android:id="@+id/scored_test"
@@ -88,10 +90,12 @@
             android:description="@string/scored_test_button_description"
             android:text="@string/scored_test_button"
             android:textAlignment="center"
+            android:visibility="gone"
             app:layout_constraintBottom_toTopOf="@+id/settings"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/test_cards" />
+            app:layout_constraintTop_toBottomOf="@id/test_cards"
+            tools:visibility="gone" />
 
         <Button
             android:id="@+id/settings"

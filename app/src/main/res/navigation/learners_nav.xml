@@ -9,27 +9,44 @@
         android:id="@+id/mainMenu"
         android:name="com.wordpress.phumelelathedesigner.learnerspermit.MainMenu"
         android:label="main_menu"
+        app:startDestination="@id/action_mainMenu_to_learnSigns"
         tools:layout="@layout/main_menu">
         <action
             android:id="@+id/action_mainMenu_to_settings2"
             app:destination="@id/settings2"
             app:enterAnim="@anim/fade_in"
             app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
             app:popUpTo="@id/mainMenu" />
         <action
             android:id="@+id/action_mainMenu_to_app_entry_nav2"
             app:destination="@id/app_entry_nav"
             app:enterAnim="@anim/fade_in"
-            app:exitAnim="@anim/fade_out" />
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
         <action
             android:id="@+id/action_mainMenu_to_scoredTest"
-            app:destination="@id/scoredTest" />
+            app:destination="@id/scoredTest"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
         <action
             android:id="@+id/action_mainMenu_to_testCards"
-            app:destination="@id/testCards" />
+            app:destination="@id/testCards"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
         <action
             android:id="@+id/action_mainMenu_to_learnSigns"
-            app:destination="@id/learn_signs_nav" />
+            app:destination="@id/learn_signs_nav"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/settings2"
@@ -39,73 +56,39 @@
         android:id="@+id/scoredTest"
         android:name="com.wordpress.phumelelathedesigner.learnerspermit.ScoredTest"
         android:label="scored_test"
-        tools:layout="@layout/scored_test" />
+        tools:layout="@layout/scored_test" >
+        <action
+            android:id="@+id/action_scoredTest_to_scoredTestTest"
+            app:destination="@id/scoredTestTest"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
     <fragment
         android:id="@+id/testCards"
         android:name="com.wordpress.phumelelathedesigner.learnerspermit.TestCards"
         android:label="test_cards"
-        tools:layout="@layout/test_cards" />
-    <navigation
-        android:id="@+id/app_entry_nav"
-        android:label="app_entry_navigation"
-        app:startDestination="@id/splash_nav">
+        tools:layout="@layout/test_cards" >
         <action
-            android:id="@+id/action_global_mainMenu2"
-            app:destination="@id/mainMenu"
+            android:id="@+id/action_testCards_to_testCardsTest"
+            app:destination="@id/testCardsTest"
             app:enterAnim="@anim/fade_in"
-            app:exitAnim="@anim/fade_out" />
-        <fragment
-            android:id="@+id/languageChoice"
-            android:name="com.wordpress.phumelelathedesigner.learnerspermit.LanguageChoice"
-            android:label="language_choice"
-            tools:layout="@layout/language_choice">
-            <action
-                android:id="@+id/action_languageChoice_to_mainMenu"
-                app:destination="@id/mainMenu"
-                app:enterAnim="@anim/fade_in"
-                app:exitAnim="@anim/fade_out" />
-        </fragment>
-        <navigation
-            android:id="@+id/splash_nav"
-            android:label="splash_navigation"
-            app:startDestination="@id/splash_company_logo">
-            <action
-                android:id="@+id/action_global_languageChoice"
-                app:destination="@id/languageChoice"
-                app:enterAnim="@anim/fade_in"
-                app:exitAnim="@anim/fade_out" />
-            <fragment
-                android:id="@+id/splash_game_logo"
-                android:name="com.wordpress.phumelelathedesigner.learnerspermit.splash_game_logo"
-                android:label="splash_game_logo"
-                tools:layout="@layout/splash_game_logo">
-                <action
-                    android:id="@+id/action_splash_game_logo_to_languageChoice"
-                    app:destination="@id/languageChoice"
-                    app:enterAnim="@anim/fade_in"
-                    app:exitAnim="@anim/fade_out" />
-            </fragment>
-            <fragment
-                android:id="@+id/splash_company_logo"
-                android:name="com.wordpress.phumelelathedesigner.learnerspermit.splash_company_logo"
-                android:label="splash_company_logo"
-                tools:layout="@layout/splash_company_logo">
-                <action
-                    android:id="@+id/action_splash_company_logo_to_splash_game_logo"
-                    app:destination="@id/splash_game_logo"
-                    app:enterAnim="@anim/fade_in"
-                    app:exitAnim="@anim/fade_out" />
-            </fragment>
-        </navigation>
-    </navigation>
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewSign"
+        android:name="com.wordpress.phumelelathedesigner.learnerspermit.ViewSign"
+        android:label="learn_signs_view_sign"
+        tools:layout="@layout/learn_signs_view_sign" />
     <navigation
         android:id="@+id/learn_signs_nav"
         app:startDestination="@id/learnSigns">
-        <fragment
-            android:id="@+id/roadMarkings"
-            android:name="com.wordpress.phumelelathedesigner.learnerspermit.RoadMarkings"
-            android:label="learn_signs_road_markings"
-            tools:layout="@layout/learn_signs_road_markings" />
+        <action
+            android:id="@+id/action_global_viewSign"
+            app:destination="@id/viewSign" />
         <fragment
             android:id="@+id/guideOrInformationSigns"
             android:name="com.wordpress.phumelelathedesigner.learnerspermit.GuideOrInformationSigns"
@@ -133,27 +116,129 @@
             tools:layout="@layout/learn_signs">
             <action
                 android:id="@+id/action_learnSigns_to_regulatorySigns"
-                app:destination="@id/regulatorySigns" />
+                app:destination="@id/regulatorySigns"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out" />
             <action
                 android:id="@+id/action_learnSigns_to_warningSigns"
-                app:destination="@id/warningSigns" />
+                app:destination="@id/warningSigns"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out" />
             <action
                 android:id="@+id/action_learnSigns_to_guideOrInformationSigns"
-                app:destination="@id/guideOrInformationSigns" />
+                app:destination="@id/guideOrInformationSigns"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out" />
             <action
                 android:id="@+id/action_learnSigns_to_roadSignals"
-                app:destination="@id/roadSignals" />
+                app:destination="@id/roadSignals"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out" />
             <action
                 android:id="@+id/action_learnSigns_to_rulesOfTheRoad"
-                app:destination="@id/rulesOfTheRoad" />
+                app:destination="@id/rulesOfTheRoad"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out" />
             <action
                 android:id="@+id/action_learnSigns_to_roadMarkings"
-                app:destination="@id/roadMarkings" />
+                app:destination="@id/roadMarkings"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out" />
         </fragment>
         <fragment
             android:id="@+id/warningSigns"
             android:name="com.wordpress.phumelelathedesigner.learnerspermit.WarningSigns"
             android:label="learn_signs_warning_signs"
             tools:layout="@layout/learn_signs_warning_signs" />
+        <fragment
+            android:id="@+id/roadMarkings"
+            android:name="com.wordpress.phumelelathedesigner.learnerspermit.RoadMarkings"
+            android:label="learn_signs_road_markings"
+            tools:layout="@layout/learn_signs_road_markings" />
     </navigation>
+    <navigation
+        android:id="@+id/app_entry_nav"
+        android:label="app_entry_navigation"
+        app:startDestination="@id/splash_nav">
+        <action
+            android:id="@+id/action_global_mainMenu2"
+            app:destination="@id/mainMenu"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <fragment
+            android:id="@+id/languageChoice"
+            android:name="com.wordpress.phumelelathedesigner.learnerspermit.LanguageChoice"
+            android:label="language_choice"
+            tools:layout="@layout/language_choice">
+            <action
+                android:id="@+id/action_languageChoice_to_mainMenu"
+                app:destination="@id/mainMenu"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out" />
+        </fragment>
+        <navigation
+            android:id="@+id/splash_nav"
+            android:label="splash_navigation"
+            app:startDestination="@id/splash_company_logo">
+            <action
+                android:id="@+id/action_global_languageChoice"
+                app:destination="@id/languageChoice"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out" />
+            <fragment
+                android:id="@+id/splash_game_logo"
+                android:name="com.wordpress.phumelelathedesigner.learnerspermit.splash_game_logo"
+                android:label="splash_game_logo"
+                tools:layout="@layout/splash_game_logo">
+                <action
+                    android:id="@+id/action_splash_game_logo_to_languageChoice"
+                    app:destination="@id/languageChoice"
+                    app:enterAnim="@anim/fade_in"
+                    app:exitAnim="@anim/fade_out"
+                    app:popEnterAnim="@anim/fade_in"
+                    app:popExitAnim="@anim/fade_out" />
+            </fragment>
+            <fragment
+                android:id="@+id/splash_company_logo"
+                android:name="com.wordpress.phumelelathedesigner.learnerspermit.splash_company_logo"
+                android:label="splash_company_logo"
+                tools:layout="@layout/splash_company_logo">
+                <action
+                    android:id="@+id/action_splash_company_logo_to_splash_game_logo"
+                    app:destination="@id/splash_game_logo"
+                    app:enterAnim="@anim/fade_in"
+                    app:exitAnim="@anim/fade_out"
+                    app:popEnterAnim="@anim/fade_in"
+                    app:popExitAnim="@anim/fade_out" />
+            </fragment>
+        </navigation>
+    </navigation>
+    <fragment
+        android:id="@+id/testCardsTest"
+        android:name="com.wordpress.phumelelathedesigner.learnerspermit.TestCardsTest"
+        android:label="test_cards_test"
+        tools:layout="@layout/testcards_test" />
+    <fragment
+        android:id="@+id/scoredTestTest"
+        android:name="com.wordpress.phumelelathedesigner.learnerspermit.ScoredTestTest"
+        android:label="scored_test_test"
+        tools:layout="@layout/scoredtest_test" />
 </navigation>

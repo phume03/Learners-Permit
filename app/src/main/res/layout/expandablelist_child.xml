@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_gravity="center"
-    android:background="@color/white"
+    android:orientation="vertical"
     android:padding="10dp"
-    android:paddingLeft="20dp">
+    android:paddingStart="20dp"
+    android:textSize="16sp"
+    android:textDirection="ltr">
+
     <TextView
         android:id="@+id/activity_learn_signs_childlist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
         android:textAlignment="textStart"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black" />
+
     <TextView
         android:id="@+id/activity_learn_signs_childlist_hint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAlignment="textStart"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@color/white"
-        android:textAlignment="textStart"
         android:textDirection="ltr" />
 </LinearLayout>

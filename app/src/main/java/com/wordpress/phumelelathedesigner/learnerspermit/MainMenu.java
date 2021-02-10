@@ -2,25 +2,29 @@ package com.wordpress.phumelelathedesigner.learnerspermit;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
 import androidx.activity.OnBackPressedCallback;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
+import androidx.preference.PreferenceManager;
 
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-/**
- * A simple {@link Fragment} subclass.
- * create an instance of this fragment.
- */
+import java.util.Locale;
+
 public class MainMenu extends Fragment {
     private static final String Log_Tag = MainMenu.class.getSimpleName();
+    private static SharedPreferences mPrefs;
     private static final String FIRST_RUN = "APP_FIRST_RUN";
     private static final String CHOSEN_LANGUAGE = "STUDY_LANGUAGE";
     private Boolean mFirstRun;
@@ -33,17 +37,13 @@ public class MainMenu extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() == null) {
-            runIntro();
-        } else {
-            Bundle data = getArguments();
-            mFirstRun = data.getBoolean(FIRST_RUN);
-            mStudyLang = data.getString(CHOSEN_LANGUAGE);
+/*        mPrefs = PreferenceManager.getDefaultSharedPreferences(requireActivity().getApplicationContext());
+        mFirstRun = mPrefs.getBoolean(FIRST_RUN, true);*/
 
-            if (mFirstRun) {
-                runIntro();
-            }
-        }
+        /*if (mFirstRun == true) {
+            mFirstRun = false;
+            runIntro();
+        }*/
 
         OnBackPressedCallback callback = new OnBackPressedCallback(true) {
             @Override

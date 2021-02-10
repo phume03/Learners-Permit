@@ -1,11 +1,17 @@
 package com.wordpress.phumelelathedesigner.learnerspermit;
 
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
 
 import androidx.activity.OnBackPressedCallback;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.preference.PreferenceManager;
+
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,16 +19,19 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 
+import java.util.Locale;
+
 /**
  * A simple {@link Fragment} subclass.
  * create an instance of this fragment.
  */
 public class LanguageChoice extends Fragment {
     private static final String Log_Tag = LanguageChoice.class.getSimpleName();
+/*    private static SharedPreferences mPrefs;
     private static final String FIRST_RUN = "APP_FIRST_RUN";
     private static final String CHOSEN_LANGUAGE = "STUDY_LANGUAGE";
     private Boolean mFirstRun;
-    private String mStudyLang;
+    private String mStudyLang;*/
 
     public LanguageChoice() {
         // Required empty public constructor
@@ -31,15 +40,6 @@ public class LanguageChoice extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mFirstRun = getArguments().getBoolean("ALPHA");
-            mStudyLang = getArguments().getString("BETA");
-            getArguments().clear();
-            Bundle data = new Bundle();
-            data.putBoolean(FIRST_RUN, mFirstRun);
-            data.putString(CHOSEN_LANGUAGE, mStudyLang);
-            setArguments(data);
-        }
 
         OnBackPressedCallback callback = new OnBackPressedCallback(true) {
             @Override
@@ -62,12 +62,14 @@ public class LanguageChoice extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        Resources res = getResources();
+        String [] langs = res.getStringArray(R.array.language_entries);
         final Button english_choice = (Button) view.findViewById(R.id.language_english);
         final Button siswati_choice = (Button) view.findViewById(R.id.language_siswati);
         english_choice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mStudyLang = new String("ENGLISH");
+                //mStudyLang = langs[0];
                 languageChoice(view);
             }
         });
@@ -75,7 +77,7 @@ public class LanguageChoice extends Fragment {
         siswati_choice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mStudyLang = new String("SISWATI");
+                //mStudyLang = langs[1];
                 languageChoice(view);
             }
         });
@@ -102,13 +104,20 @@ public class LanguageChoice extends Fragment {
     }
 
     private void languageChoice(View view) {
-        if (getArguments() != null) {
-            Bundle data = getArguments();
-            data.putBoolean(FIRST_RUN, mFirstRun);
-            data.putString(CHOSEN_LANGUAGE, mStudyLang);
-            setArguments(data);
-            NavController controller = (NavController) Navigation.findNavController(view);
-            controller.navigate(R.id.action_languageChoice_to_mainMenu, data);
-        }
+        /*Resources res = getResources();
+        Configuration config = res.getConfiguration();
+        DisplayMetrics dm = res.getDisplayMetrics();
+        mPrefs = PreferenceManager.getDefaultSharedPreferences(requireActivity().getApplicationContext());
+        mFirstRun = false;
+        SharedPreferences.Editor init = mPrefs.edit();
+        init.putBoolean(FIRST_RUN, mFirstRun);
+        init.putString(CHOSEN_LANGUAGE, mStudyLang);
+        Log.e(Log_Tag, String.valueOf(mPrefs.getBoolean(FIRST_RUN, true)));
+        Locale localeX = new Locale(mStudyLang);
+        Locale.setDefault(localeX);
+        config.locale = localeX;
+        res.updateConfiguration(config, dm);*/
+        NavController controller = (NavController) Navigation.findNavController(view);
+        controller.navigate(R.id.action_languageChoice_to_mainMenu);
     }
 }

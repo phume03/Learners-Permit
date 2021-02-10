@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- General Tags -->
-    <string name="app_name" translatable="false">Learners Permit</string>
-    <string name="app_desc" translatable="false">The Kingdom of Eswatini Learner\'s Permit study app</string>
-    <string name="app_title" translatable="false">The Kingdom of Eswatini Learners Permit Study App</string>
+    <string name="app_name" translatable="false">License to Drive</string>
+    <string name="app_desc" translatable="false">Eswatini Learner\'s Permit study app</string>
+    <string name="app_title" translatable="false">Eswatini Learner\'s Permit Study App</string>
     <string name="app_title_description" translatable="false">App Title</string>
     <string name="app_exit_alert_title" translatable="false">Exit App?</string>
     <string name="app_exit_alert_confirm" translatable="false">Yes</string>
@@ -28,8 +28,20 @@
     <string name="learn_button_description" translatable="false">Study signs button</string>
 
     <!-- Test Cards Tags -->
+    <string name="test_cards_title" translatable="false">Short Test</string>
+    <string name="test_cards_title_description" translatable="false">Short test title</string>
+    <string name="test_cards_prompt" translatable="false">Take a short random quiz to test yourself. There is no scoring, and you can take it as often as you want. \n\nSelect categories on which to be tested on.</string>
+    <string name="test_cards_prompt_description" translatable="false">Short test prompt.</string>
+    <string name="random_cards_button" translatable="false">Begin Test</string>
     <string name="test_cards_button" translatable="false">Test Cards</string>
     <string name="test_cards_button_description" translatable="false">Test cards button</string>
+    <string name="test_cards_title_description_" translatable="false">Short test category</string>
+    <string name="test_cards_title_regs_description" translatable="false">Test cards regulatory signs title</string>
+    <string name="test_cards_title_ws_description" translatable="false">Test cards warning signs title</string>
+    <string name="test_cards_title_gois_description" translatable="false">Test cards guide or information signs title</string>
+    <string name="test_cards_title_rm_description" translatable="false">Test cards road markings title</string>
+    <string name="test_cards_title_rs_description" translatable="false">Test cards road signals title</string>
+    <string name="test_cards_title_rotr_description" translatable="false">Test cards rule of the road title</string>
 
     <!-- Scored Test Tags -->
     <string name="scored_test_button" translatable="false">Scored Test</string>
@@ -505,19 +517,9 @@
     <string name="road_signals_207">Robot with Alternative Positions for Arrow Lenses</string>
 
     <!-- Preference Titles -->
-    <string name="messages_header" translatable="false">Messages</string>
-    <string name="sync_header" translatable="false">Sync</string>
-
-    <!-- Messages Preferences -->
-    <string name="signature_title" translatable="false">Your signature</string>
-    <string name="reply_title" translatable="false">Default reply action</string>
-
-    <!-- Sync Preferences -->
-    <string name="sync_title" translatable="false">Sync email periodically</string>
-    <string name="attachment_title" translatable="false">Download incoming attachments</string>
-    <string name="attachment_summary_on" translatable="false">Automatically download attachments for incoming emails
-    </string>
-    <string name="attachment_summary_off" translatable="false">Only download attachments when manually requested</string>
+    <string name="language_header" translatable="false">Language</string>
+    <string name="language_title" translatable="false">Study language</string>
+    <string name="language_summary" translatable="false">Choose a study language.</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
