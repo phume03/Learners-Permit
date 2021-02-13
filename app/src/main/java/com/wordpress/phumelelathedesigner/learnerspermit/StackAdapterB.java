@@ -72,7 +72,7 @@ public class StackAdapterB extends BaseAdapter {
         int correctAnswerIndex = (1 + rand.nextInt(5));
         int wrongAnswerIndex = 0;
         resourceDescriptionName = new String("choice").concat(Integer.toString(correctAnswerIndex));
-        resourceDescriptionID = res.getIdentifier(resourceDescriptionName, "string", packageName);
+        resourceDescriptionID = res.getIdentifier(resourceDescriptionName, "id", packageName);
         radio = view.findViewById(resourceDescriptionID);
         correctAnswer.setText(card.getText());
         correctAnswer.setVisibility(View.GONE);
@@ -83,7 +83,7 @@ public class StackAdapterB extends BaseAdapter {
         for (int i=1; i<=5; i++) {
             if (i != correctAnswerIndex) {
                 resourceDescriptionName = new String("choice").concat(Integer.toString(i));
-                resourceDescriptionID = res.getIdentifier(resourceDescriptionName, "string", packageName);
+                resourceDescriptionID = res.getIdentifier(resourceDescriptionName, "id", packageName);
                 radio = view.findViewById(resourceDescriptionID);
                 radio.setText(answers[wrongAnswerIndex]);
                 wrongAnswerIndex++;

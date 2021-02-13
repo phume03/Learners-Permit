@@ -392,6 +392,8 @@ public class TestCardsTest extends Fragment {
             stack.add(card);
         }
 
+        nf = NumberFormat.getInstance();
+        nf.setMinimumIntegerDigits(2);
         for (;num_rotr>0;num_rotr--) {
             cardnum = (1 + rand.nextInt(65));
             resourceName = new String("rules_of_the_road_").concat(nf.format(cardnum)).concat("_Q");

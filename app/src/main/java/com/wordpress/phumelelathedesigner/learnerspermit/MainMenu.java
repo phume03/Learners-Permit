@@ -29,6 +29,7 @@ public class MainMenu extends Fragment {
     private static final String CHOSEN_LANGUAGE = "STUDY_LANGUAGE";
     private Boolean mFirstRun;
     private String mStudyLang;
+    private Resources res;
 
     public MainMenu() {
         // Required empty public constructor
@@ -37,13 +38,33 @@ public class MainMenu extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-/*        mPrefs = PreferenceManager.getDefaultSharedPreferences(requireActivity().getApplicationContext());
-        mFirstRun = mPrefs.getBoolean(FIRST_RUN, true);*/
+        res = getResources();
+        mPrefs = PreferenceManager.getDefaultSharedPreferences(requireActivity().getApplicationContext());
+        if (mPrefs != null) {
+            mFirstRun = mPrefs.getBoolean(FIRST_RUN, true);
+            mStudyLang = mPrefs.getString(CHOSEN_LANGUAGE, "");
+        } else {
+            mPrefs = requireActivity().getSharedPreferences(requireActivity().getPackageName(), requireActivity().MODE_PRIVATE);
+            SharedPreferences.Editor init = mPrefs.edit();
+            mFirstRun = true;
+            mStudyLang = res.getStringArray(R.array.language_values)[0];
+            init.putBoolean(FIRST_RUN, mFirstRun);
+            init.putString(CHOSEN_LANGUAGE, mStudyLang);
+            init.apply();
+        }
 
-        /*if (mFirstRun == true) {
-            mFirstRun = false;
+        if (mFirstRun == true) {
             runIntro();
-        }*/
+        }
+
+        if (!mStudyLang.equals("")) {
+            Locale localeX = new Locale(mStudyLang);
+            Locale.setDefault(localeX);
+            DisplayMetrics dm = res.getDisplayMetrics();
+            Configuration config = res.getConfiguration();
+            config.locale = localeX;
+            res.updateConfiguration(config, dm);
+        }
 
         OnBackPressedCallback callback = new OnBackPressedCallback(true) {
             @Override

@@ -45,6 +45,7 @@ public class StackAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View view, ViewGroup parent) {
+        Resources res = context.getResources();
         view = LayoutInflater.from(context).inflate(R.layout.stack_item, null);
         ImageView question_image = view.findViewById(R.id.stack_question_image);
         TextView question_text = view.findViewById(R.id.stack_question_text);
@@ -54,7 +55,6 @@ public class StackAdapter extends BaseAdapter {
             question_image.setVisibility(View.VISIBLE);
             question_text.setVisibility(View.GONE);
         } else {
-	        Resources res = context.getResources();
             question_text.setText(res.getString(card.getImage()));
             question_text.setVisibility(View.VISIBLE);
             question_image.setVisibility(View.GONE);

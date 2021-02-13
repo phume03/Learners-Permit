@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/splash_background"
+    android:fitsSystemWindows="true"
     android:orientation="horizontal"
     android:theme="@style/ThemeOverlay.LearnersPermit.FullscreenContainer"
-    android:fitsSystemWindows="true"
+    android:visibility="visible"
     tools:context=".splash_company_logo">
 
     <!-- The primary full-screen view. This can be replaced with whatever view
@@ -18,9 +18,10 @@
         android:id="@+id/presents"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="0dp"
-        android:visibility="visible"
         android:layout_gravity="center"
+        android:layout_margin="0dp"
+        android:contentDescription="@string/splash_company_logo_video_description"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

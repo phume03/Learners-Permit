@@ -551,12 +551,6 @@
     <string name="language_header" translatable="false">Language</string>
     <string name="language_title" translatable="false">Study language</string>
     <string name="language_summary" translatable="false">Choose a study language.</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
-
-
-
-    <!-- TODO: Remove or change this placeholder text -->
-
+    <string name="splash_company_logo_video_description">Company logo splash screen video</string>
+    <string name="language_choice_navigation_error">It seems you have made an empty choice. Please contact the developer for more help.</string>
 </resources>

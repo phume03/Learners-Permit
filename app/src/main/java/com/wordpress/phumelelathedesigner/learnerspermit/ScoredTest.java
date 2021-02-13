@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 public class ScoredTest extends Fragment {
-    private Button startButton;
     private static final String Log_Tag = ScoredTest.class.getSimpleName();
 
     public ScoredTest() {
@@ -33,17 +32,16 @@ public class ScoredTest extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.scored_test, container, false);
-        startButton = (Button) rootView.findViewById(R.id.random_cards_button);
         return rootView;
     }
 
-
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
-        final NavController controller = Navigation.findNavController(view);
+        Button startButton = (Button) view.findViewById(R.id.scored_test_begin_button);
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                final NavController controller = Navigation.findNavController(v);
                 controller.navigate(R.id.action_scoredTest_to_scoredTestTest);
             }
         });

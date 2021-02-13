@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-class ScoredTestTest extends Fragment {
+public class ScoredTestTest extends Fragment {
     private static final String TEST_TYPE_LABEL="TEST_TYPE";
     private static final String TEST_SCORE_LABEL="TEST_SCORE";
     private static final String TEST_TYPE="exam";
@@ -35,13 +35,13 @@ class ScoredTestTest extends Fragment {
     private String packageName;
     private static final String Log_Tag = ScoredTestTest.class.getSimpleName();
     private static final int maxCategoryCards = 5;
-    private int num_rs = maxCategoryCards;
-    private int num_rm = maxCategoryCards;
-    private int num_gois = maxCategoryCards;
-    private int num_ws = maxCategoryCards;
-    private int num_regs = maxCategoryCards;
-    private int num_rotr = maxCategoryCards;
-    private final int maxCards = (num_rs + num_rm + num_gois + num_ws + num_regs + num_rotr);
+    private static final int num_rs = maxCategoryCards;
+    private static final int num_rm = maxCategoryCards;
+    private static final int num_gois = maxCategoryCards;
+    private static final int num_ws = maxCategoryCards;
+    private static final int num_regs = maxCategoryCards;
+    private static final int num_rotr = maxCategoryCards;
+    private static final int maxCards = (num_rs + num_rm + num_gois + num_ws + num_regs + num_rotr);
     private Random rand;
     private NumberFormat nf;
 
@@ -127,6 +127,8 @@ class ScoredTestTest extends Fragment {
             questions.add(card);
         }
 
+        nf = NumberFormat.getInstance();
+        nf.setMinimumIntegerDigits(2);
         for (int f=0;f<num_rotr;f++) {
             cardnum = (1 + rand.nextInt(65));
             genericResponses = getRulesGenericResponses(cardnum);
@@ -148,6 +150,8 @@ class ScoredTestTest extends Fragment {
     }
 
     private String[] getGenericResponses(int card_number) {
+        nf = NumberFormat.getInstance();
+        nf.setMinimumIntegerDigits(3);
         String [] genericResponses = new String [maxCategoryCards-1];
         String resourceDescriptionName;
         int resourceDescriptionID;
@@ -180,6 +184,8 @@ class ScoredTestTest extends Fragment {
     }
 
     private String[] getRulesGenericResponses(int card_number) {
+        nf = NumberFormat.getInstance();
+        nf.setMinimumIntegerDigits(2);
         String [] genericResponses = new String [maxCategoryCards-1];
         String resourceDescriptionName;
         int resourceDescriptionID;
@@ -201,7 +207,7 @@ class ScoredTestTest extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.scoredtest_test, container, false);
         questionStack = rootView.findViewById(R.id.question_stack);
-        ProgressBar testProgress = rootView.findViewById(R.id.progress_bar_tct);
+        ProgressBar testProgress = rootView.findViewById(R.id.progress_bar_stt);
         progress = 1;
         testProgress.setMax(maxCards);
         testProgress.setProgress(progress);
@@ -218,7 +224,11 @@ class ScoredTestTest extends Fragment {
                 int response = selection.getCheckedRadioButtonId();
 
                 if (response != -1) {
-                    mTEST_SCORE += mark(v, response);
+                    RadioButton radio = rootView.findViewById(response);
+                    CharSequence radioText = radio.getText();
+                    TextView answer = rootView.findViewById(R.id.question_right_answer);
+                    CharSequence answerText = answer.getText();
+                    mTEST_SCORE += mark(radioText.toString(), answerText.toString());
                     if (progress < maxCards) {
                         progress++;
                         testProgress.setProgress(progress);
@@ -226,6 +236,7 @@ class ScoredTestTest extends Fragment {
                             nextButton.setText(R.string.st_controls_linearlayout_submit_button);
                         }
                         questionStack.showNext();
+                        response = -1;
                     } else {
                         // navigate done
                         Bundle data = new Bundle();
@@ -243,11 +254,7 @@ class ScoredTestTest extends Fragment {
         return rootView;
     }
 
-    private Double mark(View v, int response) {
-        RadioButton radio = v.findViewById(response);
-        CharSequence radioText = radio.getText();
-        TextView answer = v.findViewById(R.id.question_right_answer);
-        CharSequence answerText = answer.getText();
+    private Double mark(String radioText, String answerText) {
         Double score;
         if (radioText.toString().equals(answerText.toString())) {
             score = new Double(1);

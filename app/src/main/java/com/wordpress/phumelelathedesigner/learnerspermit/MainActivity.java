@@ -14,32 +14,45 @@ import androidx.preference.PreferenceManager;
 
 public class MainActivity extends AppCompatActivity {
     private static final String Log_Tag = MainActivity.class.getSimpleName();
-/*    private static SharedPreferences mPrefs;
+    private static SharedPreferences mPrefs;
     private static final String FIRST_RUN = "APP_FIRST_RUN";
     private static final String CHOSEN_LANGUAGE = "STUDY_LANGUAGE";
     private Boolean mFirstRun;
-    private String mStudyLang;*/
+    private String mStudyLang;
+    private Resources res;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.i(Log_Tag, "Starting main activity window");
-        /*mPrefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-        SharedPreferences.Editor init = mPrefs.edit();
-        mFirstRun = mPrefs.getBoolean(FIRST_RUN, true);
-        mStudyLang = mPrefs.getString(CHOSEN_LANGUAGE, "");
-        init.putBoolean(FIRST_RUN, mFirstRun);
-        init.putString(CHOSEN_LANGUAGE, mStudyLang);
+        res = getResources();
+        mPrefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        if (mPrefs != null) {
+            SharedPreferences.Editor init = mPrefs.edit();
+            mFirstRun = mPrefs.getBoolean(FIRST_RUN, true);
+            String defaultLang = res.getStringArray(R.array.language_values)[0];
+            mStudyLang = mPrefs.getString(CHOSEN_LANGUAGE, defaultLang);
+            init.putBoolean(FIRST_RUN, mFirstRun);
+            init.putString(CHOSEN_LANGUAGE, mStudyLang);
+            init.apply();
+        } else {
+            mPrefs = getSharedPreferences(getPackageName(), MODE_PRIVATE);
+            SharedPreferences.Editor init = mPrefs.edit();
+            mFirstRun = true;
+            mStudyLang = res.getStringArray(R.array.language_values)[0];
+            init.putBoolean(FIRST_RUN, mFirstRun);
+            init.putString(CHOSEN_LANGUAGE, mStudyLang);
+            init.apply();
+        }
 
-        if (!mStudyLang.equals("")) {
-            Resources res = getResources();
+        if (!mStudyLang.equals("") && mFirstRun) {
             Locale localeX = new Locale(mStudyLang);
             Locale.setDefault(localeX);
             DisplayMetrics dm = res.getDisplayMetrics();
             Configuration config = res.getConfiguration();
             config.locale = localeX;
             res.updateConfiguration(config, dm);
-        }*/
+        }
     }
 }

@@ -9,23 +9,30 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".TestCardsTest">
+
     <ImageView
         android:id="@+id/stack_question_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/coordinatorlayout_answersheet"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="center_horizontal|top"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:visibility="gone" />
+        android:padding="5dp"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:visibility="visible"
+        app:srcCompat="@drawable/sign_002" />
+
     <TextView
         android:id="@+id/stack_question_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/coordinatorlayout_answersheet"
         android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:textAlignment="center"
         android:visibility="gone" />
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorlayout_answersheet"
@@ -53,9 +60,14 @@
                 android:id="@+id/test_card_answer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
                 android:gravity="center"
+                android:padding="5dp"
                 android:text="Hello"
+                android:textAlignment="center"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="@color/black"
                 android:textStyle="bold" />

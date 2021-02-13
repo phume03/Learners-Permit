@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/learners_nav"
-    app:startDestination="@id/testCards">
+    app:startDestination="@id/mainMenu">
 
     <fragment
         android:id="@+id/mainMenu"
@@ -90,7 +90,11 @@
         tools:layout="@layout/testcards_test">
         <action
             android:id="@+id/action_testCardsTest_to_done"
-            app:destination="@id/done" />
+            app:destination="@id/done"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/scoredTestTest"
@@ -99,7 +103,11 @@
         tools:layout="@layout/scoredtest_test" >
         <action
             android:id="@+id/action_scoredTestTest_to_done"
-            app:destination="@id/done" />
+            app:destination="@id/done"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
     </fragment>
     <navigation
         android:id="@+id/learn_signs_nav"
@@ -260,6 +268,10 @@
         tools:layout="@layout/test_done" >
         <action
             android:id="@+id/action_done_to_mainMenu"
-            app:destination="@id/mainMenu" />
+            app:destination="@id/mainMenu"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
     </fragment>
 </navigation>

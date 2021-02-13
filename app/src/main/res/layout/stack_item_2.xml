@@ -9,75 +9,107 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".TestCardsTest">
+
     <ImageView
         android:id="@+id/question_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/coordinatorlayout_answersheet"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:visibility="gone" />
+        android:layout_gravity="center_horizontal|top"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:visibility="visible"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/sign_002" />
+
     <TextView
         android:id="@+id/question_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/coordinatorlayout_mutliplechoice"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:visibility="gone" />
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:id="@+id/coordinatorlayout_mutliplechoice"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <RadioGroup
-            android:id="@+id/choices"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone"
+        android:layout_weight="1" />
+    <ScrollView
+        android:id="@+id/scrollview_mutliplechoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/linearlayout_mutliplechoice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center_horizontal"
-            android:layoutDirection="ltr"
-            android:padding="5dp"
-            android:textAlignment="center"
-            android:textDirection="ltr">
-            <RadioButton
-                android:id="@+id/choice1"
+            android:orientation="vertical"
+            >
+            <RadioGroup
+                android:id="@+id/choices"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/radio_button"
-                android:contentDescription="@string/radio_button_description"/>
-            <RadioButton
-                android:id="@+id/choice2"
-                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layoutDirection="ltr"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textDirection="ltr">
+                <RadioButton
+                    android:id="@+id/choice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/radio_button_description"
+                    android:text="@string/radio_button"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/choice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/radio_button_description"
+                    android:text="@string/radio_button"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/choice3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/radio_button_description"
+                    android:text="@string/radio_button"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/choice4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/radio_button_description"
+                    android:text="@string/radio_button"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/choice5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/radio_button_description"
+                    android:text="@string/radio_button"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question_right_answer"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="R@string/radio_button"
-                android:contentDescription="@string/radio_button_description"/>
-            <RadioButton
-                android:id="@+id/choice3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_button"
-                android:contentDescription="@string/radio_button_description"/>
-            <RadioButton
-                android:id="@+id/choice4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_button"
-                android:contentDescription="@string/radio_button_description"/>
-            <RadioButton
-                android:id="@+id/choice5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_button"
-                android:contentDescription="@string/radio_button_description"/>
-        </RadioGroup>
-        <TextView
-            android:id="@+id/question_right_answer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="@string/question_right_answer"
-            android:visibility="gone" />
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+                android:layout_gravity="center_horizontal"
+                android:text="@string/question_right_answer"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
