@@ -221,33 +221,27 @@ public class ScoredTestTest extends Fragment {
             @Override
             public void onClick(View v) {
                 RadioGroup selection = rootView.findViewById(R.id.choices);
-                int response = selection.getCheckedRadioButtonId();
-
-                if (response != -1) {
-                    RadioButton radio = rootView.findViewById(response);
-                    CharSequence radioText = radio.getText();
-                    TextView answer = rootView.findViewById(R.id.question_right_answer);
-                    CharSequence answerText = answer.getText();
-                    mTEST_SCORE += mark(radioText.toString(), answerText.toString());
-                    if (progress < maxCards) {
-                        progress++;
-                        testProgress.setProgress(progress);
-                        if (progress >= maxCards) {
-                            nextButton.setText(R.string.st_controls_linearlayout_submit_button);
-                        }
-                        questionStack.showNext();
-                        response = -1;
-                    } else {
-                        // navigate done
-                        Bundle data = new Bundle();
-                        mTEST_SCORE = ((mTEST_SCORE / maxCards) * 100);
-                        data.putString(TEST_TYPE_LABEL, TEST_TYPE);
-                        data.putDouble(TEST_SCORE_LABEL, mTEST_SCORE);
-                        final NavController controller = Navigation.findNavController(v);
-                        controller.navigate(R.id.action_scoredTestTest_to_done, data);
+                Integer response = selection.getCheckedRadioButtonId();
+                RadioButton radio = rootView.findViewById(response);
+                CharSequence radioText = radio.getText();
+                TextView answer = rootView.findViewById(R.id.question_right_answer);
+                CharSequence answerText = answer.getText();
+                mTEST_SCORE += mark(radioText.toString(), answerText.toString());
+                if (progress < maxCards) {
+                    progress++;
+                    testProgress.setProgress(progress);
+                    if (progress >= maxCards) {
+                        nextButton.setText(R.string.st_controls_linearlayout_submit_button);
                     }
+                    questionStack.showNext();
                 } else {
-                    Toast.makeText(requireContext(), R.string.submit_navigation_error_exam, Toast.LENGTH_SHORT);
+                    // navigate done
+                    Bundle data = new Bundle();
+                    mTEST_SCORE = ((mTEST_SCORE / maxCards) * 100);
+                    data.putString(TEST_TYPE_LABEL, TEST_TYPE);
+                    data.putDouble(TEST_SCORE_LABEL, mTEST_SCORE);
+                    final NavController controller = Navigation.findNavController(v);
+                    controller.navigate(R.id.action_scoredTestTest_to_done, data);
                 }
             }
         });
