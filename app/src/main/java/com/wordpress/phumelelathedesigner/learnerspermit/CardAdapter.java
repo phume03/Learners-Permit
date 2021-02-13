@@ -15,13 +15,13 @@ import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
-public class ExtendedBaseAdapter extends BaseAdapter {
+public class CardAdapter extends BaseAdapter {
     Context context;
     List<Card> cardList;
     private static final String IMAGE_ID = "IMAGE_RESOURCE_ID";
     private static final String IMAGE_DESC = "IMAGE_TEXT_RESOURCE_ID";
 
-    public ExtendedBaseAdapter(Context context, List<Card> cardList) {
+    public CardAdapter(Context context, List<Card> cardList) {
         this.context = context;
         this.cardList = cardList;
     }

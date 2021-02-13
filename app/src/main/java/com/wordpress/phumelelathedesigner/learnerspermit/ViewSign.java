@@ -10,11 +10,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ViewSign#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class ViewSign extends Fragment {
     private static final String IMAGE_ID = "IMAGE_RESOURCE_ID";
     private static final String IMAGE_DESC = "IMAGE_TEXT_RESOURCE_ID";

@@ -42,10 +42,41 @@
     <string name="test_cards_title_rm_description" translatable="false">Test cards road markings title</string>
     <string name="test_cards_title_rs_description" translatable="false">Test cards road signals title</string>
     <string name="test_cards_title_rotr_description" translatable="false">Test cards rule of the road title</string>
+    <string name="test_cards_progressbar_description" translatable="false">Test progress</string>
+    <string name="controls_linearlayout_previous_button" translatable="false">Previous</string>
+    <string name="controls_linearlayout_next_button" translatable="false">Next</string>
+    <string name="controls_linearlayout_next_button_done" translatable="false">Done</string>
+    <string name="controls_linearlayout_previous_button_description" translatable="false">Previous question button</string>
+    <string name="controls_linearlayout_next_button_description" translatable="false">Next question button</string>
+    <string name="back_navigation_attempt" translatable="false">You cannot navigate back from the test!</string>
+    <string name="back_navigation_attempt_done" translatable="false">You cannot navigate back, click done to return to the main menu.</string>
+    <string name="start_test_navigation_error" translatable="false">Please select a topic to get tested on.</string>
 
     <!-- Scored Test Tags -->
     <string name="scored_test_button" translatable="false">Scored Test</string>
     <string name="scored_test_button_description" translatable="false">Scored test button</string>
+    <string name="back_navigation_attempt_exam" translatable="false">You cannot navigate back from the test!</string>
+    <string name="scored_test_begin_button" translatable="false">Begin Test</string>
+    <string name="scored_test_prompt" translatable="false">This is a longer test of your knowledge of the road traffic signs and markings, as well as the rules of the road. There are 30 questions in total, so give yourself ample time to answer them all. They have been selected randomly from every topic to ensure that every part is tested. These are mulitple choice questions. \n\nThere is scoring, so try your best!</string>
+    <string name="scored_test_prompt_description" translatable="false">Scored test prompt.</string>
+    <string name="scored_test_title" translatable="false">Scored Test</string>
+    <string name="scored_test_title_description" translatable="false">Scored test title</string>
+    <string name="scored_test_progressbar_description" translatable="false">Scored test progress</string>
+    <string name="st_controls_linearlayout_next_button" translatable="false">Next</string>
+    <string name="st_controls_linearlayout_submit_button" translatable="false">Complete Test</string>
+    <string name="st_controls_linearlayout_next_button_description" translatable="false">Complete the scored test button</string>
+    <string name="radio_button_description" translatable="false">Multiple choice response</string>
+    <string name="radio_button" translatable="false">Radio button choice</string>
+    <string name="question_right_answer" translatable="false">This is right.</string>
+    <string name="submit_navigation_error_exam" translatable="false">Cannot submit a response until you select a value.</string>
+
+    <!-- Done Tags -->
+    <string name="done_title_description" translatable="false">Text complete title</string>
+    <string name="done_title_text" translatable="false">Test Complete</string>
+    <string name="done_content_text" translatable="false">You scored x in the test/exam.</string>
+    <string name="done_content_description" translatable="false">Completed test main text body.</string>
+    <string name="done_button_text" translatable="false">Main Menu</string>
+    <string name="done_button" translatable="false">Test complete button or navigate to main menu button</string>
 
     <!-- Settings Tags -->
     <string name="settings_button" translatable="false">Settings</string>
@@ -523,6 +554,9 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+
+
     <!-- TODO: Remove or change this placeholder text -->
 
 </resources>

@@ -1,6 +1,5 @@
 package com.wordpress.phumelelathedesigner.learnerspermit;
 
-import android.database.DataSetObserver;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.util.Log;
@@ -8,11 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
-import android.widget.SimpleAdapter;
+
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class RoadSignals extends Fragment {
     private GridView signs;
@@ -68,7 +65,7 @@ public class RoadSignals extends Fragment {
         View rootView = (View) inflater.inflate(R.layout.learn_signs_road_signals, container, false);
         signs = (GridView) rootView.findViewById(R.id.ls_rs_grid_view);
         signs.setNumColumns(3);
-        ExtendedBaseAdapter signsAdapter = new ExtendedBaseAdapter(requireContext(), signsCardsData);
+        CardAdapter signsAdapter = new CardAdapter(requireContext(), signsCardsData);
         signs.setAdapter(signsAdapter);
         return rootView;
     }

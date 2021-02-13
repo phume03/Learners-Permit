@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/learners_nav"
-    app:startDestination="@id/mainMenu">
+    app:startDestination="@id/testCards">
 
     <fragment
         android:id="@+id/mainMenu"
@@ -56,7 +56,7 @@
         android:id="@+id/scoredTest"
         android:name="com.wordpress.phumelelathedesigner.learnerspermit.ScoredTest"
         android:label="scored_test"
-        tools:layout="@layout/scored_test" >
+        tools:layout="@layout/scored_test">
         <action
             android:id="@+id/action_scoredTest_to_scoredTestTest"
             app:destination="@id/scoredTestTest"
@@ -69,7 +69,7 @@
         android:id="@+id/testCards"
         android:name="com.wordpress.phumelelathedesigner.learnerspermit.TestCards"
         android:label="test_cards"
-        tools:layout="@layout/test_cards" >
+        tools:layout="@layout/test_cards">
         <action
             android:id="@+id/action_testCards_to_testCardsTest"
             app:destination="@id/testCardsTest"
@@ -83,12 +83,34 @@
         android:name="com.wordpress.phumelelathedesigner.learnerspermit.ViewSign"
         android:label="learn_signs_view_sign"
         tools:layout="@layout/learn_signs_view_sign" />
+    <fragment
+        android:id="@+id/testCardsTest"
+        android:name="com.wordpress.phumelelathedesigner.learnerspermit.TestCardsTest"
+        android:label="test_cards_test"
+        tools:layout="@layout/testcards_test">
+        <action
+            android:id="@+id/action_testCardsTest_to_done"
+            app:destination="@id/done" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoredTestTest"
+        android:name="com.wordpress.phumelelathedesigner.learnerspermit.ScoredTestTest"
+        android:label="scored_test_test"
+        tools:layout="@layout/scoredtest_test" >
+        <action
+            android:id="@+id/action_scoredTestTest_to_done"
+            app:destination="@id/done" />
+    </fragment>
     <navigation
         android:id="@+id/learn_signs_nav"
         app:startDestination="@id/learnSigns">
         <action
             android:id="@+id/action_global_viewSign"
-            app:destination="@id/viewSign" />
+            app:destination="@id/viewSign"
+            app:enterAnim="@anim/zoom_in"
+            app:exitAnim="@anim/zoom_out"
+            app:popEnterAnim="@anim/zoom_in"
+            app:popExitAnim="@anim/zoom_out" />
         <fragment
             android:id="@+id/guideOrInformationSigns"
             android:name="com.wordpress.phumelelathedesigner.learnerspermit.GuideOrInformationSigns"
@@ -232,13 +254,12 @@
         </navigation>
     </navigation>
     <fragment
-        android:id="@+id/testCardsTest"
-        android:name="com.wordpress.phumelelathedesigner.learnerspermit.TestCardsTest"
-        android:label="test_cards_test"
-        tools:layout="@layout/testcards_test" />
-    <fragment
-        android:id="@+id/scoredTestTest"
-        android:name="com.wordpress.phumelelathedesigner.learnerspermit.ScoredTestTest"
-        android:label="scored_test_test"
-        tools:layout="@layout/scoredtest_test" />
+        android:id="@+id/done"
+        android:name="com.wordpress.phumelelathedesigner.learnerspermit.Done"
+        android:label="test_done"
+        tools:layout="@layout/test_done" >
+        <action
+            android:id="@+id/action_done_to_mainMenu"
+            app:destination="@id/mainMenu" />
+    </fragment>
 </navigation>

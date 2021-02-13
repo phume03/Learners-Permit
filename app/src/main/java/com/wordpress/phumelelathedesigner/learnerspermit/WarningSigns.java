@@ -7,11 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
-import android.widget.SimpleAdapter;
+
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class WarningSigns extends Fragment {
     private GridView signs;
@@ -141,7 +139,7 @@ public class WarningSigns extends Fragment {
         View rootView = (View) inflater.inflate(R.layout.learn_signs_warning_signs, container, false);
         signs = (GridView) rootView.findViewById(R.id.ls_ws_grid_view);
         signs.setNumColumns(3);
-        ExtendedBaseAdapter signsAdapter = new ExtendedBaseAdapter(requireContext(), signsCardsData);
+        CardAdapter signsAdapter = new CardAdapter(requireContext(), signsCardsData);
         signs.setAdapter(signsAdapter);
 
         return rootView;
