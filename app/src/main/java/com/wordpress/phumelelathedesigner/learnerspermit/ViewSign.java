@@ -14,7 +14,6 @@ public class ViewSign extends Fragment {
     private static final String IMAGE_ID = "IMAGE_RESOURCE_ID";
     private static final String IMAGE_DESC = "IMAGE_TEXT_RESOURCE_ID";
 
-    // TODO: Rename and change types of parameters
     private int mImageID;
     private String mImageDesc;
 

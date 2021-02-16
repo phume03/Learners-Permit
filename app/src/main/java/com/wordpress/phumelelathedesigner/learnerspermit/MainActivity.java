@@ -6,6 +6,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.util.Locale;
 
@@ -55,4 +56,12 @@ public class MainActivity extends AppCompatActivity {
             res.updateConfiguration(config, dm);
         }
     }
+	
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+      super.onConfigurationChanged(newConfig);
+      Toast.makeText(this,"something changed - we hope it is the locale", Toast.LENGTH_SHORT).show();
+      System.out.println(newConfig);
+    }
+
 }

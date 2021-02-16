@@ -1,6 +1,6 @@
-# License to Drive: Learner\'s Permit Study App \(Eswatini\) #
+# License to Drive: Learner's Permit Study App \(Eswatini\) #
 
-This is an android study app for the Eswatini learner\'s permit. All image and video assets have been created by New Breed Design \(chief designer Phumelela Mdluli\). Watermarks for the programs used have been left in place to help with advertising certain applications. The app provides English and SiSwati accessibility as per the rules of the Swati learner\'s laws carried by the Royal Eswatini Police. The Kingdom of Eswatini uses road signs from the Southern African Development Community \(SADC\).
+This is an android study app for the Eswatini learner's permit. All image and video assets have been created by New Breed Design \(chief designer Phumelela Mdluli\). Watermarks for the programs used have been left in place to help with advertising certain applications. The app provides English and SiSwati accessibility as per the rules of the Swati learner's laws carried by the Royal Eswatini Police. The Kingdom of Eswatini uses road signs from the Southern African Development Community \(SADC\).
 
 
 
