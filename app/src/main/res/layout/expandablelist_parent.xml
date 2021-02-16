@@ -6,12 +6,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center">
+
     <TextView
         android:id="@+id/activity_learn_signs_parentlist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/expandable_list_parent_item_margin"
+        android:layout_marginStart="@dimen/expandable_list_parent_item_margin_left"
         android:layout_marginLeft="@dimen/expandable_list_parent_item_margin_left"
+        android:layout_marginTop="@dimen/expandable_list_parent_item_margin"
+        android:layout_marginEnd="@dimen/expandable_list_parent_item_margin"
+        android:layout_marginBottom="@dimen/expandable_list_parent_item_margin"
         android:padding="@dimen/expandable_list_parent_item_padding"
         android:text="Hello"
         android:textAlignment="textStart"

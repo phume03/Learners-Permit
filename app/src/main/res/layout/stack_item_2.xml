@@ -9,25 +9,29 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".TestCardsTest">
+
     <ImageView
         android:id="@+id/question_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_above="@+id/scrollview_mutliplechoice"
         android:layout_gravity="center_horizontal|top"
         android:layout_margin="@dimen/image_margin_large"
+        android:layout_weight="@dimen/common_weight"
         android:padding="@dimen/image_padding_large"
         android:scaleX="@dimen/image_scale_x_large"
         android:scaleY="@dimen/image_scale_y_large"
         android:visibility="visible"
         app:srcCompat="@drawable/sign_002" />
+
     <TextView
         android:id="@+id/question_text"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_above="@+id/scrollview_mutliplechoice"
         android:layout_gravity="center_horizontal"
         android:layout_margin="@dimen/cardtext_margin"
+        android:layout_weight="@dimen/common_weight"
         android:padding="@dimen/cardtext_padding"
         android:textAlignment="center"
         android:textSize="@dimen/cardtext_text_size"
@@ -35,7 +39,8 @@
     <ScrollView
         android:id="@+id/scrollview_mutliplechoice"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="@dimen/common_weight"
         android:layout_gravity="center_horizontal|bottom">
         <LinearLayout
             android:id="@+id/linearlayout_mutliplechoice"
