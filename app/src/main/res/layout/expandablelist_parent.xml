@@ -5,21 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_gravity="center"
-    android:padding="10dp">
-
+    android:layout_gravity="center">
     <TextView
         android:id="@+id/activity_learn_signs_parentlist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:padding="5dp"
+        android:layout_margin="@dimen/expandable_list_parent_item_margin"
+        android:layout_marginLeft="@dimen/expandable_list_parent_item_margin_left"
+        android:padding="@dimen/expandable_list_parent_item_padding"
         android:text="Hello"
         android:textAlignment="textStart"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/black"
         android:textDirection="ltr"
-        android:textSize="18sp"
-        android:visibility="visible"
-        tools:visibility="visible" />
+        android:textSize="@dimen/expandable_list_parent_item_text_size"
+        android:visibility="visible" />
 </RelativeLayout>

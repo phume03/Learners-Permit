@@ -16,26 +16,28 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/coordinatorlayout_answersheet"
         android:layout_gravity="center_horizontal|top"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:padding="5dp"
-        android:scaleX="0.75"
-        android:scaleY="0.75"
+        android:layout_margin="@dimen/image_margin_large"
+        android:padding="@dimen/image_padding_large"
+        android:scaleX="@dimen/image_scale_x_large"
+        android:scaleY="@dimen/image_scale_y_large"
         android:visibility="visible"
         app:srcCompat="@drawable/sign_002" />
 
     <TextView
         android:id="@+id/stack_question_text"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/coordinatorlayout_answersheet"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="10dp"
-        android:padding="5dp"
+        android:layout_margin="@dimen/cardtext_margin"
+        android:padding="@dimen/cardtext_padding"
         android:textAlignment="center"
+        android:textSize="@dimen/cardtext_text_size"
         android:visibility="gone" />
+
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorlayout_answersheet"
+        android:layout_gravity="center_horizontal|bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -47,30 +49,24 @@
             android:clipToPadding="true"
             android:gravity="center_horizontal"
             android:layoutDirection="ltr"
-            android:padding="5dp"
+            android:padding="@dimen/cardtext_padding"
             android:textAlignment="center"
             android:textDirection="ltr"
             app:behavior_hideable="true"
-            app:behavior_peekHeight="50dp"
-            app:elevation="40dp"
-            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
-            tools:ignore="MissingPrefix">
+            app:behavior_peekHeight="@dimen/card_peek_height"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" >
 
             <TextView
                 android:id="@+id/test_card_answer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="5dp"
+                android:layout_margin="@dimen/cardtext_margin"
+                android:padding="@dimen/cardtext_padding"
                 android:gravity="center"
-                android:padding="5dp"
                 android:text="Hello"
+                android:textSize="@dimen/cardtext_text_size"
                 android:textAlignment="center"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@color/black"
-                android:textStyle="bold" />
+                android:textColor="@color/black" />
         </RelativeLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </LinearLayout>

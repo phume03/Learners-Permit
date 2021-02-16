@@ -8,7 +8,7 @@
     <application
         android:configChanges="locale"
         android:isGame="false"
-	android:resizeableActivity="false"
+        android:testOnly="true"
         android:allowBackup="true"
         android:fullBackupContent="true"
         android:description="@string/app_desc"
@@ -18,13 +18,8 @@
         android:largeHeap="true"
         android:hardwareAccelerated="true"
         android:supportsRtl="true"
-	android:theme="@style/Theme.LearnersPermit">
-	<uses-feature 
-		android:name="android.hardware.screen.portrait" 
-		android:required="true" />
-	<activity 
-		android:name=".MainActivity"
-		android:screenOrientation="portrait">
+        android:theme="@style/Theme.LearnersPermit">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -32,8 +27,5 @@
             </intent-filter>
         </activity>
     </application>
-    <supports-screens android:smallScreens="true"
-                      android:normalScreens="true"
-                      android:largeScreens="true"
-                      android:xlargeScreens="false"/>
+
 </manifest>

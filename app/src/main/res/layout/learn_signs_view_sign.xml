@@ -16,10 +16,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|top"
-            android:layout_margin="10dp"
-            android:padding="5dp"
-            android:scaleX="0.75"
-            android:scaleY="0.75"
+            android:layout_margin="@dimen/image_margin_large"
+            android:padding="@dimen/image_padding_large"
+            android:scaleX="@dimen/image_scale_x_large"
+            android:scaleY="@dimen/image_scale_y_large"
             android:visibility="visible"
             app:srcCompat="@drawable/sign_002" />
 
@@ -27,12 +27,12 @@
             android:id="@+id/signs_image_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:padding="5dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_margin="@dimen/cardtext_margin"
+            android:padding="@dimen/cardtext_padding"
             android:text="Hello"
             android:textAlignment="center"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="@dimen/cardtext_text_size"
             android:textColor="@color/black" />
     </LinearLayout>
 </FrameLayout>

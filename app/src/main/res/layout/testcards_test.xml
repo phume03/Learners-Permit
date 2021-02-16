@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:id="@+id/constraintlayout"
@@ -11,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="@dimen/test_progress_bar_margin_bottom"
         android:contentDescription="@string/test_cards_progressbar_description"
         android:max="10"
         android:progress="0"
@@ -24,8 +26,8 @@
         android:id="@+id/card_stack"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:padding="5dp"
-        android:textAlignment="center"
+        android:padding="@dimen/test_stack_padding"
+        android:layout_margin="@dimen/test_stack_margin"
         android:textDirection="ltr"
         android:layout_centerHorizontal="true"
         android:visibility="visible"
@@ -34,30 +36,48 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/progress_bar_tct"
         tools:visibility="visible" />
+
     <LinearLayout
         android:id="@+id/controls_linearlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/options_margin"
+        android:gravity="center_horizontal"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/card_stack"
+        android:padding="@dimen/options_padding"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_stack">
+
         <Button
             android:id="@+id/controls_linearlayout_previous"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/test_controls_button_width"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="@dimen/test_controls_button_margin"
+            android:layout_weight="@dimen/common_weight"
             android:contentDescription="@string/controls_linearlayout_previous_button_description"
-            android:padding="2dp"
-            android:text="@string/controls_linearlayout_previous_button"/>
+            android:padding="@dimen/test_controls_button_padding"
+            android:text="@string/controls_linearlayout_previous_button"
+            android:textAlignment="center"
+            android:textDirection="ltr"
+            android:textSize="@dimen/test_controls_button_text_size"
+            android:visibility="visible" />
+
         <Button
             android:id="@+id/controls_linearlayout_next"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/test_controls_button_width"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="@dimen/test_controls_button_margin"
+            android:layout_weight="@dimen/common_weight"
             android:contentDescription="@string/controls_linearlayout_next_button_description"
-            android:padding="2dp"
-            android:text="@string/controls_linearlayout_next_button" />
+            android:padding="@dimen/test_controls_button_padding"
+            android:text="@string/controls_linearlayout_next_button"
+            android:textAlignment="center"
+            android:textDirection="ltr"
+            android:textSize="@dimen/test_controls_button_text_size"
+            android:visibility="visible" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

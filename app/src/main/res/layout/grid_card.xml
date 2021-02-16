@@ -16,12 +16,13 @@
 
         <ImageView
             android:id="@+id/signs_image"
-            android:layout_width="98dp"
-            android:layout_height="98dp"
-            android:layout_margin="1dp"
-            android:padding="5dp"
-            android:scaleX="0.75"
-            android:scaleY="0.75"
+            android:layout_width="@dimen/image_width_small"
+            android:layout_height="@dimen/image_height_small"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/image_margin_small"
+            android:padding="@dimen/image_padding_small"
+            android:scaleX="@dimen/image_scale_x_small"
+            android:scaleY="@dimen/image_scale_y_small"
             android:visibility="visible"
             app:srcCompat="@drawable/sign_002" />
         <TextView

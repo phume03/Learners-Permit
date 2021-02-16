@@ -4,25 +4,16 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:paddingStart="20dp"
-    android:textSize="16sp"
+    android:padding="@dimen/options_padding"
     android:textDirection="ltr">
-
     <TextView
         android:id="@+id/activity_learn_signs_childlist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAlignment="textStart"
-        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/expandable_list_child_item_text_size"
+        android:layout_margin="@dimen/expandable_list_child_item_margin"
+        android:layout_marginLeft="@dimen/expandable_list_child_item_margin_left"
+        android:padding="@dimen/expandable_list_child_item_padding"
         android:textColor="@color/black" />
-
-    <TextView
-        android:id="@+id/activity_learn_signs_childlist_hint"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAlignment="textStart"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/white"
-        android:textDirection="ltr" />
 </LinearLayout>
