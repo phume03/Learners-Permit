@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="visible"
     tools:context=".Done">
-
-    <Button
-        android:id="@+id/done_button"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/done_title"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:contentDescription="@string/done_button"
+        android:layout_margin="@dimen/title_margin"
+        android:layout_marginBottom="@dimen/title_margin_bottom"
+        android:contentDescription="@string/done_title_description"
         android:gravity="center_horizontal"
-        android:padding="5dp"
-        android:text="@string/done_button_text"
+        android:padding="@dimen/title_padding"
+        android:text="@string/done_title_text"
         android:textAlignment="center"
+        android:textSize="@dimen/title_text_size"
+        android:textDirection="ltr"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/done_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/done_content" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/done_content"
@@ -29,9 +32,11 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/done_content_description"
         android:gravity="center_horizontal"
-        android:padding="5dp"
+        android:padding="@dimen/complete_content_padding"
+        android:layout_margin="@dimen/complete_content_margin"
         android:text="@string/done_content_text"
         android:textAlignment="center"
+        android:textSize="@dimen/complete_content_text_size"
         android:textDirection="ltr"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/done_button"
@@ -39,22 +44,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/done_title" />
 
-    <TextView
-        android:id="@+id/done_title"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="@dimen/complete_content_button_width"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:contentDescription="@string/done_title_description"
+        android:layout_margin="@dimen/complete_content_margin"
+        android:textSize="@dimen/complete_content_text_size"
+        android:contentDescription="@string/done_button"
         android:gravity="center_horizontal"
-        android:padding="5dp"
-        android:text="@string/done_title_text"
+        android:padding="@dimen/complete_content_padding"
+        android:text="@string/done_button_text"
         android:textAlignment="center"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textDirection="ltr"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/done_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/done_content" />
 </androidx.constraintlayout.widget.ConstraintLayout>

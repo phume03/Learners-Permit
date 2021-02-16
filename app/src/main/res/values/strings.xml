@@ -3,7 +3,7 @@
     <!-- General Tags -->
     <string name="app_name" translatable="false">License to Drive</string>
     <string name="app_desc" translatable="false">Eswatini Learner\'s Permit study app</string>
-    <string name="app_title" translatable="false">Eswatini Learner\'s Permit Study App</string>
+    <string name="app_title" translatable="false">License to Drive</string>
     <string name="app_title_description" translatable="false">App Title</string>
     <string name="app_exit_alert_title" translatable="false">Exit App?</string>
     <string name="app_exit_alert_confirm" translatable="false">Yes</string>

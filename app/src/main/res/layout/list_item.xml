@@ -3,11 +3,12 @@
     android:id="@+id/title"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="20dp"
-    android:padding="15dp"
+    android:layout_margin="@dimen/list_item_margin"
+    android:layout_marginLeft="@dimen/list_item_margin_left"
+    android:padding="@dimen/list_item_padding"
     android:text="Hello"
     android:textAlignment="textStart"
-    android:textAppearance="?android:attr/textAppearanceLarge"
     android:textColor="@color/black"
     android:textDirection="ltr"
-    android:textSize="18sp" />
+    android:textSize="@dimen/list_item_text_size"
+    android:visibility="visible" />

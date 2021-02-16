@@ -15,6 +15,10 @@
     <application
         android:configChanges="locale"
         android:isGame="false"
+<<<<<<< HEAD
+=======
+        android:testOnly="true"
+>>>>>>> refactoring2
         android:allowBackup="true"
         android:fullBackupContent="true"
         android:description="@string/app_desc"
@@ -25,8 +29,12 @@
         android:hardwareAccelerated="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnersPermit">
+<<<<<<< HEAD
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait">
+=======
+        <activity android:name=".MainActivity">
+>>>>>>> refactoring2
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -34,4 +42,8 @@
             </intent-filter>
         </activity>
     </application>
+<<<<<<< HEAD
+=======
+
+>>>>>>> refactoring2
 </manifest>

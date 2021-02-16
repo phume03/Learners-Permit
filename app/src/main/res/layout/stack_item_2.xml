@@ -9,98 +9,105 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".TestCardsTest">
-
     <ImageView
         android:id="@+id/question_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/scrollview_mutliplechoice"
         android:layout_gravity="center_horizontal|top"
-        android:layout_margin="5dp"
-        android:padding="5dp"
-        android:scaleX="0.75"
-        android:scaleY="0.75"
+        android:layout_margin="@dimen/image_margin_large"
+        android:padding="@dimen/image_padding_large"
+        android:scaleX="@dimen/image_scale_x_large"
+        android:scaleY="@dimen/image_scale_y_large"
         android:visibility="visible"
-        android:layout_weight="1"
         app:srcCompat="@drawable/sign_002" />
-
     <TextView
         android:id="@+id/question_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/scrollview_mutliplechoice"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="10dp"
-        android:layout_marginTop="8dp"
-        android:gravity="center_horizontal"
-        android:padding="5dp"
+        android:layout_margin="@dimen/cardtext_margin"
+        android:padding="@dimen/cardtext_padding"
         android:textAlignment="center"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:visibility="gone"
-        android:layout_weight="1" />
+        android:textSize="@dimen/cardtext_text_size"
+        android:visibility="gone" />
     <ScrollView
         android:id="@+id/scrollview_mutliplechoice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_gravity="center_horizontal|bottom">
         <LinearLayout
             android:id="@+id/linearlayout_mutliplechoice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
             <RadioGroup
                 android:id="@+id/choices"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:gravity="center_horizontal"
                 android:layoutDirection="ltr"
-                android:padding="5dp"
-                android:textAlignment="center"
                 android:textDirection="ltr">
                 <RadioButton
                     android:id="@+id/choice1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textAlignment="textStart"
+                    android:layout_margin="@dimen/cardtext_margin"
+                    android:padding="@dimen/cardtext_padding"
                     android:contentDescription="@string/radio_button_description"
                     android:text="@string/radio_button"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:textSize="@dimen/cardtext_text_size" />
 
                 <RadioButton
                     android:id="@+id/choice2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textAlignment="textStart"
+                    android:layout_margin="@dimen/cardtext_margin"
+                    android:padding="@dimen/cardtext_padding"
                     android:contentDescription="@string/radio_button_description"
                     android:text="@string/radio_button"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:textSize="@dimen/cardtext_text_size" />
 
                 <RadioButton
                     android:id="@+id/choice3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textAlignment="textStart"
+                    android:layout_margin="@dimen/cardtext_margin"
+                    android:padding="@dimen/cardtext_padding"
                     android:contentDescription="@string/radio_button_description"
                     android:text="@string/radio_button"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:textSize="@dimen/cardtext_text_size" />
 
                 <RadioButton
                     android:id="@+id/choice4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textAlignment="textStart"
+                    android:layout_margin="@dimen/cardtext_margin"
+                    android:padding="@dimen/cardtext_padding"
                     android:contentDescription="@string/radio_button_description"
                     android:text="@string/radio_button"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:textSize="@dimen/cardtext_text_size" />
 
                 <RadioButton
                     android:id="@+id/choice5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textAlignment="textStart"
+                    android:layout_margin="@dimen/cardtext_margin"
+                    android:padding="@dimen/cardtext_padding"
                     android:contentDescription="@string/radio_button_description"
                     android:text="@string/radio_button"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:textSize="@dimen/cardtext_text_size" />
             </RadioGroup>
 
             <TextView
