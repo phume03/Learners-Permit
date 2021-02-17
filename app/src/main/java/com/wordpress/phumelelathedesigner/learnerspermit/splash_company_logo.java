@@ -82,15 +82,14 @@ public class splash_company_logo extends Fragment {
 
             @Override
             public void onCompletion(MediaPlayer mp) {
-                // Do nothing player will fade with fragment
+                logoVideo.setVisibility(View.GONE);
+                logoVideo.setAnimation(fadeOut);
             }
         });
 
         new Handler().postDelayed(new Runnable() {
             public void run() {
-                logoVideo.setAnimation(fadeOut);
                 NavController controller = (NavController) Navigation.findNavController(view);
-                logoVideo.setVisibility(View.GONE);
                 controller.navigate(R.id.action_splash_company_logo_to_splash_game_logo);
             }
          }, SPLASH_SCREEN_TIMEOUT_MILLIS);

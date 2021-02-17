@@ -11,6 +11,7 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
@@ -25,10 +26,12 @@ import androidx.navigation.Navigation;
 public class StackAdapterB extends BaseAdapter {
     private Context context;
     private List <StackCardB> stack_b_data;
+    private Button nextButton;
 
-    public StackAdapterB(Context context, List <StackCardB> stack) {
+    public StackAdapterB(Context context, List <StackCardB> stack, Button nextButton) {
         this.context = context;
         this.stack_b_data = stack;
+        this.nextButton = nextButton;
     }
 
     @Override
@@ -91,6 +94,14 @@ public class StackAdapterB extends BaseAdapter {
                 continue;
             }
         }
+
+        RadioGroup selection = view.findViewById(R.id.choices);
+        selection.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                nextButton.setEnabled(true);
+            }
+        });
         return view;
     }
 }

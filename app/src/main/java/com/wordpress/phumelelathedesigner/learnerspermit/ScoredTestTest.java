@@ -44,6 +44,10 @@ public class ScoredTestTest extends Fragment {
     private static final int maxCards = (num_rs + num_rm + num_gois + num_ws + num_regs + num_rotr);
     private Random rand;
     private NumberFormat nf;
+    private RadioGroup selection;
+    private ProgressBar testProgress;
+    private Button nextButton;
+    private View rootView;
 
     public ScoredTestTest() {
         // Required empty public constructor
@@ -205,35 +209,44 @@ public class ScoredTestTest extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.scoredtest_test, container, false);
+        rootView = inflater.inflate(R.layout.scoredtest_test, container, false);
         questionStack = rootView.findViewById(R.id.question_stack);
-        ProgressBar testProgress = rootView.findViewById(R.id.progress_bar_stt);
+        testProgress = rootView.findViewById(R.id.progress_bar_stt);
         progress = 1;
         testProgress.setMax(maxCards);
         testProgress.setProgress(progress);
-        Button nextButton = rootView.findViewById(R.id.st_controls_linearlayout_next);
-        StackAdapterB stackAdapter = new StackAdapterB(requireContext(), questions);
+        nextButton = rootView.findViewById(R.id.st_controls_linearlayout_next);
+        StackAdapterB stackAdapter = new StackAdapterB(requireContext(), questions, nextButton);
         questionStack.setAdapter(stackAdapter);
         if (progress>=maxCards) {
             nextButton.setText(R.string.st_controls_linearlayout_submit_button);
         }
+        nextButton.setEnabled(false);
+        return rootView;
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedStateInstance){
+        super.onViewCreated(view, savedStateInstance);
+        selection = rootView.findViewById(R.id.choices);
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                RadioGroup selection = rootView.findViewById(R.id.choices);
-                Integer response = selection.getCheckedRadioButtonId();
-                RadioButton radio = rootView.findViewById(response);
-                CharSequence radioText = radio.getText();
-                TextView answer = rootView.findViewById(R.id.question_right_answer);
-                CharSequence answerText = answer.getText();
-                mTEST_SCORE += mark(radioText.toString(), answerText.toString());
+                Integer response_ = selection.getCheckedRadioButtonId();
+                RadioButton radio_ = rootView.findViewById(response_);
+                TextView answer_ = rootView.findViewById(R.id.question_right_answer);
+                CharSequence radioText_ = radio_.getText();
+                CharSequence answerText_ = answer_.getText();
+                mTEST_SCORE += mark(radioText_.toString(), answerText_.toString());
                 if (progress < maxCards) {
                     progress++;
                     testProgress.setProgress(progress);
                     if (progress >= maxCards) {
                         nextButton.setText(R.string.st_controls_linearlayout_submit_button);
                     }
+                    nextButton.setEnabled(false);
                     questionStack.showNext();
+                    selection = rootView.findViewById(R.id.choices);
                 } else {
                     // navigate done
                     Bundle data = new Bundle();
@@ -245,7 +258,6 @@ public class ScoredTestTest extends Fragment {
                 }
             }
         });
-        return rootView;
     }
 
     private Double mark(String radioText, String answerText) {
