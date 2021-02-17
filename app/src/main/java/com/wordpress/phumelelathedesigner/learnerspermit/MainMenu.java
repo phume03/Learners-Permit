@@ -2,34 +2,19 @@ package com.wordpress.phumelelathedesigner.learnerspermit;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.SharedPreferences;
-import android.content.res.Configuration;
-import android.content.res.Resources;
 import android.os.Bundle;
 import androidx.activity.OnBackPressedCallback;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-import androidx.navigation.fragment.NavHostFragment;
-import androidx.preference.PreferenceManager;
-
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import java.util.Locale;
-
 public class MainMenu extends Fragment {
     private static final String Log_Tag = MainMenu.class.getSimpleName();
-    private static SharedPreferences mPrefs;
-    private static final String FIRST_RUN = "APP_FIRST_RUN";
-    private static final String CHOSEN_LANGUAGE = "STUDY_LANGUAGE";
-    private Boolean mFirstRun;
-    private String mStudyLang;
-    private Resources res;
 
     public MainMenu() {
         // Required empty public constructor
@@ -38,33 +23,6 @@ public class MainMenu extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        res = getResources();
-        mPrefs = PreferenceManager.getDefaultSharedPreferences(requireActivity().getApplicationContext());
-        if (mPrefs != null) {
-            mFirstRun = mPrefs.getBoolean(FIRST_RUN, true);
-            mStudyLang = mPrefs.getString(CHOSEN_LANGUAGE, "");
-        } else {
-            mPrefs = requireActivity().getSharedPreferences(requireActivity().getPackageName(), requireActivity().MODE_PRIVATE);
-            SharedPreferences.Editor init = mPrefs.edit();
-            mFirstRun = true;
-            mStudyLang = res.getStringArray(R.array.language_values)[0];
-            init.putBoolean(FIRST_RUN, mFirstRun);
-            init.putString(CHOSEN_LANGUAGE, mStudyLang);
-            init.apply();
-        }
-
-        if (mFirstRun == true) {
-            runIntro();
-        }
-
-        if (!mStudyLang.equals("")) {
-            Locale localeX = new Locale(mStudyLang);
-            Locale.setDefault(localeX);
-            DisplayMetrics dm = res.getDisplayMetrics();
-            Configuration config = res.getConfiguration();
-            config.locale = localeX;
-            res.updateConfiguration(config, dm);
-        }
 
         OnBackPressedCallback callback = new OnBackPressedCallback(true) {
             @Override
@@ -127,11 +85,5 @@ public class MainMenu extends Fragment {
                 controller.navigate(R.id.action_mainMenu_to_settings2);
             }
         });
-    }
-
-    private void runIntro() {
-        Log.i(Log_Tag,"Run application intro");
-        final NavController controller = NavHostFragment.findNavController(this);
-        controller.navigate(R.id.action_mainMenu_to_app_entry_nav2);
     }
 }

@@ -59,7 +59,7 @@ public class LanguageChoice extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         res = getResources();
         mFirstRun = false;
-        String [] langs = res.getStringArray(R.array.language_entries);
+        String [] langs = res.getStringArray(R.array.language_values);
         final Button english_choice = (Button) view.findViewById(R.id.language_english);
         final Button siswati_choice = (Button) view.findViewById(R.id.language_siswati);
         english_choice.setOnClickListener(new View.OnClickListener() {
@@ -101,10 +101,18 @@ public class LanguageChoice extends Fragment {
 
     private void languageChoice(View view) {
         if (!mStudyLang.equals("")) {
-            Configuration config = res.getConfiguration();
             DisplayMetrics dm = res.getDisplayMetrics();
-            Locale localeX = new Locale(mStudyLang);
-            Locale.setDefault(localeX);
+            Configuration config = res.getConfiguration();
+            String [] values = res.getStringArray(R.array.language_values);
+            Locale localeX;
+            System.out.print("Language Setting: "+mStudyLang);
+            if (mStudyLang.equals(values[0])) {
+                localeX = new Locale("en","US");
+            } else if (mStudyLang.equals(values[1])) {
+                localeX = new Locale("ss","SZ");
+            } else {
+                localeX = Locale.getDefault();
+            }
             config.locale = localeX;
             res.updateConfiguration(config, dm);
 
@@ -117,12 +125,18 @@ public class LanguageChoice extends Fragment {
             init.putBoolean(FIRST_RUN, mFirstRun);
             init.putString(CHOSEN_LANGUAGE, mStudyLang);
             init.apply();
-
+            //recreate();
             NavController controller = (NavController) Navigation.findNavController(view);
             controller.navigate(R.id.action_languageChoice_to_mainMenu);
         } else {
             Toast.makeText(requireContext(), res.getString(R.string.language_choice_navigation_error), Toast.LENGTH_SHORT).show();
         }
         return;
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        Log.i(Log_Tag, "Configurations were changed -- presumably language configs");
     }
 }

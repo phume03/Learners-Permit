@@ -29,7 +29,7 @@ import static android.media.MediaPlayer.OnErrorListener;
  */
 public class splash_company_logo extends Fragment {
     private static final String Log_Tag = splash_company_logo.class.getSimpleName();
-    private static final int SPLASH_SCREEN_TIMEOUT_MILLIS = 8000;
+    private static final int SPLASH_SCREEN_TIMEOUT_MILLIS = 7990;
     private VideoView logoVideo;
 
     public splash_company_logo() {
@@ -76,7 +76,10 @@ public class splash_company_logo extends Fragment {
             }
         });
 
+        final Animation fadeOut = AnimationUtils.loadAnimation(requireActivity().getApplicationContext(),R.anim.fade_out);
         logoVideo.setOnCompletionListener(new OnCompletionListener() {
+
+
             @Override
             public void onCompletion(MediaPlayer mp) {
                 // Do nothing player will fade with fragment
@@ -84,10 +87,10 @@ public class splash_company_logo extends Fragment {
         });
 
         new Handler().postDelayed(new Runnable() {
-            final Animation fadeOut = AnimationUtils.loadAnimation(requireActivity().getApplicationContext(),R.anim.fade_out);
             public void run() {
-                logoVideo.startAnimation(fadeOut);
+                logoVideo.setAnimation(fadeOut);
                 NavController controller = (NavController) Navigation.findNavController(view);
+                logoVideo.setVisibility(View.GONE);
                 controller.navigate(R.id.action_splash_company_logo_to_splash_game_logo);
             }
          }, SPLASH_SCREEN_TIMEOUT_MILLIS);

@@ -47,21 +47,34 @@ public class MainActivity extends AppCompatActivity {
             init.apply();
         }
 
-        if (!mStudyLang.equals("") && mFirstRun) {
-            Locale localeX = new Locale(mStudyLang);
-            Locale.setDefault(localeX);
+        if (!mStudyLang.equals("") && mStudyLang != null) {
             DisplayMetrics dm = res.getDisplayMetrics();
             Configuration config = res.getConfiguration();
+            String [] values = res.getStringArray(R.array.language_values);
+            Locale localeX;
+
+            if (mStudyLang.equals(values[0])) {
+                localeX = new Locale("en","US");
+            } else if (mStudyLang.equals(values[1])) {
+                localeX = new Locale("ss","SZ");
+            } else {
+                localeX = Locale.getDefault();
+            }
             config.locale = localeX;
             res.updateConfiguration(config, dm);
+            //recreate();
+        } else {
+            // Will automatically run splash with first run forcing language choice
+            if (!mFirstRun) {
+                Log.w(Log_Tag, "If the language is not set and this is NOT the first run -- there is an error! Please check the application logic.");
+                System.exit(0);
+            }
         }
     }
 	
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
       super.onConfigurationChanged(newConfig);
-      Toast.makeText(this,"something changed - we hope it is the locale", Toast.LENGTH_SHORT).show();
-      System.out.println(newConfig);
+        Log.i(Log_Tag, "Configurations were changed -- presumably language configs");
     }
-
 }

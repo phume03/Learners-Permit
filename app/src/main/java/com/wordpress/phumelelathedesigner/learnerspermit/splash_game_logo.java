@@ -1,9 +1,13 @@
 package com.wordpress.phumelelathedesigner.learnerspermit;
 
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,10 +19,14 @@ import android.widget.ImageView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
+import java.util.Locale;
+
 import androidx.activity.OnBackPressedCallback;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
+import androidx.preference.PreferenceManager;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -26,9 +34,13 @@ import androidx.navigation.Navigation;
  */
 public class splash_game_logo extends Fragment {
     private static final String Log_Tag = splash_game_logo.class.getSimpleName();
-    private static final int SPLASH_SCREEN_TIMEOUT_MILLIS = 15000;
+    private static final int SPLASH_SCREEN_TIMEOUT_MILLIS = 14000;
     private VideoView signsVideo;
     private ImageView appLogo;
+    private static SharedPreferences mPrefs;
+    private static final String FIRST_RUN = "APP_FIRST_RUN";
+    private Boolean mFirstRun;
+    private Resources res;
 
     public splash_game_logo() {
         // required empty public constructor
@@ -37,6 +49,15 @@ public class splash_game_logo extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        res = getResources();
+        mPrefs = PreferenceManager.getDefaultSharedPreferences(requireActivity().getApplicationContext());
+        if (mPrefs != null) {
+            mFirstRun = mPrefs.getBoolean(FIRST_RUN, true);
+        } else {
+            // Now choosing to exit with zero status
+            System.exit(0);
+        }
+
         OnBackPressedCallback callback = new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
@@ -90,11 +111,11 @@ public class splash_game_logo extends Fragment {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Bundle data = new Bundle();
-                data.putBoolean("Alpha", Boolean.TRUE);
-                data.putString("Beta", "NONE");
-                NavController controller = (NavController) Navigation.findNavController(view);
-                controller.navigate(R.id.action_splash_game_logo_to_languageChoice, data);
+                if (mFirstRun == true) {
+                    chooseLanguage(view);
+                } else {
+                    mainMenu(view);
+                }
             }
         }, SPLASH_SCREEN_TIMEOUT_MILLIS);
     }
@@ -121,5 +142,17 @@ public class splash_game_logo extends Fragment {
 
     private Uri getMedia() {
         return Uri.parse("android.resource://"+requireActivity().getPackageName()+"/"+R.raw.signs);
+    }
+
+    private void chooseLanguage(View v) {
+        Log.i(Log_Tag,"Force user to choose a language");
+        final NavController controller = (NavController) Navigation.findNavController(v);
+        controller.navigate(R.id.action_splash_game_logo_to_languageChoice);
+    }
+
+    private void mainMenu(View v) {
+        Log.i(Log_Tag, "Transition to main menu for subsequent runs");
+        final NavController controller = (NavController) Navigation.findNavController(v);
+        controller.navigate(R.id.action_global_mainMenu2);
     }
 }

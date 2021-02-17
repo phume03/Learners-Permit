@@ -17,7 +17,7 @@ public class ScoredTest extends Fragment {
         // Required empty public constructor
     }
 
-    public static ScoredTest newInstance(String param1, String param2) {
+    public static ScoredTest newInstance() {
         ScoredTest fragment = new ScoredTest();
         return fragment;
     }

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".Settings">
+
+    <TextView
+        android:id="@+id/settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/title_margin"
+        android:layout_marginBottom="@dimen/title_margin_bottom"
+        android:contentDescription="@string/settings_title_description"
+        android:gravity="center_horizontal"
+        android:layoutDirection="ltr"
+        android:padding="@dimen/title_padding"
+        android:singleLine="false"
+        android:text="@string/settings_title"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textDirection="ltr"
+        android:textSize="@dimen/title_text_size"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/options_margin"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/options_padding"
+        android:textDirection="ltr"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_title">
+        <RadioGroup
+            android:id="@+id/language_options"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="@dimen/common_weight"
+            app:layout_constraintBottom_toTopOf="@+id/controls_linearlayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/language_settings_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/language_settings_title_margin"
+                android:layout_marginBottom="@dimen/language_settings_title_margin_bottom"
+                android:contentDescription="@string/language_settings_title_description"
+                android:gravity="center_horizontal"
+                android:layoutDirection="ltr"
+                android:padding="@dimen/settings_title_padding"
+                android:singleLine="false"
+                android:text="@string/language_settings_title"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textDirection="ltr"
+                android:textSize="@dimen/title_text_size"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioButton
+                android:id="@+id/languageRadioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:description="@string/language_radio_button_description"
+                android:text="RadioButton"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/language_radio_button_text_size"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/languageRadioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="viewStart"
+                android:description="@string/language_radio_button_description"
+                android:textSize="@dimen/language_radio_button_text_size"
+                android:text="RadioButton"
+                android:visibility="visible" />
+        </RadioGroup>
+        <LinearLayout
+            android:id="@+id/controls_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/options_margin"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="@dimen/options_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/language_options">
+
+            <Button
+                android:id="@+id/settings_save"
+                android:layout_width="@dimen/settings_button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="@dimen/settings_button_margin"
+                android:layout_weight="@dimen/common_weight"
+                android:contentDescription="@string/settings_save_button_description"
+                android:padding="@dimen/settings_button_padding"
+                android:text="@string/settings_save_button"
+                android:textAlignment="center"
+                android:textDirection="ltr"
+                android:textSize="@dimen/settings_button_text_size"
+                android:visibility="visible" />
+            <Button
+                android:id="@+id/settings_discard"
+                android:layout_width="@dimen/settings_button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="@dimen/settings_button_margin"
+                android:layout_weight="@dimen/common_weight"
+                android:contentDescription="@string/settings_discard_button_description"
+                android:padding="@dimen/settings_button_padding"
+                android:text="@string/settings_discard_button"
+                android:textAlignment="center"
+                android:textDirection="ltr"
+                android:textSize="@dimen/settings_button_text_size"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

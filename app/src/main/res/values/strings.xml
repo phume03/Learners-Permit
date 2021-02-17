@@ -12,6 +12,7 @@
 
     <!-- Splash Tags-->
     <string name="game_logo_description" translatable="false">Learners Permit App Logo</string>
+    <string name="splash_company_logo_video_description" translatable="false">Company logo splash screen video</string>
 
     <!-- Language Tags -->
     <string name="choose_language_title" translatable="false">Choose a Study Language:</string>
@@ -20,6 +21,10 @@
     <string name="english_button_description" translatable="false">English language choice button</string>
     <string name="siswati_button" translatable="false">SiSwati</string>
     <string name="siswati_button_description" translatable="false">SiSwati language choice button</string>
+    <string name="language_header" translatable="false">Language</string>
+    <string name="language_title" translatable="false">Study language</string>
+    <string name="language_summary" translatable="false">Choose a study language.</string>
+    <string name="language_choice_navigation_error" translatable="false">It seems you have made an empty choice. Please contact the developer for more help.</string>
 
     <!-- Learn or Study Tags -->
     <string name="learn_signs_title" translatable="false">Road Traffic Signs and Rules of the Road</string>
@@ -81,6 +86,19 @@
     <!-- Settings Tags -->
     <string name="settings_button" translatable="false">Settings</string>
     <string name="settings_button_description" translatable="false">Settings button</string>
+    <string name="app_settings_alert_title" translatable="false">Save Settings</string>
+    <string name="app_settings_alert_message" translatable="false">Would you like to save your settings before exiting this screen?</string>
+    <string name="app_settings_alert_confirm" translatable="false">Save</string>
+    <string name="app_settings_alert_decline" translatable="false">Discard</string>
+    <string name="settings_title_description" translatable="false">Settings title</string>
+    <string name="settings_title" translatable="false">Settings</string>
+    <string name="settings_save_button_description" translatable="false">Save button</string>
+    <string name="settings_save_button" translatable="false">Save</string>
+    <string name="settings_discard_button_description" translatable="false">Discard button</string>
+    <string name="settings_discard_button" translatable="false">Discard</string>
+    <string name="language_radio_button_description" translatable="false">Language option</string>
+    <string name="language_settings_title_description" translatable="false">Choose a language title</string>
+    <string name="language_settings_title" translatable="false">Choose a language</string>
 
     <!-- Categories Tags -->
     <string name="rules_of_the_road">Rules of the Road</string>
@@ -546,11 +564,4 @@
     <string name="road_signals_205">Robot with Pedestrian Signal Face</string>
     <string name="road_signals_206">Robot with Arrow Lenses</string>
     <string name="road_signals_207">Robot with Alternative Positions for Arrow Lenses</string>
-
-    <!-- Preference Titles -->
-    <string name="language_header" translatable="false">Language</string>
-    <string name="language_title" translatable="false">Study language</string>
-    <string name="language_summary" translatable="false">Choose a study language.</string>
-    <string name="splash_company_logo_video_description" translatable="false">Company logo splash screen video</string>
-    <string name="language_choice_navigation_error" translatable="false">It seems you have made an empty choice. Please contact the developer for more help.</string>
 </resources>
