@@ -2,15 +2,23 @@
 <resources>
     <!-- Scenes: Common -->
     <dimen name="title_margin">5dp</dimen>
+    <dimen name="title_margin_320_533">2dp</dimen>
     <dimen name="title_margin_bottom">16dp</dimen>
+    <dimen name="title_margin_bottom_320_533">4dp</dimen>
     <dimen name="title_padding">5dp</dimen>
+    <dimen name="title_padding_320_533">2dp</dimen>
     <dimen name="title_text_size">18sp</dimen>
+    <dimen name="title_text_size_320_533">16sp</dimen>
     <dimen name="options_padding">10dp</dimen>
     <dimen name="options_margin">10dp</dimen>
+    <dimen name="options_padding_320_533">2dp</dimen>
+    <dimen name="options_margin_320_533">2dp</dimen>
     <dimen name="common_weight">1</dimen>
 
     <dimen name="image_padding_large">5dp</dimen>
     <dimen name="image_margin_large">10dp</dimen>
+    <dimen name="image_padding_large_320_533">2dp</dimen>
+    <dimen name="image_margin_large_320_533">5dp</dimen>
     <dimen name="image_height_large">98dp</dimen>
     <dimen name="image_width_large">98dp</dimen>
     <dimen name="image_scale_x_large">0.75</dimen>
@@ -19,6 +27,9 @@
     <dimen name="cardtext_padding">5dp</dimen>
     <dimen name="cardtext_margin">5dp</dimen>
     <dimen name="cardtext_text_size">14sp</dimen>
+    <dimen name="cardtext_padding_320_533">2dp</dimen>
+    <dimen name="cardtext_margin_320_533">2dp</dimen>
+    <dimen name="cardtext_text_size_320_533">12sp</dimen>
 
     <!-- Splash: Company Logo, App Logo -->
     <dimen name="video_margin">0dp</dimen>
@@ -55,8 +66,12 @@
 
     <dimen name="image_padding_small">4dp</dimen>
     <dimen name="image_margin_small">2dp</dimen>
-    <dimen name="image_height_small">98dp</dimen>
-    <dimen name="image_width_small">98dp</dimen>
+    <dimen name="image_height_small">96dp</dimen>
+    <dimen name="image_width_small">96dp</dimen>
+    <dimen name="image_padding_small_320_533">4dp</dimen>
+    <dimen name="image_margin_small_320_533">2dp</dimen>
+    <dimen name="image_height_small_320_533">98dp</dimen>
+    <dimen name="image_width_small_320_533">98dp</dimen>
     <dimen name="image_scale_x_small">0.75</dimen>
     <dimen name="image_scale_y_small">0.75</dimen>
 
@@ -65,21 +80,36 @@
     <dimen name="test_prompt_margin_bottom">16dp</dimen>
     <dimen name="test_prompt_padding">5dp</dimen>
     <dimen name="test_prompt_text_size">14sp</dimen>
+    <dimen name="test_prompt_margin_320_533">2dp</dimen>
+    <dimen name="test_prompt_margin_bottom_320_533">2dp</dimen>
+    <dimen name="test_prompt_padding_320_533">2dp</dimen>
+    <dimen name="test_prompt_text_size_320_533">10sp</dimen>
 
     <dimen name="test_check_options_padding">5dp</dimen>
     <dimen name="test_check_options_margin">5dp</dimen>
     <dimen name="test_check_options_text_size">14sp</dimen>
+    <dimen name="test_check_options_padding_320_533">2dp</dimen>
+    <dimen name="test_check_options_margin_320_533">2dp</dimen>
+    <dimen name="test_check_options_text_size_320_533">10sp</dimen>
 
     <dimen name="test_menu_button_padding">4dp</dimen>
     <dimen name="test_menu_button_margin">5dp</dimen>
     <dimen name="test_menu_button_text_size">14sp</dimen>
+    <dimen name="test_menu_button_padding_320_533">2dp</dimen>
+    <dimen name="test_menu_button_margin_320_533">2dp</dimen>
+    <dimen name="test_menu_button_text_size_320_533">10sp</dimen>
 
     <dimen name="test_controls_button_padding">4dp</dimen>
     <dimen name="test_controls_button_margin">5dp</dimen>
     <dimen name="test_controls_button_text_size">12sp</dimen>
     <dimen name="test_controls_button_width">100dp</dimen>
+    <dimen name="test_controls_button_padding_320_533">2dp</dimen>
+    <dimen name="test_controls_button_margin_320_533">2dp</dimen>
+    <dimen name="test_controls_button_text_size_320_533">10sp</dimen>
+    <dimen name="test_controls_button_width_320_533">80dp</dimen>
 
     <dimen name="test_progress_bar_margin_bottom">5dp</dimen>
+    <dimen name="test_progress_bar_margin_bottom_320_533">2dp</dimen>
 
     <dimen name="test_stack_padding">4dp</dimen>
     <dimen name="test_stack_margin">0dp</dimen>
