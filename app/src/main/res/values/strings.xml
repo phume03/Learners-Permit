@@ -177,8 +177,8 @@
         \nv.	Smoke</string>
     <string name="rules_of_the_road_16_Q"> How do you distinguish a blind man on the road?</string>
     <string name="rules_of_the_road_16_A">i. They carry a white stick,
-        \nii. Or, they are lead by another person,
-        \niii. Or, they are lead by a trained dog.</string>
+        \nii. Or, they are led by another person,
+        \niii. Or, they are led by a trained dog.</string>
     <string name="rules_of_the_road_17_Q">What is the weight of a light vehicle or a heavy vehicle?</string>
     <string name="rules_of_the_road_17_A">A light vehicle is 3.5 tonnes and a heavy vehicle (e.g. lorry) is 7 tonnes in weight.</string>
     <string name="rules_of_the_road_18_Q">How do you distinguish a heavy vehicle when it cuts across your path, at night?</string>
@@ -186,28 +186,28 @@
     <string name="rules_of_the_road_19_Q">How do you distinguish a heavy vehicle when it is in the on coming traffic, at night?</string>
     <string name="rules_of_the_road_19_A">It has green lights at the top.</string>
     <string name="rules_of_the_road_20_Q">What are you supposed to do when approaching a cross road, at night?</string>
-    <string name="rules_of_the_road_20_A"> Dim the lights and then bright so that oncoming traffic may be alert, then reduce your speed</string>
+    <string name="rules_of_the_road_20_A"> Dim the lights and then bright to alert oncoming traffic, then reduce your speed</string>
     <string name="rules_of_the_road_21_Q">What is the difference between a light and a heavy vehicle?</string>
-    <string name="rules_of_the_road_21_A">i.	A heavy vehicle drives slowly, especially on inclined roadways; the driver of a heavy vehicle has to drive to the side and give way to light vehicles.
+    <string name="rules_of_the_road_21_A">i.	A heavy vehicle drives slowly, especially on inclined roadways; the driver of a heavy vehicle has to drive to the side and give way to light vehicles. Whereas, a light vehicle drives faster on the road.
         \nii.	A heavy vehicle has yellow reflectors on the sides, whereas a light vehicle does not.
-        \niii. A heavy vehicle has green lights at the top, on front
-        \niv.	A heavy vehicle has a different weight than a light vehicle
-        \nv.	A heavy vehicle has chevron belts at the back</string>
+        \niii.	A heavy vehicle has green lights infront, at the top. Whereas a light vehicle does not but it may have white reflectors in front.
+        \niv.	A heavy vehicle has a different weight (above 1,800kg) than a light vehicle
+        \nv.	A heavy vehicle has chevron belts at the back. Whereas a light vehicle can have red and yellow stripes (of which the red stripes must be reflective, or red retro-reflectors) fixed to the rear-end.</string>
     <string name="rules_of_the_road_22_Q">What are you supposed to do if the vehicle you are driving in experiences break failure?</string>
     <string name="rules_of_the_road_22_A">i. Use the hooter to alert other drivers on the road,
         \nii. Turn the headlights on and off before you lose control of the vehicle,
         \niii. Use the centre or dividing barrier to slow it down</string>
     <string name="rules_of_the_road_23_Q">Where are you not supposed to use a hooter?</string>
-    <string name="rules_of_the_road_23_A">i.	Royal residence
-        \nii.	School
-        \niii.	Hospital
-        \niv.	Zebra crossing
-        \nv.	Robots
-        \nvi.	Pedestrian crossing</string>
+    <string name="rules_of_the_road_23_A">i.	Royal residence(s)
+        \nii.	School(s)
+        \niii.	Hospital(s)
+        \niv.	Zebra crossing(s)
+        \nv.	Robots or Traffic lights
+        \nvi.	Pedestrian crossing(s)</string>
     <string name="rules_of_the_road_24_Q">What cars are to be given right of way or moved aside for on the road?</string>
-    <string name="rules_of_the_road_24_A">i.	Ambulance
-        \nii.	Police vehicles
-        \niii.	National Defense vehicles
+    <string name="rules_of_the_road_24_A">i.	Ambulance(s) – when they are using the siren
+        \nii.	Police vehicles – when they are using the siren
+        \niii.	National Defense vehicles – when they are using the siren
         \niv.	Fire and Emergency Trucks – when they are using the siren</string>
     <string name="rules_of_the_road_25_Q">Which signs should you see when approaching a one car structure or bridge?</string>
     <string name="rules_of_the_road_25_A">i.	Do not overtake
@@ -233,9 +233,9 @@
     <string name="rules_of_the_road_29_A">Always</string>
     <string name="rules_of_the_road_30_Q">When should you show your license?</string>
     <string name="rules_of_the_road_30_A">When requested by a confirmed traffic officer or an officer in whom you have an assurance of their duty or responsibility.</string>
-    <string name="rules_of_the_road_31_Q">When should you turn your headlights on, at sundown?</string>
+    <string name="rules_of_the_road_31_Q">When should you turn your headlights on, at sun-down?</string>
     <string name="rules_of_the_road_31_A">Turn the headlights on 30 minutes after sunset.</string>
-    <string name="rules_of_the_road_32_Q">When should you turn your headlights off, at sunup?</string>
+    <string name="rules_of_the_road_32_Q">When should you turn your headlights off, at sun-up?</string>
     <string name="rules_of_the_road_32_A">Turn the headlights off 30 minutes after sunrise.</string>
     <string name="rules_of_the_road_33_Q">The headlights are turned on when your visibility on the road has been limited to what distance?</string>
     <string name="rules_of_the_road_33_A">The headlights are turned on when you cannot see 150m ahead on the road.</string>
@@ -259,7 +259,7 @@
     <string name="rules_of_the_road_39_A">i.	Regulatory signs
         \nii.	Warning signs
         \niii.	Guide or information signs
-        \niv.	Road markings</string>
+        \niv.	Road markings and Road Signals</string>
     <string name="rules_of_the_road_40_Q">How many corners on a stop sign?</string>
     <string name="rules_of_the_road_40_A">8</string>
     <string name="rules_of_the_road_41_Q">What is the maximum speed limit permitted in the Kingdom of Eswatini?</string>
@@ -278,16 +278,16 @@
         \nv.	Cyclists
         \nvi.	Motorcycles below 50cc (50 cubic cm)
         \nvii.	Hand signal sign
-        \nviii. Driving slowly</string>
+        \nviii.	Driving slowly</string>
     <string name="rules_of_the_road_44_Q">What should one use to pull a broken down vehicle?</string>
     <string name="rules_of_the_road_44_A">i. If the vehicle has break failure, you may use a 3.5m iron rod,
         \nii. If the breaks work, you may use a 1.8m rope or a chain – so that traffic following does not plan to overtake one vehicle at a time</string>
     <string name="rules_of_the_road_45_Q">State four (4) differences between a free way  and a one way?</string>
-    <string name="rules_of_the_road_45_A">One-Way				Free-way
-        \ni.	Two lanes				Three or more lanes
-        \nii.	In town/city				Connecting towns
-        \niii.	There are obstructions		There are no obstructions
-        \niv.	Vehicles move according 		Vehicles move at the maximum speed to the traffic</string>
+    <string name="rules_of_the_road_45_A">One-Way\t\t\tFree-way
+        \ni.	Two lanes\tvs\tThree or more lanes
+        \nii.	In town/city\tvs\tConnecting towns
+        \niii.	There are obstructions\tvs\tThere are no obstructions
+        \niv.	Vehicles move according to traffic\tvs\tVehicles move at the maximum speed to the traffic</string>
     <string name="rules_of_the_road_46_Q">What must always be in the boot of a car?</string>
     <string name="rules_of_the_road_46_A">i.	Car jack
         \nii.	Red triangle
@@ -311,8 +311,8 @@
     <string name="rules_of_the_road_50_A">45m</string>
     <string name="rules_of_the_road_51_Q">How do you know you are about to enter a town?</string>
     <string name="rules_of_the_road_51_A">A sign that says “Welcome To {the city name}”</string>
-    <string name="rules_of_the_road_52_Q"> How do you know you are about to leave a town?</string>
-    <string name="rules_of_the_road_52_A"> A sign that says “Thank you/Siyabonga”</string>
+    <string name="rules_of_the_road_52_Q">How do you know you are about to leave a town?</string>
+    <string name="rules_of_the_road_52_A">A sign that says “Thank you/Siyabonga”</string>
     <string name="rules_of_the_road_53_Q">Which body parts must be well in order to drive?</string>
     <string name="rules_of_the_road_53_A">i.	Eyes
         \nii.	Ears
@@ -332,14 +332,14 @@
     <string name="rules_of_the_road_57_Q">What are road reflectors?</string>
     <string name="rules_of_the_road_57_A">Road reflectors are an enhancement to road markings/lines where there are no street lamps. They are also referred to as cat’s eyes, delineators, road studs, or road turtles.</string>
     <string name="rules_of_the_road_58_Q">How do road reflectors differ?</string>
-    <string name="rules_of_the_road_58_A">There are three types of road reflects:
+    <string name="rules_of_the_road_58_A">There are three (3) types of road reflects:
         \ni.	Red; on the barrier line
         \nii.	White; on the center line
         \niii.	Yellow; on the yellow line</string>
     <string name="rules_of_the_road_59_Q">What is a hazard?</string>
     <string name="rules_of_the_road_59_A">It is something that can disrupt your driving on the road</string>
     <string name="rules_of_the_road_60_Q">How do hazards differ?</string>
-    <string name="rules_of_the_road_60_A"> There are two types of hazards:
+    <string name="rules_of_the_road_60_A"> There are two (2) types of hazards:
         \ni.	Moving hazards (e.g. people, animals, etc)
         \nii.	Stationary hazards (e.g. potholes, rocks, trees, cans, etc)</string>
     <string name="rules_of_the_road_61_Q">How can you tell that an oncoming bus is at full capacity?</string>
@@ -352,7 +352,7 @@
     <string name="rules_of_the_road_64_Q">How close may you follow another car, when driving cautiously?</string>
     <string name="rules_of_the_road_64_A">Three segments of the centre line.</string>
     <string name="rules_of_the_road_65_Q">How do you turn into a one-way?</string>
-    <string name="rules_of_the_road_65_A">When you\'re turning into a one-way street
+    <string name="rules_of_the_road_65_A">When you\'re turning into a one-way street:
         \ni. Turn into the lane closest to you, unless there are lane markings guiding you to a different lane.
         \nii. When turning, be careful of other drivers opposite you who are also turning.</string>
 

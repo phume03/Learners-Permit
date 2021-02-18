@@ -17,24 +17,24 @@
     <string name="rules_of_the_road_02_A">Lesivumelana nendzawo lengihamba kuyo.</string>
     <string name="rules_of_the_road_03_Q">Uma kwendlula bantfu netilwane wenta njani?</string>
     <string name="rules_of_the_road_03_A">Ngibuka sibuko, ngime, ngitinike litfuba lekwendlula.</string>
-    <string name="rules_of_the_road_04_Q">Ngikuphi lapho kufanele ushayele ngekucophelela khona?</string>
-    <string name="rules_of_the_road_04_A">i. Etinkhungwini
+    <string name="rules_of_the_road_04_Q">Ngukuphi lapho kufanele ushayele ngekucophelela khona?</string>
+    <string name="rules_of_the_road_04_A">i. Engkhungwini
         \nii. Nalina
         \niii. Umakushelela
-        \niv. Etintfulini
+        \niv. Etfulwini
         \nv. Ebusuku</string>
     <string name="rules_of_the_road_05_Q">Uma ufuna ku-overtheka wentanjani?</string>
-    <string name="rules_of_the_road_05_A">i. Ngibuka emuva ngesibuko, ngibuke phambili
-        \nii. Ngibuka timphawu temgwaco kutsi tiyavuma yini
-        \niii. Ngiphindze ngibuke sibuko ngitenetise kutsi kuhlobile
-        \niv. Ngi-idikhethe ngesekudla, bese ngiya ovatheka
-        \nv. Bese ngibuka sibuko ngesencele, ngi-indikhethe ngesencele, bese ngibuyela esayidini lami</string>
+    <string name="rules_of_the_road_05_A">i. Ngibuka ngemuva - ngesibuko, ngibuke phambili
+        \nii. Ngibuke kutsi timphawu temgwaco tiyavuma yini
+        \niii. Ngiphindze ngibuke sibuko, ngitenetise kutsi kuhlobile
+        \niv. Ngi-indikhethe ngesekudla, bese ngiya ovatheka
+        \nv. Bese ngibuka sibuko ngesencele, ngi-indikhethe ngesencele, bese ngibuyela esayidini lami lekushayela</string>
     <string name="rules_of_the_road_06_Q">Ngutiphi tindzawo lapho unga-ovatheki khona, letisikhombisa (7)?</string>
     <string name="rules_of_the_road_06_A">i. Cross-road
         \nii. Edvundvuni
-        \niii. Ebhuloweni lelincane
+        \niii. Ebhulohweni lelincane
         \niv. Lapho kuwela khona betinyawo
-        \nv. Emarobhothini
+        \nv. Ema-robhothini
         \nvi. Emakhoneni lacijile
         \nvii. Ku t-junction</string>
     <string name="rules_of_the_road_07_Q">U-ovathekha ngakuphi?</string>
@@ -42,35 +42,35 @@
     <string name="rules_of_the_road_08_Q">Kuvumeleke nini ku-ovatheka ngesencele?</string>
     <string name="rules_of_the_road_08_A">Uma losembikwakho akhombisa kutsi ujikela ngasekudla ku-oneway, ubitwa liphoyisa netisebenti temgwaco.</string>
     <string name="rules_of_the_road_09_Q">Usitana kanjani nebashayeli labanye?</string>
-    <string name="rules_of_the_road_09_A">Ngisitana ngekutsi konkhe lengifuna kukwenta ngisheshe ngikhombise.</string>
+    <string name="rules_of_the_road_09_A">Ngisitana ngekutsi konkhe lengifuna kukwenta emgwacweni ngisheshe ngikukhombise.</string>
     <string name="rules_of_the_road_10_Q">Yini lokufanele kuhlale kulungile emotweni?</string>
     <string name="rules_of_the_road_10_A">i. Emathayi
         \nii. i-windscreen
         \niii. ema-wiper
         \niv. steering
         \nv. i-hooter
-        \nvi. Indicators
-        \nvii. Emalayitha
-        \nviii. Emabhiliki
-        \nix. Tibuko
-        \nx. Ema-bhandi</string>
-    <string name="rules_of_the_road_11_Q">Uma udibana nemoto ebusuku wenta njani?</string>
-    <string name="rules_of_the_road_11_A">Ngiyadima noma angangidimeli ngibambe kancane ngicophelele.</string>
-    <string name="rules_of_the_road_12_Q">Uma utfwele umtfwalo ugabanca elegebhezini wenta njani?</string>
+        \nvi. ema-indikhetha
+        \nvii. ema-layitha
+        \nviii. ema-bhiliki
+        \nix. tibuko (rearview, nasemaceleni)
+        \nx. ema-bhandi</string>
+    <string name="rules_of_the_road_11_Q">Uma udibana nalenye imoto ebusuku wenta njani?</string>
+    <string name="rules_of_the_road_11_A">Ngiyadima noma angangidimeli lona lomunye umshayeli, ngihambe kancane ngicophelele.</string>
+    <string name="rules_of_the_road_12_Q">Uma utfwele umtfwalo ugabanca eligebezini wenta njani?</string>
     <string name="rules_of_the_road_12_A">i. Ngilengisa i-triangle lebovu ngemuva ebusuku
-        \nii. Ubophe indvwangu lebovu emini</string>
+        \nii. ngibophe indvwangu lebovu emini</string>
     <string name="rules_of_the_road_13_Q">Unga ovatheka yini ku-barrier line?</string>
-    <string name="rules_of_the_road_13_A">Angeke noma chake.</string>
+    <string name="rules_of_the_road_13_A">Angeke, noma chake.</string>
     <string name="rules_of_the_road_14_Q">Ungapaka yini ku-yellow line?</string>
-    <string name="rules_of_the_road_14_A">Chake awukavumeleki.</string>
+    <string name="rules_of_the_road_14_A">Chake, awukavumeleki.</string>
     <string name="rules_of_the_road_15_Q">Ngutiphi tindzawo letisihlanu lapho kumele ukhanyise khona emini?</string>
     <string name="rules_of_the_road_15_A">i. Umalina kakhulu
         \nii. Uma kunetintfuli
         \niii. Ethoneleni
         \niv. Enkhungwini
-        \nv. Kanyenase ntfuftwini</string>
+        \nv. Kanye nase ntfuftwini</string>
     <string name="rules_of_the_road_16_Q">Imphumphutse uyibona ngani?</string>
-    <string name="rules_of_the_road_16_A">Iphatsa indvuku lemhlophe, nome idvonswe ngumuntfu, noma iholwe yinja lefundzisiwe.</string>
+    <string name="rules_of_the_road_16_A">Iphatsa indvuku lemhlophe, noma idvonswe ngumuntfu, noma iholwe yinja lefundzisiwe.</string>
     <string name="rules_of_the_road_17_Q">Sisindvo bani imoto noma i-lorry yakho?</string>
     <string name="rules_of_the_road_17_A">Imoto lencane ingu 3.5 tonne, kantsi i-lorry ingu 7 tonne.</string>
     <string name="rules_of_the_road_18_Q">Uyibona ngani imoto lenkhulu uma ijuba embikwakho ebusuku?</string>
@@ -78,26 +78,28 @@
     <string name="rules_of_the_road_19_Q">Uma udibana nayo ebusuku ubona ngani kutsi yinkhulu?</string>
     <string name="rules_of_the_road_19_A">Ngibona ngemalambu laluhlata etulu.</string>
     <string name="rules_of_the_road_20_Q">Uma uya ku-cross road ebusuku wenta njani?</string>
-    <string name="rules_of_the_road_20_A">Ngiyadima, ngibrithe, nginciphise litubane ngentele lotako abone</string>
+    <string name="rules_of_the_road_20_A">Ngiyadima, ngibrithe, nginciphise litubane ngentele umshayeli lotako abone</string>
     <string name="rules_of_the_road_21_Q">Umehluko wemoto lenkhulu nalencane yini?</string>
     <string name="rules_of_the_road_21_A">i. Lenkhulu ihamba kancane, ikakhulu etindzaweni letenyukelako; kufanele wena lohamba ngalelenkhulu ukhweshele eceleni kutowendlula lelencane.
-        \nii. Lenkhulu inema reflectors la-yellow emhlubulweni.
-        \niii. Lenkhulu inemalambu laluhlata etulu.
+        \nii. Lenkhulu inema reflectors la-yellow emhlubulweni, kantsi lencane ite.
+        \niii. Lenkhulu inemalambu laluhlata ngembhili etulu, kantsi lencane ingaba nema reflectors lamuhlophe ngembhili.
         \niv. Lenkhulu inesisindvo lesehlukile kulencane.
-        \nv. Lenkhulu inema-chevron belt ngemuva.</string>
-    <string name="rules_of_the_road_22_Q">Imoto iphelelwa ngemabhiliki njenga lapha kumalagwane wenta njani?</string>
-    <string name="rules_of_the_road_22_A">Ngishaya ihutha, ngikhanyise ingakacali kubaleka, ngiyikhweshisele eceleni khona itosima evelini</string>
+        \nv. Lenkhulu inema-chevron belt ngemuva, kantsi lencane ingaba nema "stripes" labovu namutfubi ngemuva.</string>
+    <string name="rules_of_the_road_22_Q">Imoto iphelelwa ngemabhiliki, njenga lapha kuMalagwane, kumelewente njani?</string>
+    <string name="rules_of_the_road_22_A">i. Ngishaya ihutha,
+        \nii. Ngikhanyise ingakacali kubaleka,
+        \niii. Ngiyikhweshisele eceleni khona itosima evalini.</string>
     <string name="rules_of_the_road_23_Q">Ngukuphi lapho ungakafaneli ushaye khona i-hooter?</string>
     <string name="rules_of_the_road_23_A">i. Ebukhosini
         \nii. Esikolweni
         \niii. Esibhedlela
         \niv. Ku-zebra crossing
         \nv. Emarobothini
-        \nvi. Lakuwela betinyawo khona</string>
+        \nvi. Laphokuwela betinyawo khona</string>
     <string name="rules_of_the_road_24_Q">Ngutiphi timoto letiniketwa indlela emgwacweni?</string>
-    <string name="rules_of_the_road_24_A">i. yi-ambulance
-        \nii. temaphoyisa
-        \niii. temasotja
+    <string name="rules_of_the_road_24_A">i. yi-ambulance (uma ishaya i-siren)
+        \nii. temaphoyisa (uma tishaya i-siren)
+        \niii. temasotja (uma tishaya i-siren)
         \niv. temlilo (uma tishaya i-siren)</string>
     <string name="rules_of_the_road_25_Q">Ngumaphi emasayini latfolakala uma uya ebhulohweni lelincane?</string>
     <string name="rules_of_the_road_25_A">i. Awu ovatheki
@@ -111,57 +113,58 @@
         \niii. i-traffic iyaphambana</string>
     <string name="rules_of_the_road_27_Q">Shano umtsetfo wemgwaco ube mune (4)</string>
     <string name="rules_of_the_road_27_A">i. Uhamba ngesencele
-        \nii. Awuhambi ngasekudla ngoba ungadala ingoti
-        \niii. Awuhambi ngasekudla uma timphawu temgwaco tingavumi
-        \niv. Ungahamba ngasekudla uma ubitwa ngemaphoyisa</string>
-    <string name="rules_of_the_road_28_Q">Ushayisa umuntfu emaphandleni uyalimala akafi kumele wente njani?</string>
-    <string name="rules_of_the_road_28_A">i. Ngiyehla ngiye kulomuntfu ngimnikete lusito lwekucala
-        \nii. Bese, ngiya lapho ngicale khona kubhilika, nalapho awele khona bese ngiyadvweba noma ngibophe tjani kucondzane letindzawo letimbili
+        \nii. Awuhambi ngesekudla ngoba ungadala ingoti
+        \niii. Awuhambi ngesekudla uma timphawu temgwaco tingavumi
+        \niv. Ungahamba ngesekudla uma ubitwa ngemaphoyisa</string>
+    <string name="rules_of_the_road_28_Q">Ushayisa umuntfu emaphandleni, uyalimala, akafi, kumele wente njani?</string>
+    <string name="rules_of_the_road_28_A">i. Ngiyehla emotweni, ngiye kulomuntfu, ngimunikete lusito lwekucala
+        \nii. Bese, ngiya lapho ngicale khona kubhilika nalapho awele khona, ngifike ngidvwebe noma ngibophe tjani, kucondzane letindzawo letimbili
         \niii. Bese, ngiyamtsatsa ngimphutfumisa esibhedlela,
-        \niv. Bese ngiyobikela emphoyisa kungakapheli 24-hours</string>
+        \niv. Bese, ngiyobikela emphoyisa kungakapheli 24-hours</string>
     <string name="rules_of_the_road_29_Q">Kudzingeke nini kutsi uphatse ilayisensi yakho?</string>
-    <string name="rules_of_the_road_29_A">Ngasosonkhe sikhatsi</string>
+    <string name="rules_of_the_road_29_A">Ngasosonkhe sikhatsi.</string>
     <string name="rules_of_the_road_30_Q">Kudzingeke nini kutsi ukhiphe ilayisensi yakho?</string>
-    <string name="rules_of_the_road_30_A">Uma ubitwa liphoyisa lelinesiciniseko sebuphoyisa</string>
+    <string name="rules_of_the_road_30_A">Uma ubitwa liphoyisa lelinesiciniseko sebuphoyisa.</string>
     <string name="rules_of_the_road_31_Q">Ngubani sikhatsi sekukhanyisa emalambu ntsambama?</string>
-    <string name="rules_of_the_road_31_A">Ngikhanyisa emalambu ema-minutes lamashumi lamatsatfu emva kwekushona kwelilanga</string>
+    <string name="rules_of_the_road_31_A">Ngikhanyisa emalambu ema-minutes lamashumi lamatsatfu emuva kwekushona kwelilanga.</string>
     <string name="rules_of_the_road_32_Q">Uwacisha nini emalambu ekuseni?</string>
-    <string name="rules_of_the_road_32_A">Ngiwacisha sekusele ema-minutes lamashumi lamatsatfu kutsi lilanga liphume</string>
+    <string name="rules_of_the_road_32_A">Ngiwacisha sekusele ema-minutes lamashumi lamatsatfu kutsi lilanga liphume.</string>
     <string name="rules_of_the_road_33_Q">Ukhanyisa emalambu uma ungasaboni sigaba lesinganani?</string>
-    <string name="rules_of_the_road_33_A">Ngikhanyisa uma ngingasaboni sigaba lesi ma-metre emashumi lalishumi nema shumi lasihlanu (150m)</string>
+    <string name="rules_of_the_road_33_A">Ngikhanyisa uma ngingasaboni sigaba lesi ma-metre lamashumi lalishumi nema shumi lasihlanu (150m).</string>
     <string name="rules_of_the_road_34_Q">Uma ulayishe tintfo letigabancako ngebudze kufanele tigabance kanganani?</string>
     <string name="rules_of_the_road_34_A">i. Kufanele ngemuva tingendluli emitheni lolulunye, nema centimetre lamashumi lasiphohlongo (1.8m),
         \nii. Ngembili tingengci kuma-centimetre lamashumi lamatsatfu (30cm)
         \niii. Emaceleni kube ngema-centimetre lalishumi nesihlanu (15cm)
-        \niv. Noma tingendluli ema-lamabili, nema-centimetre lamashumi lasihlanu (2.5m)</string>
-    <string name="rules_of_the_road_35_Q">Emareflectors emotweni lencane ehlukene kangakhi?</string>
-    <string name="rules_of_the_road_35_A">Ahlukene kabili:
+        \niv. Noma tingendluli ema-metre lamabili, nema-centimetre lamashumi lasihlanu (2.5m)</string>
+    <string name="rules_of_the_road_35_Q">Ema-reflectors emotweni lencane ehlukene kangakhi?</string>
+    <string name="rules_of_the_road_35_A">Ahlukene kabili (2):
         \ni. Kunalabovu ngemuva
         \nii. Nalamhlophe ngembili</string>
-    <string name="rules_of_the_road_36_Q">Emareflectors emotweni lenkhulu ehlukene kangakhi?</string>
-    <string name="rules_of_the_road_36_A">Ahlukene katsatfu:
+    <string name="rules_of_the_road_36_Q">Ema-reflectors emotweni lenkhulu ehlukene kangakhi?</string>
+    <string name="rules_of_the_road_36_A">Ahlukene katsatfu (3):
         \ni. Kunala yellow emaceleni
         \nii. Kunalabovu ngemuva
         \niii. Nalamhlophe ngembili</string>
     <string name="rules_of_the_road_37_Q">Sipidi bani lofanele uhambe ngaso nase utofika edolobheni?</string>
     <string name="rules_of_the_road_37_A">Ngifanele ngihambe nga 60km/h</string>
     <string name="rules_of_the_road_38_Q">Spidi bani lofanele uhambe ngaso ekhatsi edolobheni?</string>
-    <string name="rules_of_the_road_38_A">Ngihambisana ne-traffic lengiyilandzelako</string>
-    <string name="rules_of_the_road_39_Q">Tehlukene kangaki timphawu temgwaco?</string>
-    <string name="rules_of_the_road_39_A">i. Timphawu leticondzisako/letiphocelelako
+    <string name="rules_of_the_road_38_A">Ngihambisana ne-traffic lengiyilandzelako.</string>
+    <string name="rules_of_the_road_39_Q">Tehlukene kangakhi timphawu temgwaco?</string>
+    <string name="rules_of_the_road_39_A">Tehlukene kane (4):
+        \ni. Timphawu leticondzisako/letiphocelelako
         \nii. Timphawu leticwayisako/leticaphelisako
         \niii. Timphawu tekwatisa
         \niv. Timphawu letidvwetjwe phasi, emgwacweni</string>
     <string name="rules_of_the_road_40_Q">Mangakhi emakhona e-stop sign?</string>
     <string name="rules_of_the_road_40_A">Asiphohlongo/Angu 8</string>
     <string name="rules_of_the_road_41_Q">Ngubani sipidi lesikhulu saka Ngwane?</string>
-    <string name="rules_of_the_road_41_A">Ngifanele ngihambe nga-ngemashumi lalishumi wema-kilometre ngeli hour (100km/h).</string>
-    <string name="rules_of_the_road_42_Q">Yini lokufanele kuhlale kulungile ku-bhonaite</string>
-    <string name="rules_of_the_road_42_A">i. Engine oil
-        \nii. Brake fluid
-        \niii. Water
-        \niv. Fan belt (kutsi ite emakrete)
-        \nv. Battery terminals (kutsi acinile)</string>
+    <string name="rules_of_the_road_41_A">Ngifanele ngihambe ngemashumi lalishumi wema-kilometre ngeli hour (100km/h).</string>
+    <string name="rules_of_the_road_42_Q">Yini lokufanele kuhlale kulungile ku-bonnet</string>
+    <string name="rules_of_the_road_42_A">i. i-engine oil
+        \nii. i-brake fluid
+        \niii. ngemanti
+        \niv. i-fan belt (kutsi ite emakrete)
+        \nv. emabattery terminals (kutsi acinile)</string>
     <string name="rules_of_the_road_43_Q">Tintfo letingadzingeki ku-free way?</string>
     <string name="rules_of_the_road_43_A">i. Tilwane
         \nii. Tilwane letidonsa tinkalishi
@@ -169,17 +172,17 @@
         \niv. Tigulumba
         \nv. Labagibele emabhayisikili
         \nvi. Tidududu letingaphansi kwa-50cc (50 cubic cm)
-        \nvii. Hand signal sign
-        \nviii. Ungahambi kancane</string>
+        \nvii. ema-hand signal sign
+        \nviii. Kuhamba kancane</string>
     <string name="rules_of_the_road_44_Q">Imoto uma ifile idonswa ngani?</string>
     <string name="rules_of_the_road_44_A">i. Uma lemoto ife emabhiliki, uyidonsa ngensimbi lecinile, lengema-metre lamatsatfu, kanye nema-centimetre lamashumi lasihlanu (3.5m).
         \nii. Uma emabhiliki asebenta uyidonsa ngendophi noma i-chain leli-metre kanye nema-centimetre lamashumi lasiphohlongo (1.8m), khona lolandzelako anganufuna ku-ovatheka, atitjele kutsi utawungena emkhatsini wenu.</string>
     <string name="rules_of_the_road_45_Q">Shano umehluko we-free way ne-one way ubemune (4)?</string>
-    <string name="rules_of_the_road_45_A">One-Way				Free-way
-        \ni.	Imizila mibili				Imizila mitsatfu, nome imimuningi
-        \nii.	Iba edolobheni			Iba emaphandleni
-        \niii.	Ku netikhinyabeto			Kute tikhinyabeto
-        \niv.	Umshayeli u-controlwa itraffic	Umshayeli uhamba ngelitubane lelikhulu</string>
+    <string name="rules_of_the_road_45_A">One-Way\tvs\tFree-way
+        \ni.	Imizila mibili\tvs\timizila mitsatfu, nome miningi
+        \nii.	Iba edolobheni\tvs\tIba emaphandleni
+        \niii.	Ku netikhinyabeto\tvs\tKute tikhinyabeto
+        \niv.	Umshayeli u-controlwa yitraffic\tvs\tUmshayeli uhamba ngelitubane lelikhulu</string>
     <string name="rules_of_the_road_46_Q">Shano tintfo lekumele tihlale tikhona ebhuthini?</string>
     <string name="rules_of_the_road_46_A">i. ngu jeke
         \nii. i-triangle lebovu
@@ -188,9 +191,9 @@
         \nV. i-chain
         \nvi. i-tool box</string>
     <string name="rules_of_the_road_47_Q">Umtsetfo uba nebubele kuwe uma ushayise umuntfu wafa nini?</string>
-    <string name="rules_of_the_road_47_A">Uma ngabe utfwele bantfu labanengi emotweni wangakhoni kuvika loyedvwa.</string>
-    <string name="rules_of_the_road_48_Q">Bhala tindzawo tibe sikhombisa (7) lapho utotfola khona i-barrier line?</string>
-    <string name="rules_of_the_road_48_A">i. Ebhuloweni lelincane
+    <string name="rules_of_the_road_47_A">Uma ngabe utfwele bantfu labaningi emotweni wangakhoni kuvika lona loyedvwa.</string>
+    <string name="rules_of_the_road_48_Q">Bhala tindzawo tibe sikhombisa (7) lapho kutfola khona i-barrier line?</string>
+    <string name="rules_of_the_road_48_A">i. Ebhulohweni lelincane
         \nii. Edvundvwini
         \niii. Emakhoneni lacijile
         \niv. Esichingini
@@ -198,7 +201,7 @@
         \nvi. Ku-zebra crossing
         \nvii. Ku-cross road</string>
     <string name="rules_of_the_road_49_Q">Imoto uma ikhanyise bright, ubona sigaba lesinganani?</string>
-    <string name="rules_of_the_road_49_A">Ubona sigaba lesingema metre lama shumi lalishumi (100m)</string>
+    <string name="rules_of_the_road_49_A">Ubona sigaba lesingema metre lama shumi lalishumi (100m).</string>
     <string name="rules_of_the_road_50_Q">Uma udimile ikhanyisa kanganani?</string>
     <string name="rules_of_the_road_50_A">Uma udimile ikhanyisa sigaba lesingema metre lamashumi lamane nasihlanu (45m).</string>
     <string name="rules_of_the_road_51_Q">Ubona ngani nawuyongena edolobheni?</string>
@@ -223,7 +226,7 @@
         \nv.  Ngema wipers</string>
     <string name="rules_of_the_road_57_Q">Yini emehlo akati?</string>
     <string name="rules_of_the_road_57_A">Emehlo akati ngema reflectors lanyatsiselwa emgwacweni, lapho kutekhona ema-street lights.</string>
-    <string name="rules_of_the_road_58_Q">Ehlukene kangaki wona lamehlo akati?</string>
+    <string name="rules_of_the_road_58_Q">Ehlukene kangakhi wona lamehlo akati?</string>
     <string name="rules_of_the_road_58_A">Ehlukene katsatfu:
         \ni. Kunala bovu; amele ibarrier line
         \nii. Kunala mhlophe; amele i-centre line
@@ -231,7 +234,7 @@
     <string name="rules_of_the_road_59_Q">Yini ihazard?</string>
     <string name="rules_of_the_road_59_A">Yintfo lengakuphazamisa emgwacweni.</string>
     <string name="rules_of_the_road_60_Q">Ihlukene kangakhi yona ihazard?</string>
-    <string name="rules_of_the_road_60_A">Yehlukene kabili:
+    <string name="rules_of_the_road_60_A">Yehlukene kabili (2):
         \ni. Kunale hambako (e.g. bantfu, tilwane, etc)
         \nii. Kunale ngahambi (e.g. potholes, ematje, tihlahla, tikotela, etc)</string>
     <string name="rules_of_the_road_61_Q">Ibhasi uma igcwele uyibona ngani?</string>
@@ -244,7 +247,7 @@
     <string name="rules_of_the_road_64_Q">Uma ulandzela imoto uyilandzela sigaba lesinganani?</string>
     <string name="rules_of_the_road_64_A">Tigaba letintsatfu te-centre line.</string>
     <string name="rules_of_the_road_65_Q">Uma ujikela ku-one way ujikela njani?</string>
-    <string name="rules_of_the_road_65_A">Ujikela ku-lane yalesandla lajikela kuso, ngesencele noma ngesekudla</string>
+    <string name="rules_of_the_road_65_A">Ujikela ku-lane yalesandla lajikela kuso lomgwaco, ngesencele noma ngesekudla.</string>
 
     <!-- Road Traffic Signs and Markings Tags -->
     <string name="regulatory_signs_001">Luphawu lolungicondzisako kutsi ngime</string>
