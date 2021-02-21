@@ -9,41 +9,37 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".TestCardsTest">
-
     <ImageView
         android:id="@+id/stack_question_image"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_above="@+id/coordinatorlayout_answersheet"
         android:layout_gravity="center_horizontal|top"
-        android:layout_margin="@dimen/image_margin_large"
-        android:padding="@dimen/image_padding_large"
+        android:layout_margin="@dimen/image_margin_large_320_533"
+        android:padding="@dimen/image_padding_large_320_533"
         android:scaleX="@dimen/image_scale_x_large"
         android:scaleY="@dimen/image_scale_y_large"
         android:layout_weight="2"
         android:visibility="visible"
         app:srcCompat="@drawable/sign_002" />
-
     <TextView
         android:id="@+id/stack_question_text"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_above="@+id/coordinatorlayout_answersheet"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="@dimen/cardtext_margin"
-        android:padding="@dimen/cardtext_padding"
+        android:layout_margin="@dimen/cardtext_margin_320_533"
+        android:padding="@dimen/cardtext_padding_320_533"
         android:textAlignment="center"
         android:layout_weight="@dimen/common_weight"
-        android:textSize="@dimen/cardtext_text_size"
+        android:textSize="@dimen/cardtext_text_size_320_533"
         android:visibility="gone" />
-
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorlayout_answersheet"
         android:layout_gravity="center_horizontal|bottom"
         android:layout_weight="@dimen/common_weight"
         android:layout_width="match_parent"
         android:layout_height="0dp">
-
         <RelativeLayout
             android:id="@+id/answer_sheet"
             android:layout_width="match_parent"
@@ -58,16 +54,15 @@
             app:behavior_hideable="true"
             app:behavior_peekHeight="@dimen/card_peek_height"
             app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" >
-
             <TextView
                 android:id="@+id/test_card_answer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/cardtext_margin"
-                android:padding="@dimen/cardtext_padding"
+                android:layout_margin="@dimen/cardtext_margin_320_533"
+                android:padding="@dimen/cardtext_padding_320_533"
                 android:gravity="center"
                 android:text="Hello"
-                android:textSize="@dimen/cardtext_text_size"
+                android:textSize="@dimen/cardtext_text_size_320_533"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
         </RelativeLayout>
