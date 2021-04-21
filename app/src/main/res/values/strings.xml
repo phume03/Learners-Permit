@@ -537,8 +537,8 @@
     <string name="road_markings_178">Turn left only – straight or right turn prohibited</string>
     <string name="road_markings_179">Proceed straight only – left or right turn prohibited</string>
     <string name="road_markings_180">Turn right only – straight or left turn prohibited</string>
-    <string name="road_markings_181">Proceed straight or turn right only – left turn prohibited</string>
-    <string name="road_markings_182">Proceed straight or turn left only – right turn prohibited</string>
+    <string name="road_markings_181">Proceed straight or turn left only – right turn prohibited</string>
+    <string name="road_markings_182">Proceed straight or turn right only – left turn prohibited</string>
     <string name="road_markings_183">Bus lane on the right of the other lanes</string>
     <string name="road_markings_184">Bus lane on the left of the other lanes</string>
     <string name="road_markings_185">Bus lane in the center of the other lanes</string>

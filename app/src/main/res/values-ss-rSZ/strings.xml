@@ -252,7 +252,7 @@
     <!-- Road Traffic Signs and Markings Tags -->
     <string name="regulatory_signs_001">Luphawu lolungicondzisako kutsi ngime</string>
     <string name="regulatory_signs_002">Luphawu lolungicondzisako kutsi ngime lwaka customs</string>
-    <string name="regulatory_signs_003">Luphawu lolungicondzisako kutsi ngime lwama phoyisa</string>
+    <string name="regulatory_signs_003">Luphawu lolungicondzisako kutsi ngime lwema phoyisa</string>
     <string name="regulatory_signs_004">Luphawu lolungicondzisako kutsi siniketane indlela</string>
     <string name="regulatory_signs_005">Luphawu lolungicondzisako kutsi akungenwa umgwaco uyi one-way</string>
     <string name="regulatory_signs_006"> Luphawu lolungicondzisako kutsi tilwane letidvonsa tincola atikavumeleki</string>
@@ -266,7 +266,7 @@
     <string name="regulatory_signs_014"> Luphawu lolungicondzisako kutsi angipaki ngetikhatsi letibhaliwe</string>
     <string name="regulatory_signs_015"> Luphawu lolungicondzisako kutsi angimi ngetikhatsi letibhaliwe</string>
     <string name="regulatory_signs_016"> Luphawu lolungicondzisako kutsi angipaki/angimi ngetikhatsi letibhaliwe</string>
-    <string name="regulatory_signs_017"> Luphawu lolungicondzisako ngekuphakama lokuvumelekile lokungu ngema-metre lamane, kanye nema centimetre lamashumi lamane nakubili (4.42m)</string>
+    <string name="regulatory_signs_017"> Luphawu lolungicondzisako ngekuphakama lokuvumelekile lokungema-metre lamane, kanye nema centimetre lamashumi lamane nakubili (4.42m)</string>
     <string name="regulatory_signs_018"> Luphawu lolungicondzisako kutsi angihambi ngetulu kwema-kilometre lamashumi lasitfupha ngeli hour (60km/h)</string>
     <string name="regulatory_signs_019"> Luphawu lolungicondzisako ngesisindvo semoto lesivumelekile lesima-tonne lasihlanu (5t)</string>
     <string name="regulatory_signs_020"> Luphawu lolungicondzisako ngesisindvo se-axle lesivumelekile lesima-tonne lamabili (2t)</string>
@@ -277,17 +277,17 @@
     <string name="regulatory_signs_025"> Luphawu lolungicondzisako kutsi angicondze ngesekudla kuphela</string>
     <string name="regulatory_signs_026"> Luphawu lolungicondzisako kutsi angicondze embili kuphela</string>
     <string name="regulatory_signs_027"> Luphawu lolungicondzisako kutsi ngingajikela ngesekudla kuphela</string>
-    <string name="regulatory_signs_028"> Luphawu lolungicondzisako kutsi angijikele ngesencele kuphela</string>
+    <string name="regulatory_signs_028"> Luphawu lolungicondzisako kutsi ngingajikela ngesencele kuphela</string>
     <string name="regulatory_signs_029"> Luphawu lolungicondzisako kutsi angihambi ngephansi kwema-kilometre lamashumi lasihlanu ngeli hour (50km/h)</string>
     <string name="regulatory_signs_030"> Luphawu lolungicondzisako kutsi kuhamba bemabhayisikili kuphela kulomzila</string>
     <string name="regulatory_signs_031"> Luphawu lolungicondzisako kutsi kuhamba emabhansi kuphela kulomzila ngetikhatsi letibhaliwe</string>
-    <string name="regulatory_signs_032"> Luphawu lolungicondzisako kutsi ungapaka ema-minutes lamashumi lamane nesihlanu (45min) ngetikhatsi letibhaliwe</string>
+    <string name="regulatory_signs_032"> Luphawu lolungicondzisako kutsi ngingapaka ema-minutes lamashumi lamane nesihlanu (45min) ngetikhatsi letibhaliwe</string>
     <string name="regulatory_signs_033"> Luphawu loluphakanyisiwe ku-free way, lolungicondzisako ngemzila lengingahambi kuwo kwesikhashana</string>
     <string name="regulatory_signs_034"> Luphawu loluphakanyisiwe ku-free way, lolungicondzisako ngemzila lengingamusebentisa kwesikhashana </string>
     <string name="warning_signs_035">Caphela umgwaco usiphambano</string>
     <string name="warning_signs_036">Caphela umgwaco ungu-T</string>
     <string name="warning_signs_037">Caphela umgwaco uhluka ngalokucondzile ngesencele</string>
-    <string name="warning_signs_038">Caphela umgwaco uhluka ngekushiyashiyana ngesekudla, nangesencele</string>
+    <string name="warning_signs_038">Caphela umgwaco uhluka ngekushiyashiyana ngesencele, nangesekudla</string>
     <string name="warning_signs_039">Caphela umgwaco ungena ngalokucijile ngesencele</string>
     <string name="warning_signs_040">Caphela umgwaco uhluka ngalokucijile ngasekudla</string>
     <string name="warning_signs_041">Caphela umgwaco longenela ngalotjekile</string>
@@ -297,7 +297,7 @@
     <string name="warning_signs_045">Caphela likona lelicijile ngesekudla</string>
     <string name="warning_signs_046">Caphela umgwaco unelijika lelisa hairpin</string>
     <string name="warning_signs_047">Caphela umgwaco umajikojiko</string>
-    <string name="warning_signs_048">Caphela umgwaco unemakona lahlalelene ngesekudla, nangesencele</string>
+    <string name="warning_signs_048">Caphela umgwaco unemakona lahlalelene ngesencele, nangesekudla</string>
     <string name="warning_signs_049">Caphela umgwaco uyaphela kubangumphacambili ngesencele</string>
     <string name="warning_signs_050">Caphela umgwaco uyacala kubangumphacambili ngesekudla</string>
     <string name="warning_signs_051">Caphela i-traffic iyaphambana</string>
@@ -324,10 +324,10 @@
     <string name="warning_signs_072">Caphela lithonela</string>
     <string name="warning_signs_073">Caphela jantji wesitimela longagadvwa</string>
     <string name="warning_signs_074">Caphela umgwaco uyewukela ngesekudla</string>
-    <string name="warning_signs_075">Caphela umgwaco uyenyukela ngesencele</string>
+    <string name="warning_signs_075">Caphela umgwaco uyenyukela ngesekudla</string>
     <string name="warning_signs_076">Caphela umoya lojubako</string>
     <string name="warning_signs_077">Caphela ema-robot</string>
-    <string name="warning_signs_078">Caphela longukumisa endlulise besikolo</string>
+    <string name="warning_signs_078">Caphela longakumisa endlulise besikolo</string>
     <string name="warning_signs_079">Caphela emaloli lajubako emgwacweni</string>
     <string name="warning_signs_080">Caphela tigulumba letakha umgwaco</string>
     <string name="warning_signs_081">Caphela umgwaco ulukhetse</string>
@@ -342,7 +342,7 @@
     <string name="guide_or_information_signs_090">Lungatisa ngemgwaco loyi-one way, locondze embili</string>
     <string name="guide_or_information_signs_091">Lungatisa ngekucala kwe-free way</string>
     <string name="guide_or_information_signs_092">Lungatisa kutsi ngitohamba li-kilometre (1km), bese phambili ngesekudla ngitfola indzawo yekupaka</string>
-    <string name="guide_or_information_signs_093">Lungatisa kutsi ngitohamba li-kilometre (1km), bese phambili ngesekudla ngitfola indzawo yekuphumula</string>
+    <string name="guide_or_information_signs_093">Lungatisa kutsi ngitohamba li-kilometre (1km), bese phambili ngesencele ngitfola indzawo yekuphumula</string>
     <string name="guide_or_information_signs_094">Lungatisa kutsi ngitohamba li-kilometre (1km), bese phambili ngesekudla ngitfola siteshi setindiza lesincane</string>
     <string name="guide_or_information_signs_095">Lungatisa kutsi ngitohamba ema-kilometre lamatsatfu (3km), bese phambili ngitfola belusito lwekucala noma sibhedlela</string>
     <string name="guide_or_information_signs_096">Lungatisa kutsi ngitohamba li-kilometre (1km), bese phambili ngesekudla ngitfola lihhovisi lekwatisa tivakashi </string>
@@ -354,7 +354,7 @@
     <string name="guide_or_information_signs_102">Lungatisa kutsi ngitohamba li-kilometre (1km), bese phambili ngesekudla ngitfola i-filling station neli-garage</string>
     <string name="guide_or_information_signs_103">Lungatisa kutsi ngitohamba li-kilometre (1km), bese phambili ngesekudla ngitfola i-filling station</string>
     <string name="guide_or_information_signs_104">Lungatisa kutsi ngitohamba li-kilometre (1km), bese phambili ngesekudla ngitfola indzawo yekushaya lucingo</string>
-    <string name="guide_or_information_signs_105">Lungatisa kutsi ngitohamba li-kilometre (1km), bese phambili bese ngitfola i-police station</string>
+    <string name="guide_or_information_signs_105">Lungatisa kutsi ngitohamba li-kilometre (1km), bese phambili ngitfola i-police station</string>
     <string name="guide_or_information_signs_106">Lungatisa kutsi ngitohamba ema-kilometre lamatsatfu (3km), bese phambili ngitfola emanti</string>
     <string name="guide_or_information_signs_107">Lungatisa kutsi ngitohamba ema-kilometre lamatsatfu (3km), bese phambili ngitfola litje lesikhumbuto</string>
     <string name="guide_or_information_signs_108">Lungatisa kutsi ngitohamba li-kilometre (1km), bese phambili ngesekudla ngitfola i-restuarant</string>
@@ -385,8 +385,8 @@
     <string name="guide_or_information_signs_133">Lungatisa kutsi ngitohamba ema-metre lamashumi lamane lalishumi (400m) ngitfole umgwaco wesikhashana</string>
     <string name="guide_or_information_signs_134">Luphawu lolusa-map, lungatisa kutsi ngitohamba ema-kilometre lalishumi nesihlanu (15km), ku-free way, ngitfole umgwaco lohluka ngesencele loya kulamadolobha</string>
     <string name="guide_or_information_signs_135">Luphawu lolusa-map, lungatisa ngemgwaco losiphambano loyakulamadolobha</string>
-    <string name="guide_or_information_signs_136">Luphawu lolusa-map, lungatisa ngemgwaco lohluka ngekushiyashiyana ngesencele nangesekudla, loya kulamadolobha</string>
-    <string name="guide_or_information_signs_137">Luphawu lolusa-map, lungatisa kutsi ngendingilizi ye-traffic lenemigwaco loya kulamadolobha</string>
+    <string name="guide_or_information_signs_136">Luphawu lolusa-map, lungatisa ngemgwaco lohluka ngekushiyashiyana ngesekudla, nangesencele loya kulamadolobha</string>
+    <string name="guide_or_information_signs_137">Luphawu lolusa-map, lungatisa ngendingilizi ye-traffic lenemigwaco loya kulamadolobha</string>
     <string name="guide_or_information_signs_138">Lungatisa ngenombolo yemgwaco lomncane locondze ngesencele loya e-East London</string>
     <string name="guide_or_information_signs_139">Lungatisa ngemgwaco lomncane longenela ngesencele ku-free way lengu N2, loya e-Humansdorp</string>
     <string name="guide_or_information_signs_140">Lungatisa ngemgwaco lehlalelene leya kulamadolobha</string>
@@ -394,10 +394,10 @@
     <string name="guide_or_information_signs_142">Luphawu loluphakanyisiwe ku-free way, lungatisa ngemzila munye loya e-Strydom Rd.</string>
     <string name="guide_or_information_signs_143">Lungatisa kutsi kusele ema-kilometre lamashumi lamabili (20km) ngifike kulendzawo lengatiswe ngayo</string>
     <string name="guide_or_information_signs_144">Lungatisa ngihambe ema-kilometre lamashumi lasitfupha nge li-hour (60km/h) kulendzawo</string>
-    <string name="guide_or_information_signs_145">Luphawu loluphakanyisiwe ku-free way, lungatisa ngemzila lemibili leya e-Germiston</string>
-    <string name="guide_or_information_signs_146">Luphawu loluphakanyisiwe ku-free way, lungatisa ngemzila munye loya e-Germiston</string>
-    <string name="guide_or_information_signs_147">Luphawu loluphakanyisiwe ku-free way, lungatisa ngemzila leya e-Germiston</string>
-    <string name="guide_or_information_signs_148">Lungatisa ngesiciniseko sema khilomitha lengitawahamba ngiye kulendzawo lebhaliwe</string>
+    <string name="guide_or_information_signs_145">Luphawu loluphakanyisiwe ku-free way, lungatisa ngemzila lemibili leya e-Germinston</string>
+    <string name="guide_or_information_signs_146">Luphawu loluphakanyisiwe ku-free way, lungatisa ngemzila munye loya e-Germinston</string>
+    <string name="guide_or_information_signs_147">Luphawu loluphakanyisiwe ku-free way, lungatisa ngemzila leya e-Germinston</string>
+    <string name="guide_or_information_signs_148">Lungatisa ngesiciniseko sema-kilometre lengitawahamba ngiye kulendzawo letibhaliwe</string>
     <string name="guide_or_information_signs_149">Lungatisa ngemugwaco loya e-Jan Smuts locondze ngesencele</string>
     <string name="guide_or_information_signs_150">Lungatisa ngelilungelo lokwendlula noma kuhamba kucala</string>
     <string name="guide_or_information_signs_151">Lungatisa ngabongcwengcwe bengoti</string>
@@ -430,8 +430,8 @@
     <string name="road_markings_178">Ngumcibisholo longiphocelelako kutsi ngijikele ngesencele kuphela, kucondza embili nekujikela ngesekudla akukavumeleki</string>
     <string name="road_markings_179">Ngumcibisholo longiphocelela kutsi ngicondze embili kuphela, kujikela ngesekudla nekujikela ngesencele akukavumeleki</string>
     <string name="road_markings_180">Ngumcibisholo longiphocelela kutsi ngijikele ngesekudla kuphela, kucondza embili nekujikela ngesencele akukavumeleki</string>
-    <string name="road_markings_181">Ngumcibisholo longiphocelela kutsi ngijikele ngesekudla nome ngicondze embili kuphela, kujikela ngesencele akukavumeleki</string>
-    <string name="road_markings_182">Ngumcibisholo longiphocelela kutsi ngijikele ngesencele nome ngicondze embili kuphela, kujikela ngesekudla akukavumeleki</string>
+    <string name="road_markings_181">Ngumcibisholo longiphocelela kutsi ngijikele ngesencele nome ngicondze embili kuphela, kujikela ngesencele akukavumeleki</string>
+    <string name="road_markings_182">Ngumcibisholo longiphocelela kutsi ngijikele ngesekudla nome ngicondze embili kuphela, kujikela ngesekudla akukavumeleki</string>
     <string name="road_markings_183">Luphawu loludvwetjwe phasi lolukutjengisa umzila wemabhasi longesekudla kwaleminye</string>
     <string name="road_markings_184">Luphawu loludvwetjwe phasi lolukutjengisa umzila wemabhasi longesencele kwaleminye</string>
     <string name="road_markings_185">Luphawu loludvwetjwe phasi lolukutjengisa umzila wemabhasi losemkhatsini kwaleminye</string>
@@ -442,7 +442,7 @@
     <string name="road_markings_190">Luphawu loludvwetjwe phasi lolukutjengisa indzawo yekupaka ema-ambulance</string>
     <string name="road_markings_191">Luphawu loludvwetjwe phansi lolukutjengisa indzawo yekupaka ema-Taxi</string>
     <string name="road_markings_192">Luphawu loludvwetjwe phansi lolukutjengisa indzawo yekupaka timoto taka-fire</string>
-    <string name="road_markings_193">Luphawu loludvwetjwe phansi lolukutjengisa indzawo yekupaka bo-ricksha (risha)</string>
+    <string name="road_markings_193">Luphawu loludvwetjwe phansi lolukutjengisa indzawo yekupaka bo-ricksha (rickshaw)</string>
     <string name="road_signals_194">Traffic control umisa itraffic</string>
     <string name="road_signals_195">Traffic control undlulisa itraffic </string>
     <string name="road_signals_196">Traffic control undlulisa itraffic kancane</string>
@@ -450,7 +450,7 @@
     <string name="road_signals_198">Liphoyisa laka traffic lendlulisa itraffic lengesekudla salo</string>
     <string name="road_signals_199">Liphoyisa laka traffic lendlulisa itraffic lengesencele salo</string>
     <string name="road_signals_200">Liphoyisa laka traffic lendlulisa itraffic lesembikwalo</string>
-    <string name="road_signals_201">Liphoyisa laka traffic limisa itraffic lesembikwalo kanye nalesemvakwalo</string>
+    <string name="road_signals_201">Liphoyisa laka traffic lendlulisa itraffic lesembikwalo kanye nalesemvakwalo</string>
     <string name="road_signals_202">Liphoyisa laka traffic limisa itraffic lesembikwalo</string>
     <string name="road_signals_203">Liphoyisa laka traffic limisa itraffic lesemvakwalo</string>
     <string name="road_signals_204">Marobot</string>

@@ -62,7 +62,7 @@ public class WarningSigns extends Fragment {
         signsCardsData.add(WarningEntry);
         WarningEntry = new Card(R.drawable.sign_050, getString(R.string.warning_signs_050));
         signsCardsData.add(WarningEntry);
-        WarningEntry = new Card(R.drawable.sign_017, getString(R.string.warning_signs_051));
+        WarningEntry = new Card(R.drawable.sign_051, getString(R.string.warning_signs_051));
         signsCardsData.add(WarningEntry);
         WarningEntry = new Card(R.drawable.sign_052, getString(R.string.warning_signs_052));
         signsCardsData.add(WarningEntry);
